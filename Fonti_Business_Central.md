@@ -1,6 +1,6 @@
 # Business Central sources
 
-Check the [list of scanned URLs](archivio_fonti/url_scansionati.txt) before opening an index, article, or linked reference.
+Check the [source scan register](archivio_fonti/url_scansionati.json) before opening an index, article, or linked reference.
 
 ## Approved official Microsoft sources
 
