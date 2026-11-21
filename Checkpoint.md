@@ -8,4 +8,4 @@
 - **Open gaps.** Microsoft references disagree on the introduction minor for the Mexico DIOT file format. Keep it pending until reconciled. Several complementary indexes and articles were revisited or screened, with full archive coverage still open. Use the recorded scan scope to identify outstanding article-level comparisons.
 - **Session scope.** The user requested a new scan of all approved sources and authorized revisiting previously accessed pages for this session. The scope includes historical releases, current notes, linked official evidence, and full approved complementary archives. Pause below 25% of the initial token budget remaining when the runtime exposes it.
 
-Consult [historical checkpoints](Checkpoint_aggiornamento_2026-11-19.md) only for the release or source under review. Check the [list of scanned URLs](archivio_fonti/url_scansionati.txt) before opening a source.
+Use the [source scan register](archivio_fonti/README.md) for individual URLs and their recorded scan scope. Check the [list of scanned URLs](archivio_fonti/url_scansionati.txt) before opening a source. Record ongoing research and handoff status in this checkpoint.
