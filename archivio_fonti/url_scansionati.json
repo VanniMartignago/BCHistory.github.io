@@ -18281,10 +18281,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/ui-get-started-layouts",
-    "scanDate": "2026-11-21",
-    "lastAttemptDate": "2026-11-21",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
     "status": "processed",
-    "scope": "User-defined successor layouts"
+    "scope": "User-defined successor layouts and Manage layout status, including overrides for extension-provided layouts"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/ui-how-create-custom-report-layout",
@@ -24381,12 +24381,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/calculate-withholding-taxes-vendors",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Linked release-plan feature page",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/calculate-withholding-taxes-vendors"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Redirect to archived Microsoft release-plan feature page"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/comply-australian-payment-time-reporting-bill",
@@ -24408,12 +24406,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/control-lifecycle-report-layouts",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Linked release-plan feature page",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/control-lifecycle-report-layouts"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Redirect to archived Microsoft release-plan feature page"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/create-contract-service-orders-respect-one-service-item-lineorder-setting",
@@ -24651,10 +24647,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-tasks-all-agents-dedicated-task-pane",
-    "scanDate": null,
-    "lastAttemptDate": null,
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
     "status": "processed",
-    "scope": "Feature date verification"
+    "scope": "Redirect to archived Microsoft release-plan feature page"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/map-new-dataverse-fields-business-central",
@@ -24717,10 +24713,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/review-content-generated-agents-directly-pages",
-    "scanDate": null,
-    "lastAttemptDate": null,
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
     "status": "processed",
-    "scope": "Feature date verification"
+    "scope": "Redirect to archived Microsoft release-plan feature page"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/run-al-tests-visual-studio-code",
@@ -24900,12 +24896,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-e-invoice-formats-service-invoices-germany",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Linked release-plan feature page",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-e-invoice-formats-service-invoices-germany"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Redirect to archived Microsoft release-plan feature page"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-enhanced-faster-reports-analysis-deferrals-trial-balances",
@@ -24936,30 +24930,24 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-apis-analyzing-approval-workflows-auditors-it-staff",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Linked release-plan feature page",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-apis-analyzing-approval-workflows-auditors-it-staff"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Redirect to archived Microsoft release-plan feature page"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-apis-analyzing-permissions-auditors-it-staff",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Linked release-plan feature page",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-apis-analyzing-permissions-auditors-it-staff"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Redirect to archived Microsoft release-plan feature page"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-apis-sustainability-better-integration",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Linked release-plan feature page",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-apis-sustainability-better-integration"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Redirect to archived Microsoft release-plan feature page"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-sales-document-reports-layout-that-show-carbon-footprint",
@@ -41309,10 +41297,10 @@
   },
   {
     "url": "https://yzhums.com/72933/",
-    "scanDate": "2026-11-21",
-    "lastAttemptDate": "2026-11-21",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
     "status": "processed",
-    "scope": "Article and screen links for official release and lifecycle references"
+    "scope": "Dedicated BC 28.1 Layout Status article and links for official release and lifecycle references"
   },
   {
     "url": "https://yzhums.com/72984/",
@@ -119445,5 +119433,61 @@
     "lastAttemptDate": "2026-11-23",
     "status": "processed",
     "scope": "Functional area review of approval workflows for intercompany general journals"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/control-lifecycle-report-layouts",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Feature scope and availability reviewed for the V102 release reconciliation"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-tasks-all-agents-dedicated-task-pane",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Feature scope and availability reviewed for the V102 release reconciliation"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/review-content-generated-agents-directly-pages",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Feature scope and availability reviewed for the V102 release reconciliation"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-e-invoice-formats-service-invoices-germany",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Feature scope and availability reviewed for the V102 release reconciliation"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-apis-sustainability-better-integration",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Feature scope and availability reviewed for the V102 release reconciliation"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-apis-analyzing-approval-workflows-auditors-it-staff",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Feature scope and availability reviewed for the V102 release reconciliation"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-apis-analyzing-permissions-auditors-it-staff",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Feature scope and availability reviewed for the V102 release reconciliation"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/calculate-withholding-taxes-vendors",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Feature scope and availability reviewed for the V102 release reconciliation"
   }
 ]
