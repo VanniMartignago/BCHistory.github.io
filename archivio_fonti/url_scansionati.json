@@ -15787,10 +15787,11 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/flexible-sorting-planning-worksheet-page",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Date audit fetch attempt"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Redirect to archived Microsoft Learn page for functional area review",
+    "finalUrl": "https://learn.microsoft.com/en-us/previous-versions/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/flexible-sorting-planning-worksheet-page"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/launch-specific-company-visual-studio-code",
@@ -17767,12 +17768,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-dimensions",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Existing catalog reference; URL-level scan evidence unavailable",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/business-central/finance-dimensions"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Functional area review of shortcut dimensions on documents and journal lines"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-setup-report-intrastat",
@@ -17833,12 +17832,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-count-inventory-with-documents",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Existing catalog reference; URL-level scan evidence unavailable",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-count-inventory-with-documents"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Functional area review of physical inventory count and adjustment documents"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-import-item-pictures",
@@ -17955,12 +17952,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/localfunctionality/italy/electronic-invoicing",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Existing catalog reference; URL-level scan evidence unavailable",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/business-central/localfunctionality/italy/electronic-invoicing"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Functional area review of Italian FatturaPA configuration and XML exchange"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/localfunctionality/mexico/packing-slips-transfer-orders",
@@ -18136,12 +18131,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/qms-manual-test-creation",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Existing catalog reference; URL-level scan evidence unavailable",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/business-central/qms-manual-test-creation"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Functional area review of quality inspection report layouts"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/receivables-apply-payments-auto-reconcile-bank-accounts",
@@ -20086,12 +20079,11 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/include-approvals-intercompany-general-journals-workflows",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Date audit fetch attempt",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/include-approvals-intercompany-general-journals-workflows"
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Redirect to archived Microsoft Learn page for functional area review",
+    "finalUrl": "https://learn.microsoft.com/en-us/previous-versions/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/include-approvals-intercompany-general-journals-workflows"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/include-only-open-entries-customer-statements",
@@ -119439,5 +119431,19 @@
     "linkedFrom": "https://yzhums.com/category/dynamics365/page/94/",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/09ff28120329d1a55d9e4ffe51728719758b885ac25af946695903091052b169.json"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/flexible-sorting-planning-worksheet-page",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Functional area review of Planning and Requisition Worksheet sorting"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/include-approvals-intercompany-general-journals-workflows",
+    "scanDate": "2026-11-23",
+    "lastAttemptDate": "2026-11-23",
+    "status": "processed",
+    "scope": "Functional area review of approval workflows for intercompany general journals"
   }
 ]

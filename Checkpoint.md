@@ -1,6 +1,13 @@
 # Business Central research checkpoint
 
-## Resume here — 2026-11-21
+## Resume here — 2026-11-23
+
+- **Current catalog.** [Business_Central_Updates_V101.xlsx](Business_Central_Updates_V101.xlsx) and its [generated JSON](Business_Central_Updates.json) contain 1,026 records. The [V101 changelog](log_pr/2026-11-23-update-bc-features-v101.md) contains the row-by-row changes and existing source references.
+- **Functional area audit.** V100 had 572 blanks (55.8%). During the transition to V100, the 932 records matched by title, minor release, and country or region retained their field state (478 blank and 454 populated). The 94 unmatched records in V100 all had a blank area. V101 assigned 53 previously blank areas and cleared 3 confirmed misclassifications. It now has 504 populated areas and 522 blanks. The matrix reads the field directly.
+- **Verification.** All 17 catalog fields matched across all 1,026 V101 workbook and JSON records. Only the 56 intended Functional Area values changed. Styles and tables were preserved. The normalized duplicate check by title or description and country or region found no duplicates. The archived V100 workbook retains its original checksum.
+- **Next starting point.** Work through the remaining blank areas with specific official guides and compare them against the [Microsoft business functionality taxonomy](https://learn.microsoft.com/en-us/dynamics365/business-central/across-business-functionality). Inspect populated entries for further misclassifications. Revisit cross-functional cases such as recurring lines and invoice posting policies across sales and purchasing when the single-area convention is settled. Keep infrastructure, administration and client capabilities without a documented business process unassigned. Continue the prior historical source work below.
+
+## Prior research handoff — 2026-11-21
 
 - **Current catalog.** [Business_Central_Updates_V100.xlsx](Business_Central_Updates_V100.xlsx) and its [generated JSON](Business_Central_Updates.json) contain 1,026 records. [Pull request #10](https://github.com/VanniMartignago/BCHistory.github.io/pull/10) was merged into `main`.
 - **Verification.** The V100 session verified workbook-to-JSON parity, checked normalized titles and descriptions for duplicates by country or region, and consolidated three confirmed duplicates. The [V100 changelog](log_pr/2026-11-21-update-bc-features-v100.md) records the comparison and feature changes.
