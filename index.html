@@ -48,18 +48,24 @@
 .galaxy-feature{position:absolute;transform:translate(-50%,-50%);width:.9%;min-width:5px;aspect-ratio:1;border:0;border-radius:50%;padding:0;background:var(--node-color);box-shadow:0 0 5px var(--node-color);cursor:pointer}
 .galaxy-feature:is(:focus-visible,:hover){z-index:3;outline:2px solid #fff;outline-offset:2px}
 .galaxy-plot[data-labels="true"] .galaxy-feature:not(:hover,:focus-visible) .galaxy-node-label{display:none}
-.galaxy-network{padding:0;overflow:hidden;border-color:#293a54;border-radius:20px;background:#080e19;box-shadow:0 14px 32px #172b4d26}
-.galaxy-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid #26364e;background:#111d30}
+.galaxy-network{padding:0;overflow:hidden;border-color:#d6e1ec;border-radius:20px;background:#f5f9fd;color:#172b4d;box-shadow:0 12px 30px #172b4d12}
+.galaxy-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid #dbe5ef;background:#fff}
 .galaxy-picker{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.galaxy-picker label{font-size:14px;font-weight:700;color:#e1ecfd}
-.galaxy-picker select{min-height:38px;max-width:min(230px,61vw);border:1px solid #557199;border-radius:8px;padding:0 8px;background:#172841;color:#fff;font:inherit;font-size:14px;color-scheme:dark}
+.galaxy-picker label{font-size:14px;font-weight:700;color:#263f60}
+.galaxy-picker select{min-height:38px;max-width:min(230px,61vw);border:1px solid #bacbe0;border-radius:8px;padding:0 8px;background:#fff;color:#172b4d;font:inherit;font-size:14px}
 .galaxy-toolbar .galaxy-zoom{margin:0}
+.galaxy-zoom button{border-color:#c7d7e9;background:#edf4fc;color:#234970}
 .galaxy-viewport{max-width:920px}
-.galaxy-version{background:radial-gradient(ellipse at 50% 48%,#1c3757 0%,#101d33 26%,#0a1323 56%,#080e19 83%);border-color:#ffffff16}
-.galaxy-version .galaxy-node{background:radial-gradient(circle at 35% 30%,#fff,var(--node-color) 42%,#0a152b 115%);border-color:color-mix(in srgb,var(--node-color),white 24%);box-shadow:0 0 12px var(--node-color),0 0 26px color-mix(in srgb,var(--node-color),transparent 65%)}
-.galaxy-version .galaxy-edges line{stroke:#97b7e2;stroke-opacity:.46}
-.galaxy-orbit-trace{stroke-opacity:.43}
-.galaxy-node-info,.galaxy-empty{margin:0;padding:10px 16px;background:#111d30;color:#d7e6fa}
+.galaxy-version{background:radial-gradient(ellipse at center,#fff 12%,#f0f6fc 75%);border-color:#dbe5ef}
+.galaxy-version .galaxy-node{background:var(--node-color);border:1px solid #fff;box-shadow:0 0 0 1px var(--node-color)}
+.galaxy-version .galaxy-node[data-kind="release"]{background:#174f91;box-shadow:0 0 0 4px #dceafb}
+.galaxy-node[aria-pressed="true"],.galaxy-node:focus-visible,.galaxy-feature:is(:focus-visible,:hover){outline-color:#183b62}
+.galaxy-feature{box-shadow:none}
+.galaxy-version .galaxy-node-label{color:#172b4d;background:#ffffffed}
+.galaxy-version .galaxy-node[data-kind="release"] .galaxy-node-label{bottom:auto;top:100%;margin-top:4px;font-size:14px}
+.galaxy-version .galaxy-edges line{stroke:#7896b8;stroke-opacity:.48}
+.galaxy-orbit-trace{stroke-opacity:.34}
+.galaxy-node-info,.galaxy-empty{margin:0;padding:10px 16px;border-top:1px solid #dbe5ef;background:#fff;color:#344e6d}
 </style>
 </head>
 <body>
@@ -157,7 +163,7 @@ function galaxyVersionMarkup(found,m){
   }
   const stars=Array.from({length:135},(_,i)=>{
     const x=(i*173+i*i*17)%700,y=(i*331+i*i*23)%700;
-    return '<circle cx="'+x+'" cy="'+y+'" r="'+(i%11===0?1.25:.65)+'" fill="#bdcdef" opacity="'+(i%11===0?.55:.27)+'"/>';
+    return '<circle cx="'+x+'" cy="'+y+'" r="'+(i%11===0?1.25:.65)+'" fill="#9ab1c9" opacity="'+(i%11===0?.45:.18)+'"/>';
   }).join('');
   return [...versions].sort(([a],[b])=>Number(b)-Number(a)).map(([version,groups])=>{
     const release=version?'BC '+version:'—';
@@ -171,7 +177,7 @@ function galaxyVersionMarkup(found,m){
     nodes.push(node('release',release,total,350,350,46,'#7dd3fc',0));
     sorted.forEach(([area,items],index)=>{
       const name=area||m.matrixUnassigned;
-      const color=area?'hsl('+Math.round(functionalAreas.indexOf(area)*137.508)%360+' 85% 69%)':'#a3afbf';
+      const color=area?'hsl('+Math.round(functionalAreas.indexOf(area)*137.508)%360+' 62% 43%)':'#64748b';
       const angle=index*2.39996323-Math.PI/2;
       const distance=sorted.length===1?118:75+215*index/(sorted.length-1);
       const x=350+distance*Math.cos(angle),y=350+distance*Math.sin(angle);
@@ -198,7 +204,7 @@ function galaxyVersionMarkup(found,m){
 function galaxyMarkup(found,m){
   const italian=lang==='it';
   const zoomControls='<div class="galaxy-zoom" role="group" aria-label="Zoom Galaxy"><button type="button" data-zoom="out" aria-label="'+(italian?'Riduci zoom':'Zoom out')+'">−</button><button type="button" data-zoom="reset" aria-label="'+(italian?'Ripristina zoom':'Reset zoom')+'">100%</button><button type="button" data-zoom="in" aria-label="'+(italian?'Aumenta zoom':'Zoom in')+'">+</button></div>';
-  const options=[...major.options].map(option=>'<option value="'+esc(option.value)+'"'+(option.value===major.value?' selected':'')+'>'+esc(option.text)+'</option>').join('');
+  const options=[...major.options].slice(1).map(option=>'<option value="'+esc(option.value)+'"'+(option.value===major.value?' selected':'')+'>'+esc(option.text)+'</option>').join('');
   const filter='<div class="galaxy-picker"><label for="galaxyVersion">'+(italian?'Versione BC':'BC version')+'</label><select id="galaxyVersion">'+options+'</select></div>';
   const frame=found.length?'<div class="galaxy-viewport" tabindex="0" aria-label="'+(italian?'Grafo Galaxy':'Galaxy graph')+'"><div class="galaxy-plot galaxy-plot--versions">'+galaxyVersionMarkup(found,m)+'</div></div><div class="galaxy-node-info" aria-live="polite"></div>':'<p class="galaxy-empty">'+esc(m.none)+'</p>';
   return '<div class="galaxy-network"><div class="galaxy-toolbar">'+filter+(found.length?zoomControls:'')+'</div>'+frame+'</div>';
@@ -244,7 +250,7 @@ function wireGalaxy(){
     info.textContent=active?node.title:'';
   }));
 }
-function render(){const found=filtered(),m=messages[lang];renderAreaSummary('productSummary',m.areaLabel,found,'area',cleanArea,area);renderAreaSummary('functionalSummary',m.functionalArea,found,'functionalArea',value=>value,functionalArea);renderAreaSummary('majorSummary',m.majorLabel,found,'majorVersion',value=>'BC '+value,major);matrixByWrap.hidden=viewMode.value!=='matrix';count.innerHTML='<strong>'+found.length+'</strong> '+(found.length===1?m.foundOne:m.found);if(!found.length&&viewMode.value!=='galaxy'){list.innerHTML='<div class="empty">'+m.none+'</div>';return}list.innerHTML=viewMode.value==='galaxy'?galaxyMarkup(found,m):viewMode.value==='matrix'?matrixMarkup(found,m):cardMarkup(found);if(viewMode.value==='galaxy')wireGalaxy();list.querySelectorAll('.card,.matrix-link').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();const item=rows.find(row=>row.id===link.getAttribute('data-id'));showDetail(item,true)}))}
+function render(){if(viewMode.value==='galaxy'&&!major.value&&major.options.length>1){major.value=major.options[1].value;refreshMinorOptions()}const found=filtered(),m=messages[lang];renderAreaSummary('productSummary',m.areaLabel,found,'area',cleanArea,area);renderAreaSummary('functionalSummary',m.functionalArea,found,'functionalArea',value=>value,functionalArea);renderAreaSummary('majorSummary',m.majorLabel,found,'majorVersion',value=>'BC '+value,major);matrixByWrap.hidden=viewMode.value!=='matrix';count.innerHTML='<strong>'+found.length+'</strong> '+(found.length===1?m.foundOne:m.found);if(!found.length&&viewMode.value!=='galaxy'){list.innerHTML='<div class="empty">'+m.none+'</div>';return}list.innerHTML=viewMode.value==='galaxy'?galaxyMarkup(found,m):viewMode.value==='matrix'?matrixMarkup(found,m):cardMarkup(found);if(viewMode.value==='galaxy')wireGalaxy();list.querySelectorAll('.card,.matrix-link').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();const item=rows.find(row=>row.id===link.getAttribute('data-id'));showDetail(item,true)}))}
 function detailMarkup(item){const m=messages[lang];const rowsHtml='<div><dt>'+m.wave+'</dt><dd>'+esc(localText(item.wave||'—'))+'</dd></div>'+(clean(item.functionalArea)?'<div><dt>'+m.functionalArea+'</dt><dd>'+esc(item.functionalArea)+'</dd></div>':'')+(clean(item.area)?'<div><dt>'+m.areaLabel+'</dt><dd>'+esc(cleanArea(item.area))+'</dd></div>':'')+'<div><dt>'+m.country+'</dt><dd>'+esc(item.countryRegion||'—')+'</dd></div>'+(item.status?'<div><dt>'+m.status+'</dt><dd>'+esc(translateStatus(item.status))+'</dd></div>':'')+'<div><dt>'+m.availability+'</dt><dd>'+m.cloud+': '+esc(availability(item.cloud))+' · '+m.onprem+': '+esc(availability(item.onprem))+'</dd></div><div><dt>'+m.preview+'</dt><dd>'+esc(localText(item.preview||'—'))+'</dd></div><div><dt>'+m.ga+'</dt><dd>'+esc(localText(item.ga||'—'))+'</dd></div>';return '<div class="detail-card"><div class="detail-close"><div><div class="eyebrow">'+m.detail+'</div><div class="detail-kicker">'+m.detailKicker+'</div></div><button type="button" id="closeDetail" aria-label="'+esc(m.back)+'">'+m.back+'</button></div><div class="meta">'+(clean(item.changeType)?'<span class="tag change-type" data-change-type="'+esc(item.changeType)+'" aria-label="'+esc(m.changeType+': '+item.changeType)+'">'+esc(item.changeType)+'</span>':'')+'<span class="tag version">BC '+esc(item.version)+'</span></div><h2>'+esc(item.title)+'</h2><p>'+esc(item.summary||m.descriptionMissing)+'</p><dl>'+rowsHtml+'</dl><div class="links">'+(item.officialDocumentation?'<a target="_blank" rel="noopener" href="'+esc(item.officialDocumentation)+'">'+m.official+' <span>↗</span></a>':'')+(item.source?'<a target="_blank" rel="noopener" href="'+esc(item.source)+'">'+m.source+' <span>↗</span></a>':'<p>'+m.sourceMissing+'</p>')+(item.blogSource?'<a target="_blank" rel="noopener" href="'+esc(item.blogSource)+'">'+blogLinkLabel(item.blogSource)+' <span>↗</span></a>':'')+'</div><div class="source-note">'+m.sourceNote+'</div></div>'}
 function wireDetail(){document.querySelector('#closeDetail').onclick=closeDetail;detail.onclick=e=>{if(e.target===detail)closeDetail()}}
 function showDetail(item,push){selected=item;detail.classList.add('open');detail.setAttribute('aria-label',(lang==='it'?'Dettaglio: ':'Details: ')+item.title);detail.innerHTML=detailMarkup(item);wireDetail();if(push)history.pushState({detailId:item.id},'','?id='+encodeURIComponent(item.id));document.querySelector('#closeDetail').focus()}
