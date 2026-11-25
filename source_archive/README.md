@@ -2,17 +2,33 @@
 
 Use [scanned_urls.json](scanned_urls.json) as the current register. Each entry represents one canonical URL.
 
-1. Before opening an index, article, or linked reference, normalize the URL and match the `url` field exactly. Remove tracking parameters and heading fragments, preserve query parameters that select content or pagination, and use the English Microsoft Learn URL for localized copies of the same article. When a redirect is known, check the final URL.
-2. Open URLs absent from the register when relevant. For registered URLs, use the status to decide whether to open the page.
+## Resume a research session
 
-   | Status | Action |
-   | --- | --- |
-   | `processed` | The review was completed for the recorded scope. Reuse its findings. Reopen for a distinct pending scope only when saved evidence is insufficient, or when explicitly asked to rescan. |
-   | `retry` | The URL was discovered, retrieved, or partially reviewed. Continue its outstanding work when relevant. |
-   | `error` | An access attempt failed. Retry when relevant. A single 404 remains an error. |
-   | `excluded` | Evidence confirms that the URL is inactive, such as HTTP 410 Gone. Record the reason and reopen only on explicit request. |
+Start with the pending queues. Open URLs awaiting a first attempt, complete outstanding evidence reviews using saved content where possible, and give first failures their second attempt. Skip processed, dead, and excluded URLs. Once the queues are empty, revisit the approved primary and complementary source indexes as needed to discover new material. Check every discovered canonical URL against the register before opening it.
 
-3. Keep one entry per URL. Set `scanDate` to the latest documented completed review and `lastAttemptDate` to the latest documented access attempt. Use ISO dates (`YYYY-MM-DD`) and keep unknown dates as `null`. Record completed reviews even when they yield no feature. Record HTTP status or error details when available, and set `scope` on the URL entry to describe what the recorded status covers. Use `null` when the scope is unknown. Record relevant child URLs as separate entries, including subsequent index pages, articles, and official references. Keep a partially reviewed URL at `retry` while work on that page remains. If the page review is complete and the remaining work is on a child URL, keep the child pending and retain the parent status. Track outstanding feature verification and archive coverage in the project checkpoint.
+## Discover URLs and record them
+
+Before recording or opening an index, article, or linked reference, normalize it and match the `url` field exactly. Remove tracking parameters and heading fragments, preserve parameters that select content or pagination, and use the English Microsoft Learn URL for localized copies of the same article. When a redirect is known, check the final URL too. Keep one record per canonical URL.
+
+Record relevant new URLs from approved sources as soon as they are discovered, including archive pages, pagination, articles, and official references. Set `status` to `retry` and leave `scanDate` and `lastAttemptDate` as `null` until you have evidence for those dates. Identify the parent page in `scope` when available. Apply the project's source approval rules before adding a new source.
+
+## Open URLs and verify the evidence
+
+Use the register to resume pending work. Compare retrieved content with the catalog and confirm the change and version before updating a feature.
+
+| Status | Action |
+| --- | --- |
+| `processed` | Reuse the completed review for its recorded scope. Skip it in ordinary scans. |
+| `retry` | Open a discovered URL or continue the remaining review of a page already opened. |
+| `error` | Keep it in the queue after the first failed attempt. Retry once during a later scan. |
+| `dead` | Two access attempts failed. Keep the record and skip the URL in future scans. |
+| `excluded` | Record the evidence for confirmed inactivity, such as HTTP 410 Gone. Reopen only on explicit request. |
+
+Use ISO dates (`YYYY-MM-DD`). Update `lastAttemptDate` when you attempt access and `scanDate` when you complete a review, including reviews that yield no feature. Keep unknown dates as `null`. Record the HTTP status or error details when available. Record failed attempts in `accessFailures`. A legacy `error` without a count is treated as one recorded failure. A successful retry returns the URL to content review. Preserve any earlier completed findings. If a page is fully reviewed and work remains on child pages, retain the parent's completed status and track the children separately. Record outstanding feature verification in the project checkpoint.
+
+## List pending URLs
+
+Use the existing register to select entries with `status: retry` and no `lastAttemptDate` for a first attempt, entries with `status: retry` and a `lastAttemptDate` for evidence review, and entries with `status: error` for a second access attempt. Retain earlier evidence and access outcomes in the same record.
 
 From the project root, load the register locally and emit only the requested entry. Reuse the loaded register for other lookups in the same shell and reload it after updates.
 
