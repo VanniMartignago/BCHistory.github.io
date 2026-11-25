@@ -82,7 +82,9 @@ function renderAreaSummary(id,title,items,field,label,select){
   const summary=document.getElementById(id);
   summary.parentElement.hidden=!totals.size;
   document.getElementById(id+'Title').textContent=title;
-  const sorted=[...totals].sort(([a,countA],[b,countB])=>countB-countA||label(a).localeCompare(label(b),lang));
+  const sorted=[...totals].sort(([a,countA],[b,countB])=>
+    field==='majorVersion'?Number(b)-Number(a):countB-countA||label(a).localeCompare(label(b),lang)
+  );
   summary.replaceChildren(...sorted.map(([value,total])=>{
     const entry=document.createElement('li');
     const button=document.createElement('button');
