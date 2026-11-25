@@ -2,8 +2,12 @@
 
 ## Resume here — 2026-11-25
 
+- **Current catalog V106.** [Workbook](Business_Central_Updates_V106.xlsx) and [JSON](Business_Central_Updates.json) match across 1,056 records and all 17 fields. Added two distinct ABC Analysis reports in 2026 release wave 1, one built into Business Central and one in the Inventory Power BI app. Compared both titles, descriptions, release scope and sources against the full catalog. The [V105 workbook](archive/Business_Central_Updates_V105.xlsx) retains its original SHA-256 checksum.
+- **Pending research.** Find build-level Microsoft evidence for the first minor release of the built-in report and versioned Inventory Power BI app evidence for the Power BI report. The electronic invoicing FAQ and assisted setup design guide were reviewed for introduction evidence and marked processed. Next, review the assisted setup module and registration API against the version 15 System Application transition and continue the pending Microsoft update queues.
+
+## V105 handoff — 2026-11-25
+
 - **Current catalog V105.** [Workbook](Business_Central_Updates_V105.xlsx) and [JSON](Business_Central_Updates.json) match across 1,054 records. V105 adds zero-rate VAT details in CFDI (14.10), retention on copied corrective sales documents (14.28), and French Tax Audit job queue performance (14.48). Each has corroboration in another Microsoft update branch. The [V104 workbook](archive/Business_Central_Updates_V104.xlsx) was archived with its bytes intact.
-- **Pending research.** Continue the source queue across application and platform areas. Microsoft documents the ABC Analysis report, but its introduction version remains unverified. Complete the assisted setup and electronic invoicing guide comparisons.
 
 ## V104 handoff — 2026-11-25
 

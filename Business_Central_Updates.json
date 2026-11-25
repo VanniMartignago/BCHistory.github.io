@@ -20024,5 +20024,43 @@
     "officialDocumentation": null,
     "blogSource": null,
     "changeType": "Enhancement"
+  },
+  {
+    "majorVersion": "28",
+    "minorVersion": null,
+    "releaseWave": "2026 release wave 1",
+    "productArea": "Reporting and data analysis",
+    "countryRegion": null,
+    "functionalArea": null,
+    "feature": "Item - ABC Analysis report",
+    "description": "Classifies inventory items by their contribution to sales in local currency so planners can prioritize purchasing and replenishment. The report uses the shared ABC Analysis Setup thresholds by default. Users can override them for a run, filter by item, location or date, and include items with zero sales.",
+    "releaseStatus": "General availability",
+    "previewDate": null,
+    "gaDate": null,
+    "cloud": null,
+    "onPrem": null,
+    "primarySource": "https://learn.microsoft.com/en-us/dynamics365/business-central/reports/report-723",
+    "officialDocumentation": "https://learn.microsoft.com/en-us/dynamics365/business-central/reports/report-723",
+    "blogSource": null,
+    "changeType": "New feature"
+  },
+  {
+    "majorVersion": "28",
+    "minorVersion": null,
+    "releaseWave": "2026 release wave 1",
+    "productArea": "Reporting and data analysis",
+    "countryRegion": null,
+    "functionalArea": null,
+    "feature": "ABC Analysis report in the Inventory Power BI app",
+    "description": "Shows how much each inventory class contributes to sales, with item counts, sales amounts, sales quantities and share of sales. The classification uses sales in local currency and the same ABC Analysis Setup thresholds as the built-in Business Central report.",
+    "releaseStatus": "General availability",
+    "previewDate": null,
+    "gaDate": null,
+    "cloud": null,
+    "onPrem": null,
+    "primarySource": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-powerbi-abc-analysis",
+    "officialDocumentation": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-powerbi-abc-analysis",
+    "blogSource": null,
+    "changeType": "New feature"
   }
 ]
