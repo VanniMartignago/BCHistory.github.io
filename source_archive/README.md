@@ -28,7 +28,18 @@ Use ISO dates (`YYYY-MM-DD`). Update `lastAttemptDate` when you attempt access a
 
 ## List pending URLs
 
-Use the existing register to select entries with `status: retry` and no `lastAttemptDate` for a first attempt, entries with `status: retry` and a `lastAttemptDate` for evidence review, and entries with `status: error` for a second access attempt. Retain earlier evidence and access outcomes in the same record.
+From the repository root, run the following commands. The lists are generated directly from the register and show the most recently registered entries first within each group.
+
+| Command | Result |
+| --- | --- |
+| `python source_archive/pending_urls.py errors` | URLs that are eligible for a second access attempt. |
+| `python source_archive/pending_urls.py unopened` | URLs registered for the first time or with no documented access attempt. |
+| `python source_archive/pending_urls.py review` | URLs with a documented access attempt whose content or feature evidence still needs review. |
+| `python source_archive/pending_urls.py --counts` | Totals for all three groups. |
+
+Omit the group to print all three pending queues. Archived URLs are omitted. To save one list, redirect its output to a text file. Update the register after each batch so the next run reflects the current state.
+
+Use `--record-access failure --url <canonical-url> --date YYYY-MM-DD` after an access failure, with `--http-status` when known. Use `--record-access success` with the same arguments after accessing a pending page. Record the review scope and mark the entry `processed` after evaluating the feature evidence.
 
 From the project root, load the register locally and emit only the requested entry. Reuse the loaded register for other lookups in the same shell and reload it after updates.
 

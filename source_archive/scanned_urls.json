@@ -19768,12 +19768,13 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/supervise-agent-tasks",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Existing catalog reference; URL-level scan evidence unavailable",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/business-central/supervise-agent-tasks"
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Verified the page-notification behavior during agent review against the existing BC 30.0 catalog entry.",
+    "httpStatus": 200,
+    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/business-central/supervise-agent-tasks",
+    "accessFailures": 1
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/ui-change-basic-settings",
@@ -19800,17 +19801,19 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/ui-extensions-company-hub",
-    "scanDate": null,
-    "lastAttemptDate": null,
-    "status": "retry",
-    "scope": "Existing catalog reference; URL-level scan evidence unavailable"
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Matched the Company Hub extension and setup to the existing catalog entry.",
+    "httpStatus": 200
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/ui-extensions-late-payment-prediction",
-    "scanDate": null,
-    "lastAttemptDate": null,
-    "status": "retry",
-    "scope": "Existing catalog reference; URL-level scan evidence unavailable"
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Matched the extension and its predictions to the existing Late payment predictions entry.",
+    "httpStatus": 200
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/ui-get-started-layouts",
@@ -19849,17 +19852,19 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/ui-set-up-report-themes-header-footer-layouts",
-    "scanDate": null,
-    "lastAttemptDate": null,
-    "status": "retry",
-    "scope": "Existing catalog reference; URL-level scan evidence unavailable"
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Matched composite report themes and reusable headers and footers to existing catalog entries.",
+    "httpStatus": 200
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/ui-smart-notifications",
-    "scanDate": null,
-    "lastAttemptDate": null,
-    "status": "retry",
-    "scope": "Existing catalog reference; URL-level scan evidence unavailable"
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Verified the page-notification behavior during agent review against the existing BC 30.0 catalog entry.",
+    "httpStatus": 200
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/ui-work-general-journals",
@@ -27481,45 +27486,45 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/cumulative-update-09-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Reviewed the regulatory sections of Spring 2019 CU 09 (application 14.10). Added changes 338203, 341817 to V104. Other release-note scope remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/75d0f6491d87cfd066452414f42ebd8ca9ef5157769ab57d1554086012bc3ee8.json"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/cumulative-update-13-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Reviewed the regulatory sections of Spring 2019 CU 13 (application 14.14). Added changes 350201 to V104. Other release-note scope remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/2556a99d7955e590bcef9e116f94baa36ee88b765c826d232939977f8296bb95.json"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/cumulative-update-14-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Reviewed the regulatory sections of Spring 2019 CU 14 (application 14.15). Other release-note scope remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/e77c4b3af198fd4541f0a3afda71826f5eaf051f8d94e1f8da1c0f0c04e14d0e.json"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/cumulative-update-16-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Verified change 361287 and cataloged it in V104. Remaining update scope pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/1262c4f2f013b7c79d86faadf5a4af9950efe8dac542a7d69f4c298a394a4666.json"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/cumulative-update-19-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Reviewed the regulatory sections of Spring 2019 CU 19 (application 14.20). Other release-note scope remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/503b8bf5c6a63899df87dc9e130fb45779f90607e44db210f8e63a811607bdfd.json"
   },
@@ -27534,27 +27539,27 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/04/cumulative-update-35-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Confirmed Norwegian free text on individual VAT return lines (433241) and cataloged it in V104. BC 20.1 records the same change (433243). Remaining update scope pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/537f7d78479f3de403fbf5e799697698e6f61b0a5a108cd519f25fb46a6e0642.json"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/12/cumulative-update-43-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Screened regulatory sections of Spring 2019 CU 43 (application 14.44). Additional feature evidence and remaining release-note scope are pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/734ddbb56de8c156516c4bbb1ffbeeaeaac6aa384db9a80b46f20cc562cf1eb2.json"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-24-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Screened regulatory sections of Spring 2019 CU 24 (application 14.25). Additional feature evidence and remaining release-note scope are pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/4a4c5f30cab371a8f147b97a5df6e1cf80ff99eaff486b42505ddf8efb1ea54c.json"
   },
@@ -45620,10 +45625,10 @@
   },
   {
     "url": "https://yzhums.com/77124/",
-    "scanDate": null,
+    "scanDate": "2026-11-25",
     "lastAttemptDate": "2026-11-25",
-    "status": "retry",
-    "scope": "Linked pages checked for further URLs; article-level evidence review pending. Discovered from https://yzhums.com/category/dynamics365/dynamics365businesscentral/page/182/",
+    "status": "processed",
+    "scope": "Dedicated article compared with Microsoft documentation. The BC 30.0 notification behavior already has a catalog entry.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/5ab9837841d25d2efeaeeeab2022e72f8c53d39f2af4f6ffd8fb7bc2626a3fa2.json"
   },
@@ -45653,10 +45658,10 @@
   },
   {
     "url": "https://yzhums.com/77263/",
-    "scanDate": null,
+    "scanDate": "2026-11-25",
     "lastAttemptDate": "2026-11-25",
-    "status": "retry",
-    "scope": "Linked pages checked for further URLs; article-level evidence review pending. Discovered from https://yzhums.com/category/dynamics365/dynamics365businesscentral/page/182/",
+    "status": "processed",
+    "scope": "Dedicated article reviewed against the existing Cross-environment Master Data Management catalog entry.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/54b40dc578e12734b48d9821a7aedc9db448a66ebab84b124f11293f04d4d469.json"
   },
@@ -45670,10 +45675,10 @@
   },
   {
     "url": "https://yzhums.com/77363/",
-    "scanDate": null,
+    "scanDate": "2026-11-25",
     "lastAttemptDate": "2026-11-25",
-    "status": "retry",
-    "scope": "Linked pages checked for further URLs; article-level evidence review pending. Discovered from https://yzhums.com/77184/",
+    "status": "processed",
+    "scope": "Dedicated article reviewed against the existing Use batch totals for payment journals catalog entry.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/8f7f3432b91123e2aa9f2b9b6410557620a72f16c3310d9204deb1d5444a66f0.json"
   },
@@ -47433,9 +47438,9 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-15-5-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-5-4",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "BC 15.5 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/6c1f2df4e13ee1573c770153d7adc748ff0bb771485d9566075a33f0281ad23c.json"
   },
@@ -85655,81 +85660,81 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/cumulative-update-20-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Discovered relevant linked page",
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "Screened regulatory sections of Spring 2019 CU 20 (application 14.21). Cataloged change 381127 in V104. Additional feature evidence and remaining release-note scope are pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-cumulative-updates-for-microsoft-dynamics-365-business-central-spring-2019-update-on-premis",
-    "httpStatus": 403,
+    "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/cumulative-update-20-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-21-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Discovered relevant linked page",
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "Screened regulatory sections of Spring 2019 CU 21 (application 14.22). Additional feature evidence and remaining release-note scope are pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-cumulative-updates-for-microsoft-dynamics-365-business-central-spring-2019-update-on-premis",
-    "httpStatus": 403,
+    "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-21-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-22-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Discovered relevant linked page",
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "Screened regulatory sections of Spring 2019 CU 22 (application 14.23). Cataloged change 388141 in V104. Additional feature evidence and remaining release-note scope are pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-cumulative-updates-for-microsoft-dynamics-365-business-central-spring-2019-update-on-premis",
-    "httpStatus": 403,
+    "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-22-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-23-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Discovered relevant linked page",
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "Screened regulatory sections of Spring 2019 CU 23 (application 14.24). Additional feature evidence and remaining release-note scope are pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-cumulative-updates-for-microsoft-dynamics-365-business-central-spring-2019-update-on-premis",
-    "httpStatus": 403,
+    "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-23-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/update-15-14-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-14",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Discovered relevant linked page",
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.14 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-updates-for-microsoft-dynamics-365-business-central-2019-release-wave-2",
-    "httpStatus": 403,
+    "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/update-15-14-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-14"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/update-15-15-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-15",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Discovered relevant linked page",
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "Verified platform change 387280 and added it to V104. Other release-note content remains pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-updates-for-microsoft-dynamics-365-business-central-2019-release-wave-2",
-    "httpStatus": 403,
+    "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/update-15-15-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-15"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/update-15-16-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-16",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Discovered relevant linked page",
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.16 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-updates-for-microsoft-dynamics-365-business-central-2019-release-wave-2",
-    "httpStatus": 403,
+    "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/update-15-16-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-16"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/update-15-17-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-17",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Discovered relevant linked page",
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.17 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-updates-for-microsoft-dynamics-365-business-central-2019-release-wave-2",
-    "httpStatus": 403,
+    "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/update-15-17-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-17"
   },
   {
@@ -87683,20 +87688,20 @@
   },
   {
     "url": "https://yzhums.com/77046/",
-    "scanDate": null,
+    "scanDate": "2026-11-25",
     "lastAttemptDate": "2026-11-25",
-    "status": "retry",
-    "scope": "Linked pages checked for further URLs; article-level evidence review pending. Discovered from https://yzhums.com/category/dynamics365/dynamics365businesscentral/page/182/",
+    "status": "processed",
+    "scope": "User Details walkthrough reviewed. No documented introduction release for a distinct feature in this article.",
     "linkedFrom": "https://yzhums.com/77124/",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/0135b63425972aa37575060ce2de18282a832495f9229bbe61464e7772f5a6bf.json"
   },
   {
     "url": "https://yzhums.com/77475/",
-    "scanDate": null,
+    "scanDate": "2026-11-25",
     "lastAttemptDate": "2026-11-25",
-    "status": "retry",
-    "scope": "Linked pages checked for further URLs; article-level evidence review pending. Discovered from https://yzhums.com/77505/",
+    "status": "processed",
+    "scope": "Company Details walkthrough reviewed. No documented introduction release for a distinct feature in this article.",
     "linkedFrom": "https://yzhums.com/77124/",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/c77c87d92c3833d3d3a5aec5d28409ce09323756d4b2cb3165eca876541bcbd8.json"
@@ -122679,9 +122684,9 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-15-1-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-1-3",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "BC 15.1 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/067506f32fc4c5c39ab1dd2bd1e10b42b62bad00470cd2b2de2eb43cbbc16549.json"
   },
@@ -124214,7 +124219,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Linked page reached (HTTP 200); review for feature and release evidence pending | Discovered from: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/10/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-2",
+    "scope": "Alternative-route or transient-error retry for BC 21.16, KB 5035205: HTTP 200.",
     "httpStatus": 200
   },
   {
@@ -124230,7 +124235,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Linked page reached (HTTP 200); review for feature and release evidence pending | Discovered from: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/released-updates-for-microsoft-dynamics-365-business-central-2020-release-wave-1",
+    "scope": "Verified platform change 387822 and added it to V104. Other release-note content remains pending.",
     "httpStatus": 200
   },
   {
@@ -124238,7 +124243,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Linked page reached (HTTP 200); review for feature and release evidence pending | Discovered from: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/released-updates-for-microsoft-dynamics-365-business-central-2020-release-wave-1",
+    "scope": "BC 16.11 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
     "httpStatus": 200
   },
   {
@@ -124246,7 +124251,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Linked page reached (HTTP 200); review for feature and release evidence pending | Discovered from: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/released-updates-for-microsoft-dynamics-365-business-central-2020-release-wave-1",
+    "scope": "Verified platform change 395233 and added it to V104. Other release-note content remains pending.",
     "httpStatus": 200
   },
   {
@@ -124254,7 +124259,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Linked page reached (HTTP 200); review for feature and release evidence pending | Discovered from: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/released-updates-for-microsoft-dynamics-365-business-central-2020-release-wave-1",
+    "scope": "BC 16.13 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
     "httpStatus": 200
   },
   {
@@ -127505,9 +127510,10 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/01/update-22-10-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-10",
     "scanDate": null,
-    "lastAttemptDate": null,
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Discovered on an approved source; page access and feature review pending | Discovered from: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/04/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1"
+    "scope": "BC 22.10 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
   },
   {
     "url": "https://support.microsoft.com/en-us/topic/cumulative-update-49-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-build-14-50-49975-platform-build-14-0-49970-2deeee4c-3974-4914-81a0-4aff4a403c63",
@@ -201487,9 +201493,10 @@
   {
     "url": "https://support.microsoft.com/en-us/topic/update-20-14-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application-build-20-14-56992-platform-build-20-0-56938-a6c4ce33-6481-4dbc-b266-259e1dfbe282",
     "scanDate": null,
-    "lastAttemptDate": null,
-    "status": "retry",
-    "scope": "Linked from an approved secondary source; access and feature review pending. Discovered from https://www.sauravdhyani.com/2023/07/microsoft-dynamics-business-central.html"
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.14 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
   },
   {
     "url": "https://support.microsoft.com/en-us/topic/cumulative-update-48-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-build-14-49-49909-platform-build-14-0-49902-1fd2428f-79af-4c7e-a989-22ee04eeabeb",
@@ -206605,9 +206612,10 @@
   {
     "url": "https://support.microsoft.com/en-us/topic/update-20-11-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application-build-20-11-53614-platform-build-20-0-53556-9975149d-b3d8-49d9-9212-3e31fa920ecd",
     "scanDate": null,
-    "lastAttemptDate": null,
-    "status": "retry",
-    "scope": "Linked from an approved secondary source; access and feature review pending. Discovered from https://www.sauravdhyani.com/2023/03/microsoft-dynamics-business-central.html"
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.11 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
   },
   {
     "url": "https://support.microsoft.com/en-us/topic/update-19-17-for-microsoft-dynamics-365-business-central-on-premises-2021-release-wave-2-application-build-19-17-53613-platform-build-19-0-53551-3742d04b-8a83-413f-bd93-69f5ff34a70b",
@@ -248986,10 +248994,11 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/company-hub",
-    "scanDate": null,
-    "lastAttemptDate": null,
-    "status": "retry",
-    "scope": "Linked from an approved secondary source; access and feature review pending. Discovered from https://yzhums.com/1289/"
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Matched multi-company indicators and tasks to the existing Company Hub entry.",
+    "httpStatus": 200
   },
   {
     "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/diagnostics/diagnostic-al914",
@@ -250057,5 +250066,937 @@
     "lastAttemptDate": "2026-11-25",
     "httpStatus": 200,
     "scope": "KB 4515445. Reviewed regulatory entries as earlier context for the North American CFDI change. Full update review pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/11/cumulative-update-18-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Reviewed the regulatory sections of Spring 2019 CU 18 (application 14.19). Other release-note scope remains pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/10/cumulative-update-17-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Reviewed the regulatory sections of Spring 2019 CU 17 (application 14.18). Other release-note scope remains pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/cumulative-update-15-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Reviewed the regulatory sections of Spring 2019 CU 15 (application 14.16). Other release-note scope remains pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/cumulative-update-12-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Reviewed the regulatory sections of Spring 2019 CU 12 (application 14.13). Other release-note scope remains pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/cumulative-update-11-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Reviewed the regulatory sections of Spring 2019 CU 11 (application 14.12). Other release-note scope remains pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/cumulative-update-10-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Reviewed the regulatory sections of Spring 2019 CU 10 (application 14.11). Other release-note scope remains pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/06/cumulative-update-25-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 25 (application 14.26). Cataloged change 399520 in V104. Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/07/cumulative-update-26-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 26 (application 14.27). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/08/cumulative-update-27-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 27 (application 14.28). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/09/cumulative-update-28-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 28 (application 14.29). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/10/cumulative-update-29-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 29 (application 14.30). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/11/cumulative-update-30-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 30 (application 14.31). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/12/cumulative-update-31-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 31 (application 14.32). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/01/cumulative-update-32-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 32 (application 14.33). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/02/cumulative-update-33-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 33 (application 14.34). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/03/cumulative-update-34-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 34 (application 14.35). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/05/cumulative-update-36-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 36 (application 14.37). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/06/cumulative-update-37-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 37 (application 14.38). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/07/cumulative-update-38-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 38 (application 14.39). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/08/cumulative-update-39-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 39 (application 14.40). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/09/cumulative-update-40-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 40 (application 14.41). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/10/cumulative-update-41-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Confirmed change 450379 in Spring 2019 CU 41 and cataloged it in V104. Additional release-note scope remains pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/11/cumulative-update-42-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 42 (application 14.43). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/01/cumulative-update-44-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Confirmed change 460000 in Spring 2019 CU 44 and cataloged it in V104. Additional release-note scope remains pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/02/cumulative-update-45-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 45 (application 14.46). Cataloged change 462301 in V104. Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/03/cumulative-update-46-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 46 (application 14.47). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/04/cumulative-update-47-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 47 (application 14.48). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/05/cumulative-update-48-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Confirmed change 470995 in Spring 2019 CU 48 and cataloged it in V104. Additional release-note scope remains pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/06/cumulative-update-49-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 49 (application 14.50). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/07/cumulative-update-50-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 50 (application 14.51). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/08/cumulative-update-51-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 51 (application 14.52). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/09/cumulative-update-52-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "scanDate": null,
+    "status": "retry",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Screened regulatory sections of Spring 2019 CU 52 (application 14.53). Additional feature evidence and remaining release-note scope are pending."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/update-15-13-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-13",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.13 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/11/update-15-12-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-12",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.12 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/10/update-15-11-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-11",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.11 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-15-10-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-10",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.10 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-15-9-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-9-4",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.9 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-15-8-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-8-4",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.8 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-15-7-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-7-4",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "Verified change 359225 and cataloged it in V104. Remaining update scope pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-15-6-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-6-4",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.6 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-15-4-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-4-4",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.4 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-15-3-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-3-4",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "Verified 338314 covering EHF Billing 3.0 finance charge memos and reminders and cataloged it in V104. Remaining scope pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-15-2-for-microsoft-dynamics-365-business-central-2019-release-wave-2-application-build-15-2-3",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 15.2 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/01/update-16-19-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-19",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 16.19 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/09/update-16-17-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-17",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 16.17 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/08/update-16-16-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-16",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 16.16 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/07/update-16-15-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-15",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 16.15 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/06/update-16-14-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-14",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 16.14 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/update-16-9-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-9-2",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 16.9 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/update-16-8-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-8-1",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 16.8 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/11/update-16-7-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-7-1",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "Verified platform change 376861 and added it to V104. Other release-note content remains pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/10/update-16-6-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-6-1",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 16.6 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-16-5-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-5-1",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 16.5 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-16-4-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-4-1",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 16.4 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-16-3-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-3-1",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "Alternative-route or transient-error retry for BC 16.3, KB 4563407: HTTP 503.",
+    "httpStatus": 503
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/09/update-16-2-for-microsoft-dynamics-365-business-central-2020-release-wave-1-application-build-16-2-1",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 16.2 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-US/help/4549686",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 16.1 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-US/help/5031949",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.18 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5031029",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.17 cross-branch release-note check returned HTTP 503.",
+    "httpStatus": 503
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5029763",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "Alternative-route or transient-error retry for BC 20.16, KB 5029763: HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5029055",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "Alternative-route or transient-error retry for BC 20.15, KB 5029055: HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-US/help/5026930",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.13 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5025974",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.12 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-US/help/5023400",
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Successful retry resolved this alias to the canonical BC 20.10 update URL; follow the canonical register entry.",
+    "httpStatus": 200,
+    "accessFailures": 1,
+    "redirectUrl": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/01/update-20-10-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application"
+  },
+  {
+    "url": "https://support.microsoft.com/en-US/help/5022713",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.9 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/11/update-20-8-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 20.8 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/10/update-20-7-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 20.7 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending. Corroborates the Belgian EB Payment Journal vendor column.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5019241",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.6 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5017795",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.5 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-US/help/5017017",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.4 cross-branch release-note check returned HTTP 503.",
+    "httpStatus": 503
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5016304",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.3 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5015475",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "Alternative-route or transient-error retry for BC 20.2, KB 5015475: HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5014491",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 20.1 cross-branch release-note check returned HTTP 503.",
+    "httpStatus": 503
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/03/update-21-18-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 21.18 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5036472",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 21.17 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/01/update-21-15-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 21.15 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5033777",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 21.14 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5032753",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 21.13 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-US/help/5031950",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 21.12 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5031030",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 21.11 cross-branch release-note check returned HTTP 503.",
+    "httpStatus": 503
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5029764",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 21.10 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5029056",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 21.9 cross-branch release-note check returned HTTP 503.",
+    "httpStatus": 503
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5027891",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "Alternative-route or transient-error retry for BC 21.8, KB 5027891: HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/04/update-21-7-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 21.7 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-US/help/5025975",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 21.6 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/02/update-21-5-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 21.5 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5023401",
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Successful retry resolved this alias to the canonical BC 21.4 update URL; follow the canonical register entry.",
+    "httpStatus": 200,
+    "accessFailures": 1,
+    "redirectUrl": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/01/update-21-4-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application"
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/topic/update-21-3-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application-build-21-3-52692-platform-build-21-0-51393-52554-a69a6cc2-ec8d-4608-9489-3acf3caaa8d0",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 21.3 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/11/update-21-2-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 21.2 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5021004",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 21.1 cross-branch release-note check returned HTTP 503.",
+    "httpStatus": 503
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5046144",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 22.18 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5043979",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 22.17 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5042528",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 22.16 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-US/help/5041131",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 22.15 cross-branch release-note check returned HTTP 503.",
+    "httpStatus": 503
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/topic/update-22-14-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-14-64503-platform-build-22-0-64502-ee495af1-2eb9-4269-88ef-8511130ce862",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 22.14 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/04/update-22-13-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-13",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 22.13 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/kb/5037540",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "error",
+    "scope": "BC 22.12 cross-branch release-note check returned HTTP 403.",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/02/update-22-11-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-11",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 22.11 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/01/update-22-9-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-9-6",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 22.9 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/11/update-22-8-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-8-6",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 22.8 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/10/update-22-7-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-7-6",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 22.7 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/09/update-22-6-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-6-6",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 22.6 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/08/update-22-5-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-5-6",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 22.5 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/07/update-22-4-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-4-5",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 22.4 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/06/update-22-3-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-3-5",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 22.3 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/05/update-22-2-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-2-5",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 22.2 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending. Corroborates access to the Swiss DTA payment report.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/04/update-22-1-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-1-5",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "status": "retry",
+    "scope": "BC 22.1 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/08/update-20-17-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application",
+    "scanDate": null,
+    "status": "retry",
+    "scope": "Alternative-route or transient-error retry for BC 20.17, KB 5031029: HTTP 200.",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/07/update-20-4-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application",
+    "scanDate": null,
+    "status": "retry",
+    "scope": "Alternative-route or transient-error retry for BC 20.4, KB 5017017: HTTP 200.",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/04/update-20-1-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application",
+    "scanDate": null,
+    "status": "retry",
+    "scope": "Alternative-route or transient-error retry for BC 20.1, KB 5014491: HTTP 200.",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/08/update-21-11-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application",
+    "scanDate": null,
+    "status": "error",
+    "scope": "Alternative-route or transient-error retry for BC 21.11, KB 5031030: HTTP 403.",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/06/update-21-9-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application",
+    "scanDate": null,
+    "status": "retry",
+    "scope": "Alternative-route or transient-error retry for BC 21.9, KB 5029056: HTTP 200.",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/10/update-21-1-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application",
+    "scanDate": null,
+    "status": "retry",
+    "scope": "Alternative-route or transient-error retry for BC 21.1, KB 5021004: HTTP 200. Confirmed the Belgian vendor-name column.",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/topic/update-22-15-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-15-64637-platform-build-22-0-64630-f5fa7e06-607e-42f6-8936-237e0ef456ac",
+    "scanDate": null,
+    "status": "error",
+    "scope": "Alternative-route or transient-error retry for BC 22.15, KB 5041131: HTTP 403.",
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/01/update-20-10-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application",
+    "status": "retry",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Corroborates the CFDI electronic document cancellation status in the Mexican version. Remaining release notes need review."
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/01/update-21-4-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application",
+    "status": "retry",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-25",
+    "httpStatus": 200,
+    "scope": "Recovered the update page; content review remains pending."
   }
 ]
