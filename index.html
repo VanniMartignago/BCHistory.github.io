@@ -36,6 +36,18 @@
 .galaxy-node[data-kind="area"]{background:#a7f3a0}
 .galaxy-node[aria-pressed="true"],.galaxy-node:focus-visible{z-index:1;outline:2px solid #fff;outline-offset:2px}
 .galaxy-node-info{display:block;min-height:2.5em;padding:0 8px;text-align:center;font-size:14px}
+.galaxy-plot--versions{aspect-ratio:auto}
+.galaxy-version{position:relative;aspect-ratio:1;isolation:isolate;overflow:hidden;background:#0b1220;border-bottom:1px solid #31445c}
+.galaxy-stars{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.galaxy-version .galaxy-edges line{stroke:#85a9d7;stroke-opacity:.32}
+.galaxy-orbit-trace{fill:none;stroke-opacity:.22;stroke-width:.8}
+.galaxy-version .galaxy-node{background:var(--node-color);border-color:#ffffff70;box-shadow:0 0 12px var(--node-color)}
+.galaxy-version .galaxy-node[data-kind="release"]{min-width:28px}
+.galaxy-version .galaxy-node-label{color:var(--node-color);background:#0b1220e8}
+.galaxy-version .galaxy-node[data-kind="release"] .galaxy-node-label{display:block}
+.galaxy-feature{position:absolute;transform:translate(-50%,-50%);width:.9%;min-width:5px;aspect-ratio:1;border:0;border-radius:50%;padding:0;background:var(--node-color);box-shadow:0 0 5px var(--node-color);cursor:pointer}
+.galaxy-feature:is(:focus-visible,:hover){z-index:3;outline:2px solid #fff;outline-offset:2px}
+.galaxy-plot[data-labels="true"] .galaxy-feature:not(:hover,:focus-visible) .galaxy-node-label{display:none}
 </style>
 </head>
 <body>
@@ -129,6 +141,56 @@ function placeGalaxyNodes(nodes,radius,phase){
     node.y=350+distance*Math.sin(angle);
   });
 }
+function galaxyVersionMarkup(found,m){
+  const versions=new Map();
+  for(const item of found){
+    const version=clean(item.majorVersion);
+    const area=clean(item.functionalArea);
+    if(!versions.has(version))versions.set(version,new Map());
+    const groups=versions.get(version);
+    if(!groups.has(area))groups.set(area,[]);
+    groups.get(area).push(item);
+  }
+  const stars=Array.from({length:135},(_,i)=>{
+    const x=(i*173+i*i*17)%700,y=(i*331+i*i*23)%700;
+    return '<circle cx="'+x+'" cy="'+y+'" r="'+(i%11===0?1.25:.65)+'" fill="#bdcdef" opacity="'+(i%11===0?.55:.27)+'"/>';
+  }).join('');
+  return [...versions].sort(([a],[b])=>Number(b)-Number(a)).map(([version,groups])=>{
+    const release=version?'BC '+version:'—';
+    const sorted=[...groups].sort(([a,aItems],[b,bItems])=>bItems.length-aItems.length||a.localeCompare(b,lang));
+    const total=sorted.reduce((sum,[,items])=>sum+items.length,0);
+    const nodes=[],edges=[];
+    function node(kind,name,count,x,y,diameter,color,distance){
+      const label=name+' · '+count+' '+(count===1?m.foundOne:m.found);
+      return '<button type="button" class="galaxy-node" data-kind="'+kind+'" data-count="'+count+'" data-distance="'+distance+'" aria-pressed="false" aria-label="'+esc(label)+'" title="'+esc(label)+'" style="left:'+x/7+'%;top:'+y/7+'%;width:'+diameter/7+'%;--node-color:'+color+'"><span class="galaxy-node-label" aria-hidden="true">'+esc(name)+'</span></button>';
+    }
+    nodes.push(node('release',release,total,350,350,46,'#7dd3fc',0));
+    sorted.forEach(([area,items],index)=>{
+      const name=area||m.matrixUnassigned;
+      const color=area?'hsl('+Math.round(functionalAreas.indexOf(area)*137.508)%360+' 85% 69%)':'#a3afbf';
+      const angle=index*2.39996323-Math.PI/2;
+      const distance=sorted.length===1?118:75+215*index/(sorted.length-1);
+      const x=350+distance*Math.cos(angle),y=350+distance*Math.sin(angle);
+      const diameter=12+25*Math.sqrt(items.length/sorted[0][1].length);
+      edges.push('<line x1="350" y1="350" x2="'+x+'" y2="'+y+'"/>');
+      nodes.push(node('area',name,items.length,x,y,diameter,color,distance));
+      let offset=0,radius=diameter/2+9;
+      while(offset<items.length){
+        const capacity=Math.floor(2*Math.PI*radius/9);
+        const count=Math.min(items.length-offset,capacity);
+        edges.push('<circle class="galaxy-orbit-trace" cx="'+x+'" cy="'+y+'" r="'+radius+'" stroke="'+color+'"/>');
+        for(let i=0;i<count;i++){
+          const feature=items[offset++];
+          const orbitAngle=i/count*2*Math.PI+angle;
+          const left=(x+radius*Math.cos(orbitAngle))/7,top=(y+radius*Math.sin(orbitAngle))/7;
+          nodes.push('<button type="button" class="galaxy-feature" data-id="'+esc(feature.id)+'" title="'+esc(feature.title)+'" aria-label="'+esc(feature.title)+'" style="left:'+left+'%;top:'+top+'%;--node-color:'+color+'"><span class="galaxy-node-label" aria-hidden="true">'+esc(feature.title)+'</span></button>');
+        }
+        radius+=9;
+      }
+    });
+    return '<section class="galaxy-version" aria-label="'+esc(release)+'"><svg class="galaxy-stars" viewBox="0 0 700 700" aria-hidden="true">'+stars+'</svg><svg class="galaxy-edges" viewBox="0 0 700 700" aria-hidden="true">'+edges.join('')+'</svg>'+nodes.join('')+'</section>';
+  }).join('');
+}
 function galaxyMarkup(found,m){
   const releases=new Map(),functional=new Map(),connections=new Map();
   for(const item of found){
@@ -164,7 +226,7 @@ function galaxyMarkup(found,m){
   }).join('');
   const italian=lang==='it';
   const zoomControls='<div class="galaxy-zoom" role="group" aria-label="Zoom Galaxy"><button type="button" data-zoom="out" aria-label="'+(italian?'Riduci zoom':'Zoom out')+'">−</button><button type="button" data-zoom="reset" aria-label="'+(italian?'Ripristina zoom':'Reset zoom')+'">100%</button><button type="button" data-zoom="in" aria-label="'+(italian?'Aumenta zoom':'Zoom in')+'">+</button></div>';
-  return '<div class="galaxy-network">'+zoomControls+'<div class="galaxy-viewport" tabindex="0" aria-label="'+(italian?'Grafo Galaxy':'Galaxy graph')+'"><div class="galaxy-plot"><svg class="galaxy-edges" viewBox="0 0 700 700" aria-hidden="true">'+edges.join('')+'</svg>'+buttons+'</div></div><div class="galaxy-node-info" aria-live="polite"></div></div>';
+  return '<div class="galaxy-network">'+zoomControls+'<div class="galaxy-viewport" tabindex="0" aria-label="'+(italian?'Grafo Galaxy':'Galaxy graph')+'"><div class="galaxy-plot'+(byVersion?' galaxy-plot--versions':'')+'">'+(byVersion?galaxyVersionMarkup(found,m):'<svg class="galaxy-edges" viewBox="0 0 700 700" aria-hidden="true">'+edges.join('')+'</svg>'+buttons)+'</div></div><div class="galaxy-node-info" aria-live="polite"></div></div>';
 }
 let galaxyZoom=1;
 function wireGalaxy(){
@@ -189,6 +251,9 @@ function wireGalaxy(){
   zoomOut.addEventListener('click',()=>setZoom(galaxyZoom-.5));
   reset.addEventListener('click',()=>setZoom(1));
   setZoom(galaxyZoom);
+  list.querySelectorAll('.galaxy-feature').forEach(point=>point.addEventListener('click',()=>{
+    showDetail(rows.find(item=>item.id===point.dataset.id),true);
+  }));
   const info=list.querySelector('.galaxy-node-info');
   const nodes=[...list.querySelectorAll('.galaxy-node')];
   nodes.forEach(node=>node.addEventListener('click',()=>{
