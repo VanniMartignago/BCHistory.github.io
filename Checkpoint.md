@@ -2,6 +2,10 @@
 
 ## Resume here — 2026-11-25
 
+- **Current catalog V107.** [Workbook](Business_Central_Updates_V107.xlsx) and [JSON](Business_Central_Updates.json) match across 1,056 records and 17 fields. Consolidated the three equivalent Power Platform product-area labels into `Adapt faster with Power Platform`. The filter now has one Power Platform option covering 25 records. This changed the product-area field on 24 records. The [V106 workbook](archive/Business_Central_Updates_V106.xlsx) retains its original SHA-256 checksum.
+
+## V106 handoff — 2026-11-25
+
 - **Current catalog V106.** [Workbook](Business_Central_Updates_V106.xlsx) and [JSON](Business_Central_Updates.json) match across 1,056 records and all 17 fields. Added two distinct ABC Analysis reports in 2026 release wave 1, one built into Business Central and one in the Inventory Power BI app. Compared both titles, descriptions, release scope and sources against the full catalog. The [V105 workbook](archive/Business_Central_Updates_V105.xlsx) retains its original SHA-256 checksum.
 - **Pending research.** Find build-level Microsoft evidence for the first minor release of the built-in report and versioned Inventory Power BI app evidence for the Power BI report. The electronic invoicing FAQ and assisted setup design guide were reviewed for introduction evidence and marked processed. Next, review the assisted setup module and registration API against the version 15 System Application transition and continue the pending Microsoft update queues.
 
