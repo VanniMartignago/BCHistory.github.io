@@ -36,13 +36,13 @@
 .galaxy-node[data-kind="area"]{background:#a7f3a0}
 .galaxy-node[aria-pressed="true"],.galaxy-node:focus-visible{z-index:1;outline:2px solid #fff;outline-offset:2px}
 .galaxy-node-info{display:block;min-height:2.5em;padding:0 8px;text-align:center;font-size:14px}
-.galaxy-plot--versions{aspect-ratio:auto}
-.galaxy-version{position:relative;aspect-ratio:1;isolation:isolate;overflow:hidden;background:#0b1220;border-bottom:1px solid #31445c}
+.galaxy-universe{display:grid;grid-template-columns:repeat(var(--galaxy-columns),minmax(0,1fr));align-content:center;min-height:100%;background:#0b1220}
+.galaxy-version{position:relative;min-width:0;aspect-ratio:1}
 .galaxy-stars{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .galaxy-version .galaxy-edges line{stroke:#85a9d7;stroke-opacity:.32}
 .galaxy-orbit-trace{fill:none;stroke-opacity:.22;stroke-width:.8}
 .galaxy-version .galaxy-node{background:var(--node-color);border-color:#ffffff70;box-shadow:0 0 12px var(--node-color)}
-.galaxy-version .galaxy-node[data-kind="release"]{min-width:28px}
+.galaxy-version .galaxy-node[data-kind="release"]{min-width:13px}.galaxy-version .galaxy-node[data-kind="release"] .galaxy-node-label{max-width:min(160px,95px + 4vw);overflow-wrap:anywhere}
 .galaxy-version .galaxy-node-label{color:var(--node-color);background:#0b1220e8}
 .galaxy-version .galaxy-node[data-kind="release"] .galaxy-node-label{display:block}
 .galaxy-feature{position:absolute;transform:translate(-50%,-50%);width:.9%;min-width:5px;aspect-ratio:1;border:0;border-radius:50%;padding:0;background:var(--node-color);box-shadow:0 0 5px var(--node-color);cursor:pointer}
@@ -133,21 +133,13 @@ function renderAreaSummary(id,title,items,field,label,select){
     return entry;
   }));
 }
-function placeGalaxyNodes(nodes,radius,phase){
-  nodes.forEach((node,index)=>{
-    const angle=phase+2*Math.PI*index/nodes.length;
-    const distance=nodes.length===1&&radius===160?0:radius;
-    node.x=350+distance*Math.cos(angle);
-    node.y=350+distance*Math.sin(angle);
-  });
-}
-function galaxyVersionMarkup(found,m){
-  const versions=new Map();
+function galaxyUniverseMarkup(found,m,byVersion){
+  const galaxies=new Map();
   for(const item of found){
-    const version=clean(item.majorVersion);
-    const area=clean(item.functionalArea);
-    if(!versions.has(version))versions.set(version,new Map());
-    const groups=versions.get(version);
+    const center=clean(byVersion?item.majorVersion:item.functionalArea);
+    const area=clean(byVersion?item.functionalArea:item.area);
+    if(!galaxies.has(center))galaxies.set(center,new Map());
+    const groups=galaxies.get(center);
     if(!groups.has(area))groups.set(area,[]);
     groups.get(area).push(item);
   }
@@ -155,8 +147,11 @@ function galaxyVersionMarkup(found,m){
     const x=(i*173+i*i*17)%700,y=(i*331+i*i*23)%700;
     return '<circle cx="'+x+'" cy="'+y+'" r="'+(i%11===0?1.25:.65)+'" fill="#bdcdef" opacity="'+(i%11===0?.55:.27)+'"/>';
   }).join('');
-  return [...versions].sort(([a],[b])=>Number(b)-Number(a)).map(([version,groups])=>{
-    const release=version?'BC '+version:'—';
+  const missingProduct=lang==='it'?'Area prodotto non indicata':'Product area not specified';
+  const areaName=area=>byVersion?(area||m.matrixUnassigned):(area?cleanArea(area):missingProduct);
+  const centers=[...galaxies].sort(([a],[b])=>byVersion?Number(b)-Number(a):(a||m.matrixUnassigned).localeCompare(b||m.matrixUnassigned,lang));
+  const tiles=centers.map(([center,groups])=>{
+    const release=byVersion?(center?'BC '+center:'—'):(center||m.matrixUnassigned);
     const sorted=[...groups].sort(([a,aItems],[b,bItems])=>bItems.length-aItems.length||a.localeCompare(b,lang));
     const total=sorted.reduce((sum,[,items])=>sum+items.length,0);
     const nodes=[],edges=[];
@@ -166,8 +161,8 @@ function galaxyVersionMarkup(found,m){
     }
     nodes.push(node('release',release,total,350,350,46,'#7dd3fc',0));
     sorted.forEach(([area,items],index)=>{
-      const name=area||m.matrixUnassigned;
-      const color=area?'hsl('+Math.round(functionalAreas.indexOf(area)*137.508)%360+' 85% 69%)':'#a3afbf';
+      const name=areaName(area);
+      const color=area?'hsl('+Math.round((byVersion?functionalAreas:areas).indexOf(area)*137.508)%360+' 85% 69%)':'#a3afbf';
       const angle=index*2.39996323-Math.PI/2;
       const distance=sorted.length===1?118:75+215*index/(sorted.length-1);
       const x=350+distance*Math.cos(angle),y=350+distance*Math.sin(angle);
@@ -190,43 +185,13 @@ function galaxyVersionMarkup(found,m){
     });
     return '<section class="galaxy-version" aria-label="'+esc(release)+'"><svg class="galaxy-stars" viewBox="0 0 700 700" aria-hidden="true">'+stars+'</svg><svg class="galaxy-edges" viewBox="0 0 700 700" aria-hidden="true">'+edges.join('')+'</svg>'+nodes.join('')+'</section>';
   }).join('');
+  return {tiles,columns:Math.ceil(Math.sqrt(centers.length))};
 }
 function galaxyMarkup(found,m){
-  const releases=new Map(),functional=new Map(),connections=new Map();
-  for(const item of found){
-    const version=clean(item.majorVersion);
-    const area=clean(item.functionalArea);
-    if(!releases.has(version))releases.set(version,{name:version?'BC '+version:'—',kind:'release',count:0});
-    if(!functional.has(area))functional.set(area,{name:area||m.matrixUnassigned,kind:'area',count:0});
-    const release=releases.get(version),category=functional.get(area);
-    release.count++;
-    category.count++;
-    if(!connections.has(release))connections.set(release,new Map());
-    const edges=connections.get(release);
-    edges.set(category,(edges.get(category)||0)+1);
-  }
-  const releaseNodes=[...releases].sort(([a],[b])=>Number(b)-Number(a)).map(([,node])=>node);
-  const areaNodes=[...functional.values()].sort((a,b)=>a.name.localeCompare(b.name,lang));
-  const byVersion=galaxyBy.value==='version';
-  placeGalaxyNodes(releaseNodes,byVersion?160:285,-Math.PI/2);
-  placeGalaxyNodes(areaNodes,byVersion?285:160,-Math.PI/2+.16);
-  const edges=[];
-  for(const [release,areas] of connections){
-    for(const [category,count] of areas){
-      edges.push('<line x1="'+release.x+'" y1="'+release.y+'" x2="'+category.x+'" y2="'+category.y+'" stroke-width="'+Math.min(5,.6+Math.sqrt(count)/2)+'"/>');
-    }
-  }
-  const nodes=[...releaseNodes,...areaNodes];
-  const largest=Math.max(...nodes.map(node=>node.count));
-  const buttons=nodes.map(node=>{
-    const type=node.kind==='release'?m.majorLabel:m.functionalArea;
-    const label=type+' · '+node.name+' · '+node.count+' '+(node.count===1?m.foundOne:m.found);
-    const diameter=5.8*Math.sqrt(node.count/largest);
-    return '<button type="button" class="galaxy-node" data-kind="'+node.kind+'" data-count="'+node.count+'" aria-pressed="false" title="'+esc(label)+'" aria-label="'+esc(label)+'" style="left:'+node.x/7+'%;top:'+node.y/7+'%;width:'+diameter+'%"><span class="galaxy-node-label" aria-hidden="true">'+esc(node.name)+'</span></button>';
-  }).join('');
+  const universe=galaxyUniverseMarkup(found,m,galaxyBy.value==='version');
   const italian=lang==='it';
   const zoomControls='<div class="galaxy-zoom" role="group" aria-label="Zoom Galaxy"><button type="button" data-zoom="out" aria-label="'+(italian?'Riduci zoom':'Zoom out')+'">−</button><button type="button" data-zoom="reset" aria-label="'+(italian?'Ripristina zoom':'Reset zoom')+'">100%</button><button type="button" data-zoom="in" aria-label="'+(italian?'Aumenta zoom':'Zoom in')+'">+</button></div>';
-  return '<div class="galaxy-network">'+zoomControls+'<div class="galaxy-viewport" tabindex="0" aria-label="'+(italian?'Grafo Galaxy':'Galaxy graph')+'"><div class="galaxy-plot'+(byVersion?' galaxy-plot--versions':'')+'">'+(byVersion?galaxyVersionMarkup(found,m):'<svg class="galaxy-edges" viewBox="0 0 700 700" aria-hidden="true">'+edges.join('')+'</svg>'+buttons)+'</div></div><div class="galaxy-node-info" aria-live="polite"></div></div>';
+  return '<div class="galaxy-network">'+zoomControls+'<div class="galaxy-viewport" tabindex="0" aria-label="'+(italian?'Universo Galaxy':'Galaxy universe')+'"><div class="galaxy-plot galaxy-universe" style="--galaxy-columns:'+universe.columns+'">'+universe.tiles+'</div></div><div class="galaxy-node-info" aria-live="polite"></div></div>';
 }
 let galaxyZoom=1;
 function wireGalaxy(){
