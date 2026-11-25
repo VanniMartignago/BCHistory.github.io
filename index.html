@@ -58,7 +58,11 @@
 .galaxy-viewport{max-width:920px}
 .galaxy-version{background:radial-gradient(ellipse at center,#fff 12%,#f0f6fc 75%);border-color:#dbe5ef}
 .galaxy-version .galaxy-node{background:var(--node-color);border:1px solid #fff;box-shadow:0 0 0 1px var(--node-color)}
-.galaxy-version .galaxy-node[data-kind="release"]{background:#174f91;box-shadow:0 0 0 4px #dceafb}
+.galaxy-version .galaxy-node[data-kind="release"]{background:#b1cdec;box-shadow:0 0 0 4px #deebf9}
+.galaxy-version .galaxy-node[data-kind="area"]{box-shadow:0 0 0 1px color-mix(in srgb,var(--node-color),#496681 25%)}
+.galaxy-version .galaxy-node[data-kind="area"] .galaxy-node-label{display:none;background:color-mix(in srgb,var(--node-color),white 75%);border:1px solid color-mix(in srgb,var(--node-color),white 35%);font-size:13px}
+.galaxy-version .galaxy-node[data-kind="area"][data-show-label="true"] .galaxy-node-label{display:block}
+.galaxy-feature{outline:1px solid color-mix(in srgb,var(--node-color),#496681 30%)}
 .galaxy-node[aria-pressed="true"],.galaxy-node:focus-visible,.galaxy-feature:is(:focus-visible,:hover){outline-color:#183b62}
 .galaxy-feature{box-shadow:none}
 .galaxy-version .galaxy-node-label{color:#172b4d;background:#ffffffed}
@@ -170,20 +174,21 @@ function galaxyVersionMarkup(found,m){
     const sorted=[...groups].sort(([a,aItems],[b,bItems])=>bItems.length-aItems.length||a.localeCompare(b,lang));
     const total=sorted.reduce((sum,[,items])=>sum+items.length,0);
     const nodes=[],edges=[];
-    function node(kind,name,count,x,y,diameter,color,distance){
+    function node(kind,name,count,x,y,diameter,color,distance,labelZoom=1){
       const label=name+' · '+count+' '+(count===1?m.foundOne:m.found);
-      return '<button type="button" class="galaxy-node" data-kind="'+kind+'" data-count="'+count+'" data-distance="'+distance+'" aria-pressed="false" aria-label="'+esc(label)+'" title="'+esc(label)+'" style="left:'+x/7+'%;top:'+y/7+'%;width:'+diameter/7+'%;--node-color:'+color+'"><span class="galaxy-node-label" aria-hidden="true">'+esc(name)+'</span></button>';
+      return '<button type="button" class="galaxy-node" data-kind="'+kind+'" data-count="'+count+'" data-distance="'+distance+'" data-label-zoom="'+labelZoom+'" aria-pressed="false" aria-label="'+esc(label)+'" title="'+esc(label)+'" style="left:'+x/7+'%;top:'+y/7+'%;width:'+diameter/7+'%;--node-color:'+color+'"><span class="galaxy-node-label" aria-hidden="true">'+esc(name)+'</span></button>';
     }
-    nodes.push(node('release',release,total,350,350,46,'#7dd3fc',0));
+    nodes.push(node('release',release,total,350,350,46,'#b1cdec',0));
     sorted.forEach(([area,items],index)=>{
       const name=area||m.matrixUnassigned;
-      const color=area?'hsl('+Math.round(functionalAreas.indexOf(area)*137.508)%360+' 62% 43%)':'#64748b';
+      const color=area?'hsl('+Math.round(functionalAreas.indexOf(area)*137.508+205)%360+' 56% 77%)':'#bdc9d8';
       const angle=index*2.39996323-Math.PI/2;
       const distance=sorted.length===1?118:75+215*index/(sorted.length-1);
       const x=350+distance*Math.cos(angle),y=350+distance*Math.sin(angle);
       const diameter=12+25*Math.sqrt(items.length/sorted[0][1].length);
       edges.push('<line x1="350" y1="350" x2="'+x+'" y2="'+y+'"/>');
-      nodes.push(node('area',name,items.length,x,y,diameter,color,distance));
+      const labelZoom=1+Math.min(6,Math.ceil(Math.max(0,index-3)/3))*.5;
+      nodes.push(node('area',name,items.length,x,y,diameter,color,distance,labelZoom));
       let offset=0,radius=diameter/2+9;
       while(offset<items.length){
         const capacity=Math.floor(2*Math.PI*radius/9);
@@ -229,6 +234,9 @@ function wireGalaxy(){
     galaxyZoom=Math.min(4,Math.max(1,level));
     plot.style.width=galaxyZoom*100+'%';
     plot.dataset.labels=String(galaxyZoom>=1.5);
+    plot.querySelectorAll('.galaxy-node[data-kind="area"]').forEach(node=>{
+      node.dataset.showLabel=String(galaxyZoom>=Number(node.dataset.labelZoom));
+    });
     viewport.scrollLeft=x*plot.offsetWidth-viewport.clientWidth/2;
     viewport.scrollTop=y*plot.offsetHeight-viewport.clientHeight/2;
     zoomIn.disabled=galaxyZoom===4;
