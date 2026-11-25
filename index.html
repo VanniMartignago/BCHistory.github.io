@@ -22,7 +22,14 @@
 .area-summaries{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:20px}.area-summaries:not(:has(.area-summary:not([hidden]))){display:none}.area-summary{min-width:0;padding:9px 10px;background:var(--white);border:1px solid var(--line);border-radius:12px}.area-summary h2{font-size:14px;margin:0 0 6px}.area-summary ul{display:flex;flex-wrap:wrap;gap:4px;margin:0;padding:0;list-style:none}.area-summary li{max-width:100%}.area-summary button{display:flex;align-items:baseline;gap:5px;max-width:100%;padding:2px 6px;background:#eef3fb;color:#315279;border:0;border-radius:6px;font:inherit;font-size:12px;line-height:1.35;text-align:left;cursor:pointer}.area-summary button:hover{background:#dce9fa}.area-summary button[aria-pressed=true]{background:#164c9d;color:#fff}.area-summary button[aria-pressed=true] strong{color:inherit}.area-summary li span{min-width:0;overflow-wrap:anywhere}.area-summary strong{color:var(--ink);font-variant-numeric:tabular-nums}
 .view-toolbar{flex-wrap:wrap}.view-toolbar #galaxyByWrap{display:flex;align-items:center;gap:10px}.view-toolbar #galaxyByWrap[hidden]{display:none}.view-toolbar #galaxyByLabel{font-weight:750;text-transform:uppercase;letter-spacing:.08em}
 .galaxy-network{background:#122039;border:1px solid #283d60;border-radius:15px;padding:10px;color:#fff}
-.galaxy-plot{position:relative;aspect-ratio:1;max-width:700px;margin:auto}
+.galaxy-zoom{display:flex;justify-content:center;align-items:center;gap:6px;margin:2px 0 8px}
+.galaxy-zoom button{min-width:38px;min-height:36px;border:1px solid #557199;border-radius:8px;background:#233d68;color:#fff;font:inherit;cursor:pointer}
+.galaxy-zoom button:disabled{opacity:.55;cursor:default}
+.galaxy-zoom [data-zoom="reset"]{min-width:64px}
+.galaxy-viewport{position:relative;overflow:auto;overscroll-behavior:contain;aspect-ratio:1;max-width:700px;margin:auto}
+.galaxy-plot{position:relative;width:100%;aspect-ratio:1}
+.galaxy-node-label{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);width:max-content;max-width:180px;padding:2px 5px;border-radius:4px;background:#122039ee;color:#fff;font-size:12px;font-weight:650;text-align:center;pointer-events:none}
+.galaxy-plot[data-labels="true"] .galaxy-node-label{display:block}
 .galaxy-edges{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .galaxy-edges line{stroke:#a6b7ce;stroke-opacity:.24}
 .galaxy-node{position:absolute;transform:translate(-50%,-50%);aspect-ratio:1;min-width:9px;border:1px solid #122039;border-radius:50%;padding:0;cursor:pointer;background:#7dd3fc}
@@ -153,11 +160,35 @@ function galaxyMarkup(found,m){
     const type=node.kind==='release'?m.majorLabel:m.functionalArea;
     const label=type+' · '+node.name+' · '+node.count+' '+(node.count===1?m.foundOne:m.found);
     const diameter=5.8*Math.sqrt(node.count/largest);
-    return '<button type="button" class="galaxy-node" data-kind="'+node.kind+'" data-count="'+node.count+'" aria-pressed="false" title="'+esc(label)+'" aria-label="'+esc(label)+'" style="left:'+node.x/7+'%;top:'+node.y/7+'%;width:'+diameter+'%"></button>';
+    return '<button type="button" class="galaxy-node" data-kind="'+node.kind+'" data-count="'+node.count+'" aria-pressed="false" title="'+esc(label)+'" aria-label="'+esc(label)+'" style="left:'+node.x/7+'%;top:'+node.y/7+'%;width:'+diameter+'%"><span class="galaxy-node-label" aria-hidden="true">'+esc(node.name)+'</span></button>';
   }).join('');
-  return '<div class="galaxy-network"><div class="galaxy-plot"><svg class="galaxy-edges" viewBox="0 0 700 700" aria-hidden="true">'+edges.join('')+'</svg>'+buttons+'</div><div class="galaxy-node-info" aria-live="polite"></div></div>';
+  const italian=lang==='it';
+  const zoomControls='<div class="galaxy-zoom" role="group" aria-label="Zoom Galaxy"><button type="button" data-zoom="out" aria-label="'+(italian?'Riduci zoom':'Zoom out')+'">−</button><button type="button" data-zoom="reset" aria-label="'+(italian?'Ripristina zoom':'Reset zoom')+'">100%</button><button type="button" data-zoom="in" aria-label="'+(italian?'Aumenta zoom':'Zoom in')+'">+</button></div>';
+  return '<div class="galaxy-network">'+zoomControls+'<div class="galaxy-viewport" tabindex="0" aria-label="'+(italian?'Grafo Galaxy':'Galaxy graph')+'"><div class="galaxy-plot"><svg class="galaxy-edges" viewBox="0 0 700 700" aria-hidden="true">'+edges.join('')+'</svg>'+buttons+'</div></div><div class="galaxy-node-info" aria-live="polite"></div></div>';
 }
+let galaxyZoom=1;
 function wireGalaxy(){
+  const viewport=list.querySelector('.galaxy-viewport');
+  const plot=list.querySelector('.galaxy-plot');
+  const zoomIn=list.querySelector('[data-zoom="in"]');
+  const zoomOut=list.querySelector('[data-zoom="out"]');
+  const reset=list.querySelector('[data-zoom="reset"]');
+  function setZoom(level){
+    const x=(viewport.scrollLeft+viewport.clientWidth/2)/plot.offsetWidth;
+    const y=(viewport.scrollTop+viewport.clientHeight/2)/plot.offsetHeight;
+    galaxyZoom=Math.min(4,Math.max(1,level));
+    plot.style.width=galaxyZoom*100+'%';
+    plot.dataset.labels=String(galaxyZoom>=1.5);
+    viewport.scrollLeft=x*plot.offsetWidth-viewport.clientWidth/2;
+    viewport.scrollTop=y*plot.offsetHeight-viewport.clientHeight/2;
+    zoomIn.disabled=galaxyZoom===4;
+    zoomOut.disabled=galaxyZoom===1;
+    reset.textContent=Math.round(galaxyZoom*100)+'%';
+  }
+  zoomIn.addEventListener('click',()=>setZoom(galaxyZoom+.5));
+  zoomOut.addEventListener('click',()=>setZoom(galaxyZoom-.5));
+  reset.addEventListener('click',()=>setZoom(1));
+  setZoom(galaxyZoom);
   const info=list.querySelector('.galaxy-node-info');
   const nodes=[...list.querySelectorAll('.galaxy-node')];
   nodes.forEach(node=>node.addEventListener('click',()=>{
