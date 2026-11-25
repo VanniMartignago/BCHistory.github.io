@@ -13,7 +13,9 @@ The project maintains an English-language blog documenting Microsoft Dynamics 36
 
 Research features chronologically from version 13 toward current releases. Verify each feature's actual minor release where evidence permits. A release note mentioning a feature does not by itself establish its introduction release.
 
-Before opening a source URL, follow the [source archive instructions](source_archive/README.md), including during scheduled maintenance and release-note review. Reuse recorded findings and local extracts.
+Start each research session with the pending queues in the [source archive](source_archive/README.md). Work through recorded links awaiting access or feature review and reuse saved evidence. When the queues are empty, resume discovery from the approved primary and complementary sources. Before recording or opening a URL, normalize it and look up the exact canonical URL in the register. Record new relevant URLs there before opening them.
+
+Keep each discovered URL queued until its review is complete. After the first access failure, queue one retry. After the second failure, archive the URL as dead. Skip processed, dead, and excluded URLs in routine scans. Apply this workflow during scheduled maintenance and release-note reviews.
 
 At the beginning of each research session, assess whether independent feature batches can be researched in parallel. When delegating, assign distinct releases, sources, or features, use the latest workbook as the common baseline, and request proposed record changes, official references, and pages reviewed or inaccessible. Reconcile overlaps and conflicting evidence before applying changes chronologically to one sequential workbook. Use one researcher when the task is small or depends on earlier findings.
 
