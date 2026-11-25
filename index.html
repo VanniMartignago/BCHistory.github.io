@@ -60,8 +60,6 @@
 .galaxy-version .galaxy-node{background:var(--node-color);border:1px solid #fff;box-shadow:0 0 0 1px var(--node-color)}
 .galaxy-version .galaxy-node[data-kind="release"]{background:#b1cdec;box-shadow:0 0 0 4px #deebf9}
 .galaxy-version .galaxy-node[data-kind="area"]{box-shadow:0 0 0 1px color-mix(in srgb,var(--node-color),#496681 25%)}
-.galaxy-version .galaxy-node[data-kind="area"] .galaxy-node-label{display:none;background:color-mix(in srgb,var(--node-color),white 75%);border:1px solid color-mix(in srgb,var(--node-color),white 35%);font-size:13px}
-.galaxy-version .galaxy-node[data-kind="area"][data-show-label="true"] .galaxy-node-label{display:block}
 .galaxy-feature{outline:1px solid color-mix(in srgb,var(--node-color),#496681 30%)}
 .galaxy-node[aria-pressed="true"],.galaxy-node:focus-visible,.galaxy-feature:is(:focus-visible,:hover){outline-color:#183b62}
 .galaxy-feature{box-shadow:none}
@@ -70,6 +68,21 @@
 .galaxy-version .galaxy-edges line{stroke:#7896b8;stroke-opacity:.48}
 .galaxy-orbit-trace{stroke-opacity:.34}
 .galaxy-node-info,.galaxy-empty{margin:0;padding:10px 16px;border-top:1px solid #dbe5ef;background:#fff;color:#344e6d}
+.galaxy-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,29%);background:#fff}
+.galaxy-body .galaxy-viewport{width:100%;max-width:none;margin:0;background:#f0f6fc}
+.galaxy-body .galaxy-plot{min-width:490px}
+.galaxy-external-label{position:absolute;z-index:2;transform:translateX(-50%);display:flex;gap:5px;align-items:baseline;width:max-content;max-width:124px;overflow-wrap:anywhere;padding:2px 6px;border:1px solid color-mix(in srgb,var(--node-color),white 20%);border-radius:6px;background:color-mix(in srgb,var(--node-color),white 78%);color:#172b4d;font-size:12px;font-weight:700;line-height:1.2;text-align:center;pointer-events:none}
+.galaxy-label-above{transform:translate(-50%,-100%)}
+.galaxy-label-release{max-width:185px;font-size:14px;padding:5px 8px}
+.galaxy-external-label b{color:#334b66}
+.galaxy-inspector{min-width:0;padding:18px 16px;border-left:1px solid #dbe5ef;color:#172b4d}
+.galaxy-inspector h3{margin:2px 0;font-size:19px;line-height:1.3}
+.galaxy-inspector p{margin:0;font-size:14px;color:#465d77}
+.galaxy-inspector ul{list-style:none;margin:12px 0 0;padding:0;max-height:300px;overflow:auto}
+.galaxy-inspector li+li{border-top:1px solid #e4ebf3}
+.galaxy-inspector button{width:100%;border:0;background:transparent;color:#234970;text-align:left;font:inherit;font-size:14px;padding:7px 3px;cursor:pointer}
+.galaxy-inspector button:hover{text-decoration:underline}
+@media(max-width:760px){.galaxy-body{grid-template-columns:minmax(0,1fr)}.galaxy-inspector{border-left:0;border-top:1px solid #dbe5ef}}
 </style>
 </head>
 <body>
@@ -174,14 +187,18 @@ function galaxyVersionMarkup(found,m){
     const sorted=[...groups].sort(([a,aItems],[b,bItems])=>bItems.length-aItems.length||a.localeCompare(b,lang));
     const total=sorted.reduce((sum,[,items])=>sum+items.length,0);
     const nodes=[],edges=[];
-    function node(kind,name,count,x,y,diameter,color,distance,labelZoom=1){
+    function node(kind,name,count,x,y,diameter,color,distance,group){
       const label=name+' · '+count+' '+(count===1?m.foundOne:m.found);
-      return '<button type="button" class="galaxy-node" data-kind="'+kind+'" data-count="'+count+'" data-distance="'+distance+'" data-label-zoom="'+labelZoom+'" aria-pressed="false" aria-label="'+esc(label)+'" title="'+esc(label)+'" style="left:'+x/7+'%;top:'+y/7+'%;width:'+diameter/7+'%;--node-color:'+color+'"><span class="galaxy-node-label" aria-hidden="true">'+esc(name)+'</span></button>';
+      const style='left:'+x/7+'%;top:'+y/7+'%;--node-color:'+color;
+      const above=kind==='area'&&y<350;
+      const labelClass='galaxy-external-label '+(above?'galaxy-label-above':'galaxy-label-below')+(kind==='release'?' galaxy-label-release':'');
+      const labelTop=(y+(above?-1:1)*(diameter/2+7))/7;
+      return '<button type="button" class="galaxy-node" data-kind="'+kind+'" data-count="'+count+'" data-distance="'+distance+'" data-group="'+esc(group)+'" data-name="'+esc(name)+'" aria-pressed="false" aria-label="'+esc(label)+'" title="'+esc(label)+'" style="'+style+';width:'+diameter/7+'%"></button><span class="'+labelClass+'" aria-hidden="true" style="left:'+x/7+'%;top:'+labelTop+'%;--node-color:'+color+'">'+esc(name)+(kind==='area'?'<b>'+count+'</b>':'')+'</span>';
     }
     const optionText=[...major.options].find(option=>option.value===version)?.text||'';
     const wave=optionText.split(' · ').slice(1).join(' · ');
     const releaseLabel=wave?release+' · '+wave:release;
-    nodes.push(node('release',releaseLabel,total,350,350,46,'#b1cdec',0));
+    nodes.push(node('release',releaseLabel,total,350,350,46,'#b1cdec',0,''));
     sorted.forEach(([area,items],index)=>{
       const name=area||m.matrixUnassigned;
       const color=area?'hsl('+Math.round(functionalAreas.indexOf(area)*137.508+205)%360+' 56% 77%)':'#bdc9d8';
@@ -190,8 +207,7 @@ function galaxyVersionMarkup(found,m){
       const x=350+distance*Math.cos(angle),y=350+distance*Math.sin(angle);
       const diameter=12+25*Math.sqrt(items.length/sorted[0][1].length);
       edges.push('<line x1="350" y1="350" x2="'+x+'" y2="'+y+'"/>');
-      const labelZoom=1+Math.min(6,Math.ceil(Math.max(0,index-3)/3))*.5;
-      nodes.push(node('area',name,items.length,x,y,diameter,color,distance,labelZoom));
+      nodes.push(node('area',name,items.length,x,y,diameter,color,distance,area));
       let offset=0,radius=diameter/2+9;
       while(offset<items.length){
         const capacity=Math.floor(2*Math.PI*radius/9);
@@ -201,7 +217,7 @@ function galaxyVersionMarkup(found,m){
           const feature=items[offset++];
           const orbitAngle=i/count*2*Math.PI+angle;
           const left=(x+radius*Math.cos(orbitAngle))/7,top=(y+radius*Math.sin(orbitAngle))/7;
-          nodes.push('<button type="button" class="galaxy-feature" data-id="'+esc(feature.id)+'" title="'+esc(feature.title)+'" aria-label="'+esc(feature.title)+'" style="left:'+left+'%;top:'+top+'%;--node-color:'+color+'"><span class="galaxy-node-label" aria-hidden="true">'+esc(feature.title)+'</span></button>');
+          nodes.push('<button type="button" class="galaxy-feature" data-id="'+esc(feature.id)+'" data-group="'+esc(area)+'" title="'+esc(feature.title)+'" aria-label="'+esc(feature.title)+'" style="left:'+left+'%;top:'+top+'%;--node-color:'+color+'"><span class="galaxy-node-label" aria-hidden="true">'+esc(feature.title)+'</span></button>');
         }
         radius+=9;
       }
@@ -214,7 +230,7 @@ function galaxyMarkup(found,m){
   const zoomControls='<div class="galaxy-zoom" role="group" aria-label="Zoom Galaxy"><button type="button" data-zoom="out" aria-label="'+(italian?'Riduci zoom':'Zoom out')+'">−</button><button type="button" data-zoom="reset" aria-label="'+(italian?'Ripristina zoom':'Reset zoom')+'">100%</button><button type="button" data-zoom="in" aria-label="'+(italian?'Aumenta zoom':'Zoom in')+'">+</button></div>';
   const options=[...major.options].slice(1).map(option=>'<option value="'+esc(option.value)+'"'+(option.value===major.value?' selected':'')+'>'+esc(option.text)+'</option>').join('');
   const filter='<div class="galaxy-picker"><label for="galaxyVersion">'+(italian?'Versione BC':'BC version')+'</label><select id="galaxyVersion">'+options+'</select></div>';
-  const frame=found.length?'<div class="galaxy-viewport" tabindex="0" aria-label="'+(italian?'Grafo Galaxy':'Galaxy graph')+'"><div class="galaxy-plot galaxy-plot--versions">'+galaxyVersionMarkup(found,m)+'</div></div><div class="galaxy-node-info" aria-live="polite"></div>':'<p class="galaxy-empty">'+esc(m.none)+'</p>';
+  const frame=found.length?'<div class="galaxy-body"><div class="galaxy-viewport" tabindex="0" aria-label="'+(italian?'Grafo Galaxy':'Galaxy graph')+'"><div class="galaxy-plot galaxy-plot--versions">'+galaxyVersionMarkup(found,m)+'</div></div><aside class="galaxy-inspector" aria-label="'+esc(m.matrixFeature)+'"><p class="galaxy-inspector-type"></p><h3></h3><p class="galaxy-inspector-count"></p><ul></ul></aside></div>':'<p class="galaxy-empty">'+esc(m.none)+'</p>';
   return '<div class="galaxy-network"><div class="galaxy-toolbar">'+filter+(found.length?zoomControls:'')+'</div>'+frame+'</div>';
 }
 let galaxyZoom=1;
@@ -237,9 +253,6 @@ function wireGalaxy(){
     galaxyZoom=Math.min(4,Math.max(1,level));
     plot.style.width=galaxyZoom*100+'%';
     plot.dataset.labels=String(galaxyZoom>=1.5);
-    plot.querySelectorAll('.galaxy-node[data-kind="area"]').forEach(node=>{
-      node.dataset.showLabel=String(galaxyZoom>=Number(node.dataset.labelZoom));
-    });
     viewport.scrollLeft=x*plot.offsetWidth-viewport.clientWidth/2;
     viewport.scrollTop=y*plot.offsetHeight-viewport.clientHeight/2;
     zoomIn.disabled=galaxyZoom===4;
@@ -250,16 +263,33 @@ function wireGalaxy(){
   zoomOut.addEventListener('click',()=>setZoom(galaxyZoom-.5));
   reset.addEventListener('click',()=>setZoom(1));
   setZoom(galaxyZoom);
-  list.querySelectorAll('.galaxy-feature').forEach(point=>point.addEventListener('click',()=>{
-    showDetail(rows.find(item=>item.id===point.dataset.id),true);
-  }));
-  const info=list.querySelector('.galaxy-node-info');
+  const m=messages[lang];
   const nodes=[...list.querySelectorAll('.galaxy-node')];
-  nodes.forEach(node=>node.addEventListener('click',()=>{
-    const active=node.getAttribute('aria-pressed')!=='true';
-    nodes.forEach(button=>button.setAttribute('aria-pressed',String(active&&button===node)));
-    info.textContent=active?node.title:'';
-  }));
+  const points=[...list.querySelectorAll('.galaxy-feature')];
+  const inspector=list.querySelector('.galaxy-inspector');
+  const byId=new Map(rows.map(item=>[item.id,item]));
+  const openFeature=id=>showDetail(byId.get(id),true);
+  points.forEach(point=>point.addEventListener('click',()=>openFeature(point.dataset.id)));
+  function selectNode(node){
+    nodes.forEach(button=>button.setAttribute('aria-pressed',String(button===node)));
+    const release=node.dataset.kind==='release';
+    const matching=release?points:points.filter(point=>point.dataset.group===node.dataset.group);
+    inspector.querySelector('.galaxy-inspector-type').textContent=release?m.majorLabel:m.functionalArea;
+    inspector.querySelector('h3').textContent=node.dataset.name;
+    inspector.querySelector('.galaxy-inspector-count').textContent=matching.length+' '+(matching.length===1?m.foundOne:m.found);
+    const features=inspector.querySelector('ul');
+    features.replaceChildren(...matching.map(point=>{
+      const entry=document.createElement('li'),button=document.createElement('button');
+      button.type='button';
+      button.textContent=byId.get(point.dataset.id).title;
+      button.addEventListener('click',()=>openFeature(point.dataset.id));
+      entry.append(button);
+      return entry;
+    }));
+    features.scrollTop=0;
+  }
+  nodes.forEach(node=>node.addEventListener('click',()=>selectNode(node)));
+  selectNode(nodes.find(node=>node.dataset.kind==='area'&&node.dataset.group)||nodes[0]);
 }
 function render(){if(viewMode.value==='galaxy'&&!major.value&&major.options.length>1){major.value=major.options[1].value;refreshMinorOptions()}const found=filtered(),m=messages[lang];renderAreaSummary('productSummary',m.areaLabel,found,'area',cleanArea,area);renderAreaSummary('functionalSummary',m.functionalArea,found,'functionalArea',value=>value,functionalArea);renderAreaSummary('majorSummary',m.majorLabel,found,'majorVersion',value=>'BC '+value,major);matrixByWrap.hidden=viewMode.value!=='matrix';count.innerHTML='<strong>'+found.length+'</strong> '+(found.length===1?m.foundOne:m.found);if(!found.length&&viewMode.value!=='galaxy'){list.innerHTML='<div class="empty">'+m.none+'</div>';return}list.innerHTML=viewMode.value==='galaxy'?galaxyMarkup(found,m):viewMode.value==='matrix'?matrixMarkup(found,m):cardMarkup(found);if(viewMode.value==='galaxy')wireGalaxy();list.querySelectorAll('.card,.matrix-link').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();const item=rows.find(row=>row.id===link.getAttribute('data-id'));showDetail(item,true)}))}
 function detailMarkup(item){const m=messages[lang];const rowsHtml='<div><dt>'+m.wave+'</dt><dd>'+esc(localText(item.wave||'—'))+'</dd></div>'+(clean(item.functionalArea)?'<div><dt>'+m.functionalArea+'</dt><dd>'+esc(item.functionalArea)+'</dd></div>':'')+(clean(item.area)?'<div><dt>'+m.areaLabel+'</dt><dd>'+esc(cleanArea(item.area))+'</dd></div>':'')+'<div><dt>'+m.country+'</dt><dd>'+esc(item.countryRegion||'—')+'</dd></div>'+(item.status?'<div><dt>'+m.status+'</dt><dd>'+esc(translateStatus(item.status))+'</dd></div>':'')+'<div><dt>'+m.availability+'</dt><dd>'+m.cloud+': '+esc(availability(item.cloud))+' · '+m.onprem+': '+esc(availability(item.onprem))+'</dd></div><div><dt>'+m.preview+'</dt><dd>'+esc(localText(item.preview||'—'))+'</dd></div><div><dt>'+m.ga+'</dt><dd>'+esc(localText(item.ga||'—'))+'</dd></div>';return '<div class="detail-card"><div class="detail-close"><div><div class="eyebrow">'+m.detail+'</div><div class="detail-kicker">'+m.detailKicker+'</div></div><button type="button" id="closeDetail" aria-label="'+esc(m.back)+'">'+m.back+'</button></div><div class="meta">'+(clean(item.changeType)?'<span class="tag change-type" data-change-type="'+esc(item.changeType)+'" aria-label="'+esc(m.changeType+': '+item.changeType)+'">'+esc(item.changeType)+'</span>':'')+'<span class="tag version">BC '+esc(item.version)+'</span></div><h2>'+esc(item.title)+'</h2><p>'+esc(item.summary||m.descriptionMissing)+'</p><dl>'+rowsHtml+'</dl><div class="links">'+(item.officialDocumentation?'<a target="_blank" rel="noopener" href="'+esc(item.officialDocumentation)+'">'+m.official+' <span>↗</span></a>':'')+(item.source?'<a target="_blank" rel="noopener" href="'+esc(item.source)+'">'+m.source+' <span>↗</span></a>':'<p>'+m.sourceMissing+'</p>')+(item.blogSource?'<a target="_blank" rel="noopener" href="'+esc(item.blogSource)+'">'+blogLinkLabel(item.blogSource)+' <span>↗</span></a>':'')+'</div><div class="source-note">'+m.sourceNote+'</div></div>'}
