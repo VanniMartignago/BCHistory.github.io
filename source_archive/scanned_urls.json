@@ -27488,7 +27488,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Reviewed the regulatory sections of Spring 2019 CU 09 (application 14.10). Added changes 338203, 341817 to V104. Other release-note scope remains pending.",
+    "scope": "Verified change 339896 in BC 14.10 and cataloged in V105. Corroborated by BC 15.3. Other update content remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/75d0f6491d87cfd066452414f42ebd8ca9ef5157769ab57d1554086012bc3ee8.json"
   },
@@ -248960,23 +248960,26 @@
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-powerbi-abc-analysis",
     "scanDate": null,
-    "lastAttemptDate": null,
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Linked from an approved secondary source; access and feature review pending. Discovered from https://yzhums.com/74176/"
+    "scope": "Microsoft Learn guide retrieved for feature and introduction-version review.",
+    "httpStatus": 200
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-al-boolean-operators",
-    "scanDate": null,
-    "lastAttemptDate": null,
-    "status": "retry",
-    "scope": "Linked from an approved secondary source; access and feature review pending. Discovered from https://yzhums.com/74473/"
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Reviewed AL boolean operator reference. No separate release-specific feature change identified.",
+    "httpStatus": 200
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-designing-navigate-pages",
     "scanDate": null,
-    "lastAttemptDate": null,
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Linked from an approved secondary source; access and feature review pending. Discovered from https://yzhums.com/74973/"
+    "scope": "Microsoft Learn guide retrieved for feature and introduction-version review.",
+    "httpStatus": 200
   },
   {
     "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/properties/devenv-tooltip-property",
@@ -249321,17 +249324,19 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/fa-how-maintain",
-    "scanDate": null,
-    "lastAttemptDate": null,
-    "status": "retry",
-    "scope": "Linked from an approved secondary source; access and feature review pending. Discovered from https://www.dynamicsuser.net/t/question-of-fixed-assets-maintenance-in-business-central/88372"
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Reviewed fixed asset maintenance posting guide. No separate release-specific feature change identified.",
+    "httpStatus": 200
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrade-unmodified-application-to-v26",
-    "scanDate": null,
-    "lastAttemptDate": null,
-    "status": "retry",
-    "scope": "Linked from an approved secondary source; access and feature review pending. Discovered from https://www.dynamicsuser.net/t/upgrade-bc24-to-bc26-why-not-directly/87943"
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Reviewed administrative upgrade instructions. No separate catalog feature established by this guide.",
+    "httpStatus": 200
   },
   {
     "url": "https://www.dynamicsuser.net/tag/bc3amigos/48?page=1",
@@ -249429,9 +249434,10 @@
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/faq-electronic-invoicing",
     "scanDate": null,
-    "lastAttemptDate": null,
+    "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Linked from an approved secondary source; access and feature review pending. Discovered from https://www.dynamicsuser.net/t/amazon-punchout-integration-with-d365-business-central/88853"
+    "scope": "Microsoft Learn guide retrieved for feature and introduction-version review.",
+    "httpStatus": 200
   },
   {
     "url": "https://www.dynamicsuser.net/tag/ssrs/6?page=1",
@@ -250137,7 +250143,7 @@
     "status": "retry",
     "lastAttemptDate": "2026-11-25",
     "httpStatus": 200,
-    "scope": "Screened regulatory sections of Spring 2019 CU 27 (application 14.28). Additional feature evidence and remaining release-note scope are pending."
+    "scope": "Verified change 403848 in BC 14.28 and cataloged in V105. Corroborated by BC 16.16. Other update content remains pending."
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/09/cumulative-update-28-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
@@ -250281,7 +250287,7 @@
     "status": "retry",
     "lastAttemptDate": "2026-11-25",
     "httpStatus": 200,
-    "scope": "Screened regulatory sections of Spring 2019 CU 47 (application 14.48). Additional feature evidence and remaining release-note scope are pending."
+    "scope": "Verified change 344089 in BC 14.48 and cataloged in V105. Corroborated by BC 21.7 and 22.1. Other update content remains pending."
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/05/cumulative-update-48-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
