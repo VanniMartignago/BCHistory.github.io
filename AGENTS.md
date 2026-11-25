@@ -13,7 +13,7 @@ The project maintains an English-language blog documenting Microsoft Dynamics 36
 
 Research features chronologically from version 13 toward current releases. Verify each feature's actual minor release where evidence permits. A release note mentioning a feature does not by itself establish its introduction release.
 
-Before opening a source URL, follow the [source archive instructions](archivio_fonti/README.md), including during scheduled maintenance and release-note review. Reuse recorded findings and local extracts.
+Before opening a source URL, follow the [source archive instructions](source_archive/README.md), including during scheduled maintenance and release-note review. Reuse recorded findings and local extracts.
 
 At the beginning of each research session, assess whether independent feature batches can be researched in parallel. When delegating, assign distinct releases, sources, or features, use the latest workbook as the common baseline, and request proposed record changes, official references, and pages reviewed or inaccessible. Reconcile overlaps and conflicting evidence before applying changes chronologically to one sequential workbook. Use one researcher when the task is small or depends on earlier findings.
 
@@ -21,7 +21,7 @@ Treat each approved primary and complementary source URL as an entry point. Foll
 
 For each relevant page, identify the documented features and changes, verify the introduction version and lifecycle against the available evidence, and compare each item with the current workbook. Add missing eligible features and update existing records when the evidence warrants it. Record unresolved candidates and the evidence still needed in the checkpoint. An archive is complete when its relevant indexes, articles, and linked evidence have been reviewed and any remaining gaps have been resolved.
 
-Consult [Business Central sources](Fonti_Business_Central.md) for approved sources. Before treating a newly discovered source as approved, follow the source proposal rules below. Do not add or rely on an unapproved secondary source as a project source.
+Consult [Business Central sources](Business_Central_Sources.md) for approved sources. Before treating a newly discovered source as approved, follow the source proposal rules below. Do not add or rely on an unapproved secondary source as a project source.
 
 ### Microsoft release notes
 
@@ -60,10 +60,10 @@ Maintain these fields for each feature: major version, full minor version, relea
 
 For each update:
 
-1. Use `Business_Central_Updates.xlsx` as the initial baseline. For later updates, use the highest numbered workbook in the project root. Exclude `archivio` from baseline selection, current file counts, and feature searches.
+1. Use `Business_Central_Updates.xlsx` as the initial baseline. For later updates, use the highest numbered workbook in the project root. Exclude `archive` from baseline selection, current file counts, and feature searches.
 2. Carry forward the baseline data and apply verified changes in the next sequential workbook, starting with `Business_Central_Updates_V1.xlsx`. Regenerate `Business_Central_Updates.json` from it.
 3. Verify workbook-to-JSON parity. Before committing, compare new and modified records with all current records using normalized titles, descriptions, release history, country or region, and source references. Resolve confirmed duplicates while preserving distinct enhancements and localized implementations. Record the result in [Checkpoint.md](Checkpoint.md).
-4. After verification, move older numbered workbooks and their inspection sidecars to `archivio` without changing their contents. Keep only the newest numbered workbook in the project root.
+4. After verification, move older numbered workbooks and their inspection sidecars to `archive` without changing their contents. Keep only the newest numbered workbook in the project root.
 
 ## GitHub branches, pull requests, and changelogs
 

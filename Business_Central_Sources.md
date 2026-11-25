@@ -1,6 +1,6 @@
 # Business Central sources
 
-Check the [source scan register](archivio_fonti/url_scansionati.json) before opening an index, article, or linked reference.
+Check the [source scan register](source_archive/scanned_urls.json) before opening an index, article, or linked reference.
 
 ## Approved official Microsoft sources
 
@@ -9,7 +9,7 @@ Check the [source scan register](archivio_fonti/url_scansionati.json) before ope
 - [What's new or changed in Business Central](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/overview): current overview of product, administration, and development changes, with links to release notes and the current roadmap.
 - [Italy local functionality](https://learn.microsoft.com/en-us/dynamics365/business-central/localfunctionality/italy/italy-local-functionality): functional guidance for Italian VAT, electronic invoicing, statutory books, and reporting. Use the relevant update note to establish the introduction version.
 - The [verified Microsoft Learn update release notes](Microsoft_Learn_Release_Notes.md) and all other available official pages matching `https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/whatsnew-update-{major}-{minor}` are approved primary sources. Check for newly published pages when updating. Verify each page exists and check its feature status and any version-independent service-feature notes before assigning an introduction version.
-- [Microsoft 365 roadmap](https://www.microsoft.com/it-it/microsoft-365/roadmap?filters=%5B%22Dynamics+365+Business+Central%22%5D#Roadmap): planned features; dates and scope can change.
+- [Microsoft 365 roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=%5B%22Dynamics+365+Business+Central%22%5D#Roadmap): planned features; dates and scope can change.
 - [Dynamics 365 and Power Platform release plans](https://learn.microsoft.com/en-us/dynamics365/release-plans/): Microsoft's notice on the retirement of the semiannual release plans and the transition to the AI at Work roadmap. Use the archived wave plans for historical research.
 - [Microsoft Support Business Central update history](https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/01/update-history-for-microsoft-dynamics-365-business-central): online update builds and rollout history. For on-premises dates, fixes, and regulatory changes, locate the Microsoft Support cumulative update article for the relevant version. Verify feature introductions against feature-level evidence.
 - [Dynamics 365 Ideas](https://experience.dynamics.com/ideas/): Microsoft-hosted portal for community proposals, votes, and idea status. Use it to identify candidates for research and verify availability in release notes or product documentation.
@@ -20,7 +20,7 @@ Check the [source scan register](archivio_fonti/url_scansionati.json) before ope
 - [Official Dynamics 365 Business Central blog](https://www.microsoft.com/en-us/dynamics-365/blog/product/dynamics-365-business-central/?sort-by=newest-oldest): announcements and context; corroborate availability and dates with product documentation when possible.
 - [Microsoft Dynamics 365 Blog](https://www.microsoft.com/en-us/dynamics-365/blog/) (formerly [Cloud Blogs](https://cloudblogs.microsoft.com/dynamics365/)): broader Dynamics 365 announcements, including Copilot and agents. Prefer the Business Central channel for product-specific coverage.
 
-### Sviluppo
+### Development
 
 - [Microsoft BCApps](https://github.com/microsoft/BCApps) and its [releases](https://github.com/microsoft/BCApps/releases): application contributions and technical changes; a changelog entry alone does not establish general availability.
 - [Microsoft AL](https://github.com/microsoft/AL): official issue tracker for the AL compiler and Visual Studio Code development tools, including issues affecting AL Developer Preview builds.
@@ -31,7 +31,7 @@ Check the [source scan register](archivio_fonti/url_scansionati.json) before ope
 
 Use these non-official sources for additional detail and examples; prefer Microsoft documentation when available.
 
-### Top MVP & Blog Tecnici
+### MVPs and Technical Blogs
 
 - [Foxer — Business Central release updates](https://bc.foxer.pl/en/).
 - [Yun Zhu — Dynamics 365 Lab, Business Central archive](https://yzhums.com/category/dynamics365/dynamics365businesscentral/).
@@ -64,7 +64,7 @@ Use these non-official sources for additional detail and examples; prefer Micros
 - [Marije Brummel](https://marije.me/): application design, architecture, database behavior, and locking. The former address marijebrummel.blog redirects here.
 - [Teddy Herryanto — That NAV Guy](https://thatnavguy.com/): operations, inventory, development, and practical troubleshooting.
 
-### Italia, Community & Eventi
+### Italy, Community and Events
 
 - [Roberto Stefanetti — RS Business Central Blog](https://blogbcrs.wordpress.com/): Business Central and NAV, including Italian localization and operational topics. The supplied robertostefanetti.com domain did not resolve during verification.
 - [Duilio Tacconi](https://duiliotacconi.com/): SaaS upgrades, telemetry, SQL performance, and support insights.
