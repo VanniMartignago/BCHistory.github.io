@@ -20,18 +20,15 @@
 .hero-heading-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}.site-preview{display:inline-block;margin-inline-start:auto;border-radius:999px;background:#fff2df;color:#744910;padding:3px 9px;font-size:14px;font-weight:750}
 .detail-card .tag.change-type{margin-left:0}
 .area-summaries{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:20px}.area-summaries:not(:has(.area-summary:not([hidden]))){display:none}.area-summary{min-width:0;padding:9px 10px;background:var(--white);border:1px solid var(--line);border-radius:12px}.area-summary h2{font-size:14px;margin:0 0 6px}.area-summary ul{display:flex;flex-wrap:wrap;gap:4px;margin:0;padding:0;list-style:none}.area-summary li{max-width:100%}.area-summary button{display:flex;align-items:baseline;gap:5px;max-width:100%;padding:2px 6px;background:#eef3fb;color:#315279;border:0;border-radius:6px;font:inherit;font-size:12px;line-height:1.35;text-align:left;cursor:pointer}.area-summary button:hover{background:#dce9fa}.area-summary button[aria-pressed=true]{background:#164c9d;color:#fff}.area-summary button[aria-pressed=true] strong{color:inherit}.area-summary li span{min-width:0;overflow-wrap:anywhere}.area-summary strong{color:var(--ink);font-variant-numeric:tabular-nums}
-.galaxy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px}
-.galaxy-cluster{margin:0;padding:8px;background:#122039;border:1px solid #283d60;border-radius:15px}
-.galaxy-cluster svg{display:block;width:100%;max-width:245px;height:auto;margin:auto;overflow:visible}
-.galaxy-orbit{fill:none;stroke:#3b4e6f;stroke-width:.65}
-.galaxy-core{fill:#233d68;stroke:#7190bd}
-.galaxy-caption{fill:#fff;text-anchor:middle;dominant-baseline:middle;font-size:10px;font-weight:750}
-.galaxy-point circle{cursor:pointer;stroke:#122039;stroke-width:.6}
-.galaxy-point:hover circle,.galaxy-point:focus-visible circle{stroke:#fff;stroke-width:1.5;r:5}
-.galaxy-legend{display:flex;flex-wrap:wrap;gap:6px 14px;list-style:none;margin:0 0 12px;padding:12px;background:#122039;color:#fff;border-radius:15px;font-size:14px}
-.galaxy-legend li{display:flex;align-items:center;gap:6px}
-.galaxy-swatch{width:10px;height:10px;border-radius:50%;flex:none}
-.view-toolbar{flex-wrap:wrap}.view-toolbar #galaxyByWrap{display:flex;align-items:center;gap:10px}.view-toolbar #galaxyByWrap[hidden]{display:none}.view-toolbar #galaxyByLabel{font-weight:750;text-transform:uppercase;letter-spacing:.08em}.galaxy-cluster figcaption{color:#fff;text-align:center;font-size:14px;font-weight:700;padding:4px 6px;overflow-wrap:anywhere}.galaxy-product circle{stroke:#122039;stroke-width:.6}
+.view-toolbar{flex-wrap:wrap}.view-toolbar #galaxyByWrap{display:flex;align-items:center;gap:10px}.view-toolbar #galaxyByWrap[hidden]{display:none}.view-toolbar #galaxyByLabel{font-weight:750;text-transform:uppercase;letter-spacing:.08em}
+.galaxy-network{background:#122039;border:1px solid #283d60;border-radius:15px;padding:10px;color:#fff}
+.galaxy-plot{position:relative;aspect-ratio:1;max-width:700px;margin:auto}
+.galaxy-edges{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.galaxy-edges line{stroke:#a6b7ce;stroke-opacity:.24}
+.galaxy-node{position:absolute;transform:translate(-50%,-50%);aspect-ratio:1;min-width:9px;border:1px solid #122039;border-radius:50%;padding:0;cursor:pointer;background:#7dd3fc}
+.galaxy-node[data-kind="area"]{background:#a7f3a0}
+.galaxy-node[aria-pressed="true"],.galaxy-node:focus-visible{z-index:1;outline:2px solid #fff;outline-offset:2px}
+.galaxy-node-info{display:block;min-height:2.5em;padding:0 8px;text-align:center;font-size:14px}
 </style>
 </head>
 <body>
@@ -117,61 +114,59 @@ function renderAreaSummary(id,title,items,field,label,select){
     return entry;
   }));
 }
-const galaxyColors=['#ff8a80','#ffd180','#ffff8d','#ccff90','#a7ffeb','#80d8ff','#b388ff','#ff80ab','#ffab40','#64ffda','#82b1ff','#ea80fc','#ff5252','#b2ff59','#18ffff','#7c9dff','#ff4081','#f4ff81','#69f0ae','#e0aaff','#f3c6ac'];
-function galaxyColor(value,categories){
-  if(!value)return '#a3afbf';
-  const index=categories.indexOf(value);
-  return galaxyColors[index]||'hsl('+Math.round(index*137.508)%360+' 80% 70%)';
-}
-function galaxyCluster(title,items,categories,byArea){
-  const orbits=[],points=[];
-  let cursor=0,radius=28;
-  while(cursor<items.length){
-    const count=Math.min(items.length-cursor,Math.floor(2*Math.PI*radius/10));
-    orbits.push('<circle class="galaxy-orbit" r="'+radius+'"/>');
-    for(let i=0;i<count;i++){
-      const point=items[cursor++];
-      const angle=(i/count-.25)*2*Math.PI;
-      const dot='<circle cx="'+(radius*Math.cos(angle)).toFixed(2)+'" cy="'+(radius*Math.sin(angle)).toFixed(2)+'" r="'+(byArea?4.6:3.8)+'" fill="'+galaxyColor(point.color,categories)+'"/>';
-      const label='<title>'+esc(point.label)+'</title>';
-      points.push(byArea
-        ?'<g class="galaxy-product" role="img" aria-label="'+esc(point.label)+'">'+label+dot+'</g>'
-        :'<a class="galaxy-point" data-id="'+esc(point.id)+'" href="?id='+encodeURIComponent(point.id)+'" aria-label="'+esc(point.label)+'">'+label+dot+'</a>');
-    }
-    radius+=11;
-  }
-  const edge=Math.max(86,radius+1);
-  const caption=byArea?'<figcaption>'+esc(title)+'</figcaption>':'';
-  return '<figure class="galaxy-cluster">'+caption+'<svg viewBox="'+[-edge,-edge,edge*2,edge*2].join(' ')+'" aria-label="'+esc(title)+' · '+items.length+'"><circle class="galaxy-core" r="21"/><text class="galaxy-caption">'+esc(byArea?items.length:title)+'</text>'+orbits.join('')+points.join('')+'</svg></figure>';
+function placeGalaxyNodes(nodes,radius,phase){
+  nodes.forEach((node,index)=>{
+    const angle=phase+2*Math.PI*index/nodes.length;
+    const distance=nodes.length===1&&radius===160?0:radius;
+    node.x=350+distance*Math.cos(angle);
+    node.y=350+distance*Math.sin(angle);
+  });
 }
 function galaxyMarkup(found,m){
-  const byArea=galaxyBy.value==='functionalArea';
-  const categories=byArea?areas:functionalAreas;
-  const missingArea=lang==='it'?'Area prodotto non indicata':'Product area not specified';
-  const missingColor=byArea?missingArea:m.matrixUnassigned;
-  const colorLabel=value=>value?(byArea?cleanArea(value):value):missingColor;
-  const groupLabel=value=>byArea?(value||m.matrixUnassigned):(value?'BC '+value:'—');
-  const groups=new Map();
-  const visibleColors=new Set();
+  const releases=new Map(),functional=new Map(),connections=new Map();
   for(const item of found){
-    const key=clean(byArea?item.functionalArea:item.majorVersion);
-    const color=clean(byArea?item.area:item.functionalArea);
-    if(!groups.has(key))groups.set(key,[]);
-    groups.get(key).push({id:item.id,color,label:item.title+' · '+colorLabel(color)});
-    visibleColors.add(color);
+    const version=clean(item.majorVersion);
+    const area=clean(item.functionalArea);
+    if(!releases.has(version))releases.set(version,{name:version?'BC '+version:'—',kind:'release',count:0});
+    if(!functional.has(area))functional.set(area,{name:area||m.matrixUnassigned,kind:'area',count:0});
+    const release=releases.get(version),category=functional.get(area);
+    release.count++;
+    category.count++;
+    if(!connections.has(release))connections.set(release,new Map());
+    const edges=connections.get(release);
+    edges.set(category,(edges.get(category)||0)+1);
   }
-  const legend=[...visibleColors].sort((a,b)=>colorLabel(a).localeCompare(colorLabel(b),lang));
-  const labels=legend.map(color=>'<li><span class="galaxy-swatch" style="background:'+galaxyColor(color,categories)+'"></span>'+esc(colorLabel(color))+'</li>').join('');
-  const clusters=[...groups].sort(([a],[b])=>byArea?groupLabel(a).localeCompare(groupLabel(b),lang):Number(b)-Number(a)).map(([key,items])=>{
-    if(!byArea)return galaxyCluster(groupLabel(key),items,categories,false);
-    const totals=new Map();
-    for(const item of items)totals.set(item.color,(totals.get(item.color)||0)+1);
-    const points=[...totals].sort(([a],[b])=>colorLabel(a).localeCompare(colorLabel(b),lang)).map(([color,total])=>({color,label:colorLabel(color)+' · '+total}));
-    return galaxyCluster(groupLabel(key),points,categories,true);
+  const releaseNodes=[...releases].sort(([a],[b])=>Number(b)-Number(a)).map(([,node])=>node);
+  const areaNodes=[...functional.values()].sort((a,b)=>a.name.localeCompare(b.name,lang));
+  const byVersion=galaxyBy.value==='version';
+  placeGalaxyNodes(releaseNodes,byVersion?160:285,-Math.PI/2);
+  placeGalaxyNodes(areaNodes,byVersion?285:160,-Math.PI/2+.16);
+  const edges=[];
+  for(const [release,areas] of connections){
+    for(const [category,count] of areas){
+      edges.push('<line x1="'+release.x+'" y1="'+release.y+'" x2="'+category.x+'" y2="'+category.y+'" stroke-width="'+Math.min(5,.6+Math.sqrt(count)/2)+'"/>');
+    }
+  }
+  const nodes=[...releaseNodes,...areaNodes];
+  const largest=Math.max(...nodes.map(node=>node.count));
+  const buttons=nodes.map(node=>{
+    const type=node.kind==='release'?m.majorLabel:m.functionalArea;
+    const label=type+' · '+node.name+' · '+node.count+' '+(node.count===1?m.foundOne:m.found);
+    const diameter=5.8*Math.sqrt(node.count/largest);
+    return '<button type="button" class="galaxy-node" data-kind="'+node.kind+'" data-count="'+node.count+'" aria-pressed="false" title="'+esc(label)+'" aria-label="'+esc(label)+'" style="left:'+node.x/7+'%;top:'+node.y/7+'%;width:'+diameter+'%"></button>';
   }).join('');
-  return '<ul class="galaxy-legend" aria-label="'+esc(byArea?m.areaLabel:m.functionalArea)+'">'+labels+'</ul><div class="galaxy-grid">'+clusters+'</div>';
+  return '<div class="galaxy-network"><div class="galaxy-plot"><svg class="galaxy-edges" viewBox="0 0 700 700" aria-hidden="true">'+edges.join('')+'</svg>'+buttons+'</div><div class="galaxy-node-info" aria-live="polite"></div></div>';
 }
-function render(){const found=filtered(),m=messages[lang];renderAreaSummary('productSummary',m.areaLabel,found,'area',cleanArea,area);renderAreaSummary('functionalSummary',m.functionalArea,found,'functionalArea',value=>value,functionalArea);renderAreaSummary('majorSummary',m.majorLabel,found,'majorVersion',value=>'BC '+value,major);matrixByWrap.hidden=viewMode.value!=='matrix';galaxyByWrap.hidden=viewMode.value!=='galaxy';count.innerHTML='<strong>'+found.length+'</strong> '+(found.length===1?m.foundOne:m.found);if(!found.length){list.innerHTML='<div class="empty">'+m.none+'</div>';return}list.innerHTML=viewMode.value==='galaxy'?galaxyMarkup(found,m):viewMode.value==='matrix'?matrixMarkup(found,m):cardMarkup(found);list.querySelectorAll('.card,.matrix-link,.galaxy-point').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();const item=rows.find(row=>row.id===link.getAttribute('data-id'));showDetail(item,true)}))}
+function wireGalaxy(){
+  const info=list.querySelector('.galaxy-node-info');
+  const nodes=[...list.querySelectorAll('.galaxy-node')];
+  nodes.forEach(node=>node.addEventListener('click',()=>{
+    const active=node.getAttribute('aria-pressed')!=='true';
+    nodes.forEach(button=>button.setAttribute('aria-pressed',String(active&&button===node)));
+    info.textContent=active?node.title:'';
+  }));
+}
+function render(){const found=filtered(),m=messages[lang];renderAreaSummary('productSummary',m.areaLabel,found,'area',cleanArea,area);renderAreaSummary('functionalSummary',m.functionalArea,found,'functionalArea',value=>value,functionalArea);renderAreaSummary('majorSummary',m.majorLabel,found,'majorVersion',value=>'BC '+value,major);matrixByWrap.hidden=viewMode.value!=='matrix';galaxyByWrap.hidden=viewMode.value!=='galaxy';count.innerHTML='<strong>'+found.length+'</strong> '+(found.length===1?m.foundOne:m.found);if(!found.length){list.innerHTML='<div class="empty">'+m.none+'</div>';return}list.innerHTML=viewMode.value==='galaxy'?galaxyMarkup(found,m):viewMode.value==='matrix'?matrixMarkup(found,m):cardMarkup(found);if(viewMode.value==='galaxy')wireGalaxy();list.querySelectorAll('.card,.matrix-link').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();const item=rows.find(row=>row.id===link.getAttribute('data-id'));showDetail(item,true)}))}
 function detailMarkup(item){const m=messages[lang];const rowsHtml='<div><dt>'+m.wave+'</dt><dd>'+esc(localText(item.wave||'—'))+'</dd></div>'+(clean(item.functionalArea)?'<div><dt>'+m.functionalArea+'</dt><dd>'+esc(item.functionalArea)+'</dd></div>':'')+(clean(item.area)?'<div><dt>'+m.areaLabel+'</dt><dd>'+esc(cleanArea(item.area))+'</dd></div>':'')+'<div><dt>'+m.country+'</dt><dd>'+esc(item.countryRegion||'—')+'</dd></div>'+(item.status?'<div><dt>'+m.status+'</dt><dd>'+esc(translateStatus(item.status))+'</dd></div>':'')+'<div><dt>'+m.availability+'</dt><dd>'+m.cloud+': '+esc(availability(item.cloud))+' · '+m.onprem+': '+esc(availability(item.onprem))+'</dd></div><div><dt>'+m.preview+'</dt><dd>'+esc(localText(item.preview||'—'))+'</dd></div><div><dt>'+m.ga+'</dt><dd>'+esc(localText(item.ga||'—'))+'</dd></div>';return '<div class="detail-card"><div class="detail-close"><div><div class="eyebrow">'+m.detail+'</div><div class="detail-kicker">'+m.detailKicker+'</div></div><button type="button" id="closeDetail" aria-label="'+esc(m.back)+'">'+m.back+'</button></div><div class="meta">'+(clean(item.changeType)?'<span class="tag change-type" data-change-type="'+esc(item.changeType)+'" aria-label="'+esc(m.changeType+': '+item.changeType)+'">'+esc(item.changeType)+'</span>':'')+'<span class="tag version">BC '+esc(item.version)+'</span></div><h2>'+esc(item.title)+'</h2><p>'+esc(item.summary||m.descriptionMissing)+'</p><dl>'+rowsHtml+'</dl><div class="links">'+(item.officialDocumentation?'<a target="_blank" rel="noopener" href="'+esc(item.officialDocumentation)+'">'+m.official+' <span>↗</span></a>':'')+(item.source?'<a target="_blank" rel="noopener" href="'+esc(item.source)+'">'+m.source+' <span>↗</span></a>':'<p>'+m.sourceMissing+'</p>')+(item.blogSource?'<a target="_blank" rel="noopener" href="'+esc(item.blogSource)+'">'+blogLinkLabel(item.blogSource)+' <span>↗</span></a>':'')+'</div><div class="source-note">'+m.sourceNote+'</div></div>'}
 function wireDetail(){document.querySelector('#closeDetail').onclick=closeDetail;detail.onclick=e=>{if(e.target===detail)closeDetail()}}
 function showDetail(item,push){selected=item;detail.classList.add('open');detail.setAttribute('aria-label',(lang==='it'?'Dettaglio: ':'Details: ')+item.title);detail.innerHTML=detailMarkup(item);wireDetail();if(push)history.pushState({detailId:item.id},'','?id='+encodeURIComponent(item.id));document.querySelector('#closeDetail').focus()}
