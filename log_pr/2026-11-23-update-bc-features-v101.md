@@ -72,7 +72,7 @@
 ## Other project changes
 
 - Updated the current checkpoint and recorded the functional-area source checks in the scan archive.
-- Moved V100 into `archivio` and verified its SHA-256 against the original.
+- Moved V100 into `archive` and verified its SHA-256 against the original.
 - Used `Quality Management` for the documented quality inspection and testing features.
 
 ## Verification

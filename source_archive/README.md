@@ -1,6 +1,6 @@
 # Source scan archive
 
-Use [url_scansionati.json](url_scansionati.json) as the current register. Each entry represents one canonical URL.
+Use [scanned_urls.json](scanned_urls.json) as the current register. Each entry represents one canonical URL.
 
 1. Before opening an index, article, or linked reference, normalize the URL and match the `url` field exactly. Remove tracking parameters and heading fragments, preserve query parameters that select content or pagination, and use the English Microsoft Learn URL for localized copies of the same article. When a redirect is known, check the final URL.
 2. Open URLs absent from the register when relevant. For registered URLs, use the status to decide whether to open the page.
@@ -18,9 +18,9 @@ From the project root, load the register locally and emit only the requested ent
 
 ```powershell
 $canonicalUrl = 'https://example.com/article'
-$register = Get-Content -LiteralPath archivio_fonti/url_scansionati.json -Raw | ConvertFrom-Json
+$register = Get-Content -LiteralPath source_archive/scanned_urls.json -Raw | ConvertFrom-Json
 $register | Where-Object { $_.url -ceq $canonicalUrl } | ConvertTo-Json
 ```
 
-The initial JSON preserves the processed URLs from the previous list and imports dates and access outcomes from the V100 [historical register](registro.jsonl). Use the JSON for routine lookups and consult the historical register only on explicit user request.
+The initial JSON preserves the processed URLs from the previous list and imports dates and access outcomes from the V100 [historical register](historical_register.jsonl). Use the JSON for routine lookups and consult the historical register only on explicit user request.
 Historical evidence references to `Checkpoint_aggiornamento_2026-11-19.md` can be resolved against the [archived checkpoint in Git history](https://github.com/VanniMartignago/BCHistory.github.io/blob/c92f9c069301e370456f526e3a61b15f6b3295e7/Checkpoint_aggiornamento_2026-11-19.md).
