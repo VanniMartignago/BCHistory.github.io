@@ -70,7 +70,7 @@ function renderAreaSummary(id,title,items,field,label){
   const summary=document.getElementById(id);
   summary.parentElement.hidden=!totals.size;
   document.getElementById(id+'Title').textContent=title;
-  const sorted=[...totals].sort(([a],[b])=>a.localeCompare(b,lang));
+  const sorted=[...totals].sort(([nameA,countA],[nameB,countB])=>countB-countA||nameA.localeCompare(nameB,lang));
   summary.innerHTML=sorted.map(([name,total])=>'<li><span>'+esc(name)+'</span><strong>'+total+'</strong></li>').join('');
 }
 function render(){const found=filtered(),m=messages[lang];renderAreaSummary('productSummary',m.areaLabel,found,'area',cleanArea);renderAreaSummary('functionalSummary',m.functionalArea,found,'functionalArea',value=>value);matrixByWrap.hidden=viewMode.value!=='matrix';count.innerHTML='<strong>'+found.length+'</strong> '+(found.length===1?m.foundOne:m.found);if(!found.length){list.innerHTML='<div class="empty">'+m.none+'</div>';return}list.innerHTML=viewMode.value==='matrix'?matrixMarkup(found,m):cardMarkup(found);list.querySelectorAll('.card,.matrix-link').forEach(c=>c.onclick=e=>{e.preventDefault();const item=rows.find(x=>x.id===c.dataset.id);showDetail(item,true)})}
