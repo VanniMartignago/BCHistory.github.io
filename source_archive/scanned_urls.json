@@ -248952,17 +248952,18 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/reports/report-723",
-    "scanDate": null,
-    "lastAttemptDate": null,
-    "status": "retry",
-    "scope": "Linked from an approved secondary source; access and feature review pending. Discovered from https://yzhums.com/74176/"
+    "scanDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-25",
+    "status": "processed",
+    "scope": "Verified the built-in Item - ABC Analysis report for 2026 release wave 1. Exact minor release remains pending.",
+    "httpStatus": 200
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-powerbi-abc-analysis",
-    "scanDate": null,
+    "scanDate": "2026-11-25",
     "lastAttemptDate": "2026-11-25",
-    "status": "retry",
-    "scope": "Microsoft Learn guide retrieved for feature and introduction-version review.",
+    "status": "processed",
+    "scope": "Verified the separate Inventory Power BI ABC Analysis report for 2026 release wave 1. Exact minor release remains pending.",
     "httpStatus": 200
   },
   {
@@ -248975,10 +248976,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-designing-navigate-pages",
-    "scanDate": null,
+    "scanDate": "2026-11-25",
     "lastAttemptDate": "2026-11-25",
-    "status": "retry",
-    "scope": "Microsoft Learn guide retrieved for feature and introduction-version review.",
+    "status": "processed",
+    "scope": "Reviewed NavigatePage guided setup design and wizard examples. This guidance does not establish a new Business Central introduction release.",
     "httpStatus": 200
   },
   {
@@ -249433,10 +249434,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/faq-electronic-invoicing",
-    "scanDate": null,
+    "scanDate": "2026-11-25",
     "lastAttemptDate": "2026-11-25",
-    "status": "retry",
-    "scope": "Microsoft Learn guide retrieved for feature and introduction-version review.",
+    "status": "processed",
+    "scope": "Reviewed e-invoicing framework and localization FAQ against existing entries. Current coverage guidance does not establish an introduction release for additional changes.",
     "httpStatus": 200
   },
   {
