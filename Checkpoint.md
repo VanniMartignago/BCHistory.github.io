@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-26
 
-- **Current catalog V109.** Added the modular System Application foundation (15.0), including the initial Assisted Setup module. Verified all 17 fields across 1,058 [workbook](Business_Central_Updates_V109.xlsx) and [JSON](Business_Central_Updates.json) records. Archived [V108](archive/Business_Central_Updates_V108.xlsx) byte-for-byte.
+- **Current catalog V110.** [Workbook](Business_Central_Updates_V110.xlsx) and [JSON](Business_Central_Updates.json) match across all 17 fields and 1,061 records. Added debugger global-variable inspection performance (20.7), online SQL authentication performance (21.2), and dimension-code entry through web services (22.4). Corrected three existing German and UK entries to the earlier documented on-premises updates 14.22, 14.25, and 14.27. Archived [V109](archive/Business_Central_Updates_V109.xlsx) byte-for-byte.
+- **Continue research.** The current System Application overview did not date the Assisted Setup registration API. The historic GitHub module path returned 404 and is eligible for its one retry. Continue feature-level review of pending update pages, including technical improvements, and seek historical version evidence for GetPaddedString.
+
+## V109 handoff — 2026-11-26
+
+- **Current catalog V109.** Added the modular System Application foundation (15.0), including the initial Assisted Setup module. Verified all 17 fields across 1,058 [workbook](archive/Business_Central_Updates_V109.xlsx) and [JSON](Business_Central_Updates.json) records. Archived [V108](archive/Business_Central_Updates_V108.xlsx) byte-for-byte.
 - **Source queue.** Reviewed four pending Assisted Setup component references and two historical Microsoft articles. Checked the Microsoft Learn release overview, Microsoft Dynamics blog, Yun Zhu, Demiliani, ArvyDev and Daxly indexes against registered canonical links. One new Yun Zhu article describes GetPaddedString, also documented in 2023 by That NAV Guy. Keep the introduction of that method and the exact Assisted Setup registration API pending.
 
 ## V108 handoff — 2026-11-26

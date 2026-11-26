@@ -27559,7 +27559,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Screened regulatory sections of Spring 2019 CU 24 (application 14.25). Additional feature evidence and remaining release-note scope are pending.",
+    "scope": "Confirmed earlier documented on-premises change 399225 and corrected the V110 catalog entry. Other update items remain pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/4a4c5f30cab371a8f147b97a5df6e1cf80ff99eaff486b42505ddf8efb1ea54c.json"
   },
@@ -67979,13 +67979,13 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-system-application-overview",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Discovered relevant linked page",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Current System Application overview reviewed. It does not establish the first release of the Assisted Setup registration API.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/telemetry-azure-function-integration-trace",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-system-application-overview"
+    "httpStatus": 200,
+    "accessFailures": 1
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-wait-statistics",
@@ -85672,7 +85672,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Screened regulatory sections of Spring 2019 CU 21 (application 14.22). Additional feature evidence and remaining release-note scope are pending.",
+    "scope": "Confirmed earlier documented on-premises change 387347 and corrected the V110 catalog entry. Other update items remain pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-cumulative-updates-for-microsoft-dynamics-365-business-central-spring-2019-update-on-premis",
     "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-21-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu"
@@ -250136,7 +250136,7 @@
     "status": "retry",
     "lastAttemptDate": "2026-11-25",
     "httpStatus": 200,
-    "scope": "Screened regulatory sections of Spring 2019 CU 26 (application 14.27). Additional feature evidence and remaining release-note scope are pending."
+    "scope": "Confirmed earlier documented on-premises change 404260 and corrected the V110 catalog entry. Other update items remain pending."
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/08/cumulative-update-27-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
@@ -250609,7 +250609,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "BC 20.7 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending. Corroborates the Belgian EB Payment Journal vendor column.",
+    "scope": "Verified change 450902 and added it in V110. Further update items remain pending.",
     "httpStatus": 200
   },
   {
@@ -250787,7 +250787,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "BC 21.2 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "scope": "Verified change 456304 and added it in V110. Further update items remain pending.",
     "httpStatus": 200
   },
   {
@@ -250907,7 +250907,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "BC 22.4 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "scope": "Verified change 477634 and added it in V110. Further update items remain pending.",
     "httpStatus": 200
   },
   {
@@ -251030,5 +251030,15 @@
     "lastAttemptDate": "2026-11-26",
     "httpStatus": 200,
     "scope": "Verified the 2019 release-wave System Application foundation, release dates and initial Assisted Setup module; cataloged the platform change in V109."
+  },
+  {
+    "url": "https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Assisted%20Setup",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-26",
+    "status": "error",
+    "scope": "The historical Assisted Setup GitHub path now redirects to main and returns 404. One retry remains.",
+    "accessFailures": 1,
+    "httpStatus": 404,
+    "redirectUrl": "https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Assisted%20Setup"
   }
 ]
