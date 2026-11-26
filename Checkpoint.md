@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-26
 
-- **Current catalog V110.** [Workbook](Business_Central_Updates_V110.xlsx) and [JSON](Business_Central_Updates.json) match across all 17 fields and 1,061 records. Added debugger global-variable inspection performance (20.7), online SQL authentication performance (21.2), and dimension-code entry through web services (22.4). Corrected three existing German and UK entries to the earlier documented on-premises updates 14.22, 14.25, and 14.27. Archived [V109](archive/Business_Central_Updates_V109.xlsx) byte-for-byte.
+- **Current catalog V111.** [Workbook](Business_Central_Updates_V111.xlsx) and [JSON](Business_Central_Updates.json) match across 1,064 records. Added recovery from SQL Server crashes during installation (22.1), improved memory allocation during server startup (22.4), and improved thread allocation for web service endpoints (22.4). The two 22.4 changes are also listed for 22.5. Archived [V110](archive/Business_Central_Updates_V110.xlsx) byte-for-byte.
+- **Continue research.** Review the remaining application and platform update notes. The Assisted Setup registration API and GetPaddedString still need versioned evidence.
+
+## V110 handoff — 2026-11-26
+
+- **Current catalog V110.** [Workbook](archive/Business_Central_Updates_V110.xlsx) and [JSON](Business_Central_Updates.json) match across all 17 fields and 1,061 records. Added debugger global-variable inspection performance (20.7), online SQL authentication performance (21.2), and dimension-code entry through web services (22.4). Corrected three existing German and UK entries to the earlier documented on-premises updates 14.22, 14.25, and 14.27. Archived [V109](archive/Business_Central_Updates_V109.xlsx) byte-for-byte.
 - **Continue research.** The current System Application overview did not date the Assisted Setup registration API. The historic GitHub module path returned 404 and is eligible for its one retry. Continue feature-level review of pending update pages, including technical improvements, and seek historical version evidence for GetPaddedString.
 
 ## V109 handoff — 2026-11-26

@@ -250907,7 +250907,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Verified change 477634 and added it in V110. Further update items remain pending.",
+    "scope": "Verified change 477634 and added it in V110. Further update items remain pending. V111 verified platform changes 477432, 478287.",
     "httpStatus": 200
   },
   {
@@ -250931,7 +250931,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "BC 22.1 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "scope": "BC 22.1 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending. V111 verified platform changes 469313.",
     "httpStatus": 200
   },
   {
