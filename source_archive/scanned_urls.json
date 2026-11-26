@@ -27387,18 +27387,18 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2019/06/cumulative-update-07-for-microsoft-dynamics-365-business-central-on-premises-application-build-31809",
     "scanDate": "2026-11-21",
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Verified and cataloged VAT report reminder DateFormula support (307397) in V112. Other update evidence remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/a67aa7831ed9055d3f2e9e4df5fc387dd7a9adecf307a028ca07f59883462353.json"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2019/08/cumulative-update-10-for-microsoft-dynamics-365-business-central-on-premises-application-build-34590",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Matched Norwegian KID structure (318349) to an existing 13.10 entry. UK Making Tax Digital header comparison remains pending. Other update evidence remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/e63d1de8dc40e9ef9a7b5ed5580aa943ca9ace8ba330853d6b704fe7cfa32248.json"
   },
@@ -27423,9 +27423,9 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2019/11/cumulative-update-13-for-microsoft-dynamics-365-business-central-on-premises-application-build-37622",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Compared selected regulatory entries with existing catalog entries. Other update evidence remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/ea005302eb1a64cd6ec4e5691ec84ad39a2e93f04c580a503efa393c354081c7.json"
   },
@@ -27450,9 +27450,9 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/04/cumulative-update-08-for-microsoft-dynamics-365-business-central-on-premises-application-build-32990",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Compared selected regulatory entries with existing catalog entries. Other update evidence remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/80d044ecc1e6ff27e4f2845ac5dd3fcb0d982ee090bbbe93ecba8eb46c093c36.json"
   },

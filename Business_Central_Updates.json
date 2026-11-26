@@ -20214,5 +20214,24 @@
     "officialDocumentation": null,
     "blogSource": null,
     "changeType": "Enhancement"
+  },
+  {
+    "majorVersion": "13",
+    "minorVersion": "13.7",
+    "releaseWave": "October 2018",
+    "productArea": "Finance",
+    "countryRegion": null,
+    "functionalArea": null,
+    "feature": "Use a date formula for the VAT report reminder",
+    "description": "The reminder time field in VAT Report Setup uses the DateFormula type. A date formula expresses the reminder interval relative to a date.",
+    "releaseStatus": "General availability",
+    "previewDate": null,
+    "gaDate": "May 2019",
+    "cloud": null,
+    "onPrem": "Yes",
+    "primarySource": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2019/06/cumulative-update-07-for-microsoft-dynamics-365-business-central-on-premises-application-build-31809",
+    "officialDocumentation": null,
+    "blogSource": null,
+    "changeType": "Enhancement"
   }
 ]
