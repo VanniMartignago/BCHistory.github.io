@@ -83347,20 +83347,20 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/codeunit/system.environment.configuration.assisted-setup-installation",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed the current assisted setup component reference; no introduction release was stated. Historical API verification remains pending.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/namespace/system.environment.configuration",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/a3a8fa22243360feb2713c77085b698081baf0f0dfb4a5102ab86260eec7ca6a.json"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/codeunit/system.environment.configuration.assisted-setup-upgrade",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed the current assisted setup component reference; no introduction release was stated. Historical API verification remains pending.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/namespace/system.environment.configuration",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/ceca5501be7f3db5bebebe5136446adc9fbf75d8eaa0048401d6c3953e8fb283.json"
@@ -83517,10 +83517,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/enum/system.environment.configuration.assisted-setup-group",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed the current assisted setup component reference; no introduction release was stated. Historical API verification remains pending.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/namespace/system.environment.configuration",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/4460e7dc78b5f03e0abc9f4aec2c51a8a8df1e850b3d0cf7d4b9bbf92bca392d.json"
@@ -83647,10 +83647,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/page/system.environment.configuration.assisted-setup",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed the current assisted setup component reference; no introduction release was stated. Historical API verification remains pending.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/namespace/system.environment.configuration",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/121b4bad663cdedd0d01a3df9837f64a61cacf772408932b453d8c88d3fd1cc6.json"
@@ -88039,9 +88039,9 @@
   {
     "url": "https://thatnavguy.com/blog/2023/d365-business-central-stringconversionmanagement-codeunit",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Linked pages checked for further URLs; article-level evidence review pending.",
+    "scope": "Confirms GetPaddedString was available by 2023, without identifying its introduction release.",
     "linkedFrom": "https://thatnavguy.com/blog/2023/azure-using-logic-apps-to-monitor-azure-app-registration-expiration",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/3775045b36ee7d08e9b5980697c16231cec90ac3988626a7489841f50cb9586d.json"
@@ -105440,10 +105440,10 @@
   },
   {
     "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2019/09/19/customization-inside-the-system-application-in-dynamics-365-business-central/",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed Microsoft System Application architecture and extensibility evidence against the 2019 release plan.",
     "linkedFrom": "https://www.microsoft.com/en-us/dynamics-365/blog/product/dynamics-365-business-central/?paged=6",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/a85ad40bf5256638ceb25e922b61b85bb5d3a57e24dcb9c0d33b77835eccac04.json"
@@ -106020,10 +106020,10 @@
   },
   {
     "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2019/08/09/introducing-the-dynamics-365-business-central-system-application/",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed Microsoft System Application architecture and extensibility evidence against the 2019 release plan.",
     "linkedFrom": "https://www.microsoft.com/en-us/dynamics-365/blog/product/dynamics-365-business-central/?paged=7",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/1dad5c2a2151e3ef2fbd59f6db35c4cd95b9e75f2e8b89e694905470c91d7d57.json"
@@ -251005,5 +251005,30 @@
     "lastAttemptDate": "2026-11-25",
     "httpStatus": 200,
     "scope": "Recovered the update page; content review remains pending."
+  },
+  {
+    "url": "https://yzhums.com/77663/",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-26",
+    "status": "retry",
+    "scope": "Dedicated GetPaddedString walkthrough. The method was already documented by That NAV Guy in 2023; introduction version is unverified.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-business-central/system-application-application-foundation",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Resolved to the canonical archived Microsoft Learn release plan.",
+    "httpStatus": 200,
+    "redirectUrl": "https://learn.microsoft.com/en-us/previous-versions/dynamics365-release-plan/2019wave2/dynamics365-business-central/system-application-application-foundation"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365-release-plan/2019wave2/dynamics365-business-central/system-application-application-foundation",
+    "status": "processed",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "httpStatus": 200,
+    "scope": "Verified the 2019 release-wave System Application foundation, release dates and initial Assisted Setup module; cataloged the platform change in V109."
   }
 ]

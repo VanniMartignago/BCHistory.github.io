@@ -20081,5 +20081,24 @@
     "officialDocumentation": null,
     "blogSource": null,
     "changeType": "Enhancement"
+  },
+  {
+    "majorVersion": "15",
+    "minorVersion": "15.0",
+    "releaseWave": "2019 release wave 2",
+    "productArea": "Development",
+    "countryRegion": null,
+    "functionalArea": null,
+    "feature": "Use the modular System Application foundation in AL extensions",
+    "description": "The first modular System Application provides reusable AL components for capabilities shared by extensions, separate from the Base Application business logic. Its initial modules include Assisted Setup, which centralizes pages used by guided setup experiences.",
+    "releaseStatus": "General availability",
+    "previewDate": "August 1, 2019",
+    "gaDate": "October 1, 2019",
+    "cloud": null,
+    "onPrem": null,
+    "primarySource": "https://learn.microsoft.com/en-us/previous-versions/dynamics365-release-plan/2019wave2/dynamics365-business-central/system-application-application-foundation",
+    "officialDocumentation": null,
+    "blogSource": null,
+    "changeType": "Addition"
   }
 ]

@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-26
 
-- **Current catalog V108.** [Workbook](Business_Central_Updates_V108.xlsx) and [JSON](Business_Central_Updates.json) match across 1,057 records and all 17 fields. Added the Spanish SII operation date option (14.36) and corrected the mixed goods/services SII entry from 17.5 to the older documented on-premises 14.23 branch. [Archived V107](archive/Business_Central_Updates_V107.xlsx) retains its original bytes.
+- **Current catalog V109.** Added the modular System Application foundation (15.0), including the initial Assisted Setup module. Verified all 17 fields across 1,058 [workbook](Business_Central_Updates_V109.xlsx) and [JSON](Business_Central_Updates.json) records. Archived [V108](archive/Business_Central_Updates_V108.xlsx) byte-for-byte.
+- **Source queue.** Reviewed four pending Assisted Setup component references and two historical Microsoft articles. Checked the Microsoft Learn release overview, Microsoft Dynamics blog, Yun Zhu, Demiliani, ArvyDev and Daxly indexes against registered canonical links. One new Yun Zhu article describes GetPaddedString, also documented in 2023 by That NAV Guy. Keep the introduction of that method and the exact Assisted Setup registration API pending.
+
+## V108 handoff — 2026-11-26
+
+- **Current catalog V108.** [Workbook](archive/Business_Central_Updates_V108.xlsx) and [JSON](Business_Central_Updates.json) match across 1,057 records and all 17 fields. Added the Spanish SII operation date option (14.36) and corrected the mixed goods/services SII entry from 17.5 to the older documented on-premises 14.23 branch. [Archived V107](archive/Business_Central_Updates_V107.xlsx) retains its original bytes.
 - **Pending research.** Continue the source queue and verify the assisted setup registration API against versioned evidence. The current System Application reference was retrieved.
 
 ## V107 handoff — 2026-11-25
