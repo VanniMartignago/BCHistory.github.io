@@ -3439,20 +3439,20 @@
     "changeType": "Enhancement"
   },
   {
-    "majorVersion": "17",
-    "minorVersion": "17.5",
-    "releaseWave": "2020 release wave 2",
+    "majorVersion": "14",
+    "minorVersion": "14.23",
+    "releaseWave": "Spring 2019",
     "productArea": "Country/region",
     "countryRegion": "Spain",
     "functionalArea": "Sales",
     "feature": "Spain — Report goods and services together in SII foreign-customer documents",
-    "description": "Supports reporting deliveries of goods and services together in a single SII document for a foreign customer, covering transactions that include both types of supply.",
+    "description": "Supports reporting deliveries of goods and services together in a single SII document for a foreign customer, covering transactions that include both types of supply. Microsoft records the on-premises change in 14.23 and also lists it in updates 15.16 and 17.5.",
     "releaseStatus": "General availability",
     "previewDate": null,
-    "gaDate": null,
-    "cloud": "Yes",
-    "onPrem": null,
-    "primarySource": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/whatsnew-update-17-5",
+    "gaDate": "March 2021",
+    "cloud": null,
+    "onPrem": "Yes",
+    "primarySource": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-22-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
     "officialDocumentation": null,
     "blogSource": null,
     "changeType": "Enhancement"
@@ -20062,5 +20062,24 @@
     "officialDocumentation": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-powerbi-abc-analysis",
     "blogSource": null,
     "changeType": "New feature"
+  },
+  {
+    "majorVersion": "14",
+    "minorVersion": "14.36",
+    "releaseWave": "Spring 2019",
+    "productArea": "Country/region",
+    "countryRegion": "Spain",
+    "functionalArea": "Exchanging Data Electronically",
+    "feature": "Spain — Choose the operation date used in SII invoice XML",
+    "description": "The Spanish SII reporting workflow can use either the posting date or the document date as the operation date in the XML submitted to the tax authorities.",
+    "releaseStatus": "General availability",
+    "previewDate": null,
+    "gaDate": "May 2022",
+    "cloud": null,
+    "onPrem": "Yes",
+    "primarySource": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/04/cumulative-update-35-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
+    "officialDocumentation": null,
+    "blogSource": null,
+    "changeType": "Enhancement"
   }
 ]

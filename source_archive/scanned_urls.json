@@ -27541,7 +27541,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Confirmed Norwegian free text on individual VAT return lines (433241) and cataloged it in V104. BC 20.1 records the same change (433243). Remaining update scope pending.",
+    "scope": "Verified issue 433037 for V108. Added the Spanish SII operation-date option in 14.36; corroborated in 20.1. Other update scope remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/537f7d78479f3de403fbf5e799697698e6f61b0a5a108cd519f25fb46a6e0642.json"
   },
@@ -77260,9 +77260,9 @@
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/module/system-application",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Retrieved the System Application reference. The assisted setup registration API still needs versioned evidence.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/ai-build-capability-in-al",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/9325cbf9058f8e1b77d44a3af2ce542410df36998ea00d5be823a3a6a03e19cb.json"
@@ -85682,7 +85682,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Screened regulatory sections of Spring 2019 CU 22 (application 14.23). Cataloged change 388141 in V104. Additional feature evidence and remaining release-note scope are pending.",
+    "scope": "Verified issue 385944 for V108. Corrected the existing Spanish mixed-supply SII entry to the earlier on-premises 14.23 evidence; corroborated in 15.16. Other update scope remains pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-cumulative-updates-for-microsoft-dynamics-365-business-central-spring-2019-update-on-premis",
     "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-22-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu"

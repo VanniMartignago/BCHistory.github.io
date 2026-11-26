@@ -1,8 +1,13 @@
 # Business Central research checkpoint
 
-## Resume here — 2026-11-25
+## Resume here — 2026-11-26
 
-- **Current catalog V107.** [Workbook](Business_Central_Updates_V107.xlsx) and [JSON](Business_Central_Updates.json) match across 1,056 records and 17 fields. Consolidated the three equivalent Power Platform product-area labels into `Adapt faster with Power Platform`. The filter now has one Power Platform option covering 25 records. This changed the product-area field on 24 records. The [V106 workbook](archive/Business_Central_Updates_V106.xlsx) retains its original SHA-256 checksum.
+- **Current catalog V108.** [Workbook](Business_Central_Updates_V108.xlsx) and [JSON](Business_Central_Updates.json) match across 1,057 records and all 17 fields. Added the Spanish SII operation date option (14.36) and corrected the mixed goods/services SII entry from 17.5 to the older documented on-premises 14.23 branch. [Archived V107](archive/Business_Central_Updates_V107.xlsx) retains its original bytes.
+- **Pending research.** Continue the source queue and verify the assisted setup registration API against versioned evidence. The current System Application reference was retrieved.
+
+## V107 handoff — 2026-11-25
+
+- **Current catalog V107.** [Workbook](archive/Business_Central_Updates_V107.xlsx) and [JSON](Business_Central_Updates.json) match across 1,056 records and 17 fields. Consolidated the three equivalent Power Platform product-area labels into `Adapt faster with Power Platform`. The filter now has one Power Platform option covering 25 records. This changed the product-area field on 24 records. The [V106 workbook](archive/Business_Central_Updates_V106.xlsx) retains its original SHA-256 checksum.
 
 ## V106 handoff — 2026-11-25
 
