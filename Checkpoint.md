@@ -1,8 +1,33 @@
 # Business Central research checkpoint
 
-## Resume here — 2026-11-25
+## Resume here — 2026-11-26
 
-- **Current catalog V107.** [Workbook](Business_Central_Updates_V107.xlsx) and [JSON](Business_Central_Updates.json) match across 1,056 records and 17 fields. Consolidated the three equivalent Power Platform product-area labels into `Adapt faster with Power Platform`. The filter now has one Power Platform option covering 25 records. This changed the product-area field on 24 records. The [V106 workbook](archive/Business_Central_Updates_V106.xlsx) retains its original SHA-256 checksum.
+- **Current catalog V112.** [Workbook](Business_Central_Updates_V112.xlsx) and [JSON](Business_Central_Updates.json) match across 1,065 records. Added VAT report reminder DateFormula support (13.7). Archived [V111](archive/Business_Central_Updates_V111.xlsx) byte-for-byte.
+- **Continue research.** Screened four queued Business Central 13 updates. The Norwegian SEPA KID change was already cataloged in 13.10. Compare the UK 13.10 fraud header item with later configuration and automation changes and continue remaining application and platform evidence.
+
+## V111 handoff — 2026-11-26
+
+- **Current catalog V111.** [Workbook](archive/Business_Central_Updates_V111.xlsx) and [JSON](Business_Central_Updates.json) match across 1,064 records. Added recovery from SQL Server crashes during installation (22.1), improved memory allocation during server startup (22.4), and improved thread allocation for web service endpoints (22.4). The two 22.4 changes are also listed for 22.5. Archived [V110](archive/Business_Central_Updates_V110.xlsx) byte-for-byte.
+- **Continue research.** Review the remaining application and platform update notes. The Assisted Setup registration API and GetPaddedString still need versioned evidence.
+
+## V110 handoff — 2026-11-26
+
+- **Current catalog V110.** [Workbook](archive/Business_Central_Updates_V110.xlsx) and [JSON](Business_Central_Updates.json) match across all 17 fields and 1,061 records. Added debugger global-variable inspection performance (20.7), online SQL authentication performance (21.2), and dimension-code entry through web services (22.4). Corrected three existing German and UK entries to the earlier documented on-premises updates 14.22, 14.25, and 14.27. Archived [V109](archive/Business_Central_Updates_V109.xlsx) byte-for-byte.
+- **Continue research.** The current System Application overview did not date the Assisted Setup registration API. The historic GitHub module path returned 404 and is eligible for its one retry. Continue feature-level review of pending update pages, including technical improvements, and seek historical version evidence for GetPaddedString.
+
+## V109 handoff — 2026-11-26
+
+- **Current catalog V109.** Added the modular System Application foundation (15.0), including the initial Assisted Setup module. Verified all 17 fields across 1,058 [workbook](archive/Business_Central_Updates_V109.xlsx) and [JSON](Business_Central_Updates.json) records. Archived [V108](archive/Business_Central_Updates_V108.xlsx) byte-for-byte.
+- **Source queue.** Reviewed four pending Assisted Setup component references and two historical Microsoft articles. Checked the Microsoft Learn release overview, Microsoft Dynamics blog, Yun Zhu, Demiliani, ArvyDev and Daxly indexes against registered canonical links. One new Yun Zhu article describes GetPaddedString, also documented in 2023 by That NAV Guy. Keep the introduction of that method and the exact Assisted Setup registration API pending.
+
+## V108 handoff — 2026-11-26
+
+- **Current catalog V108.** [Workbook](archive/Business_Central_Updates_V108.xlsx) and [JSON](Business_Central_Updates.json) match across 1,057 records and all 17 fields. Added the Spanish SII operation date option (14.36) and corrected the mixed goods/services SII entry from 17.5 to the older documented on-premises 14.23 branch. [Archived V107](archive/Business_Central_Updates_V107.xlsx) retains its original bytes.
+- **Pending research.** Continue the source queue and verify the assisted setup registration API against versioned evidence. The current System Application reference was retrieved.
+
+## V107 handoff — 2026-11-25
+
+- **Current catalog V107.** [Workbook](archive/Business_Central_Updates_V107.xlsx) and [JSON](Business_Central_Updates.json) match across 1,056 records and 17 fields. Consolidated the three equivalent Power Platform product-area labels into `Adapt faster with Power Platform`. The filter now has one Power Platform option covering 25 records. This changed the product-area field on 24 records. The [V106 workbook](archive/Business_Central_Updates_V106.xlsx) retains its original SHA-256 checksum.
 
 ## V106 handoff — 2026-11-25
 
@@ -57,6 +82,6 @@
 - **Verification.** The V100 session verified workbook-to-JSON parity, checked normalized titles and descriptions for duplicates by country or region, and consolidated three confirmed duplicates. The [V100 changelog](log_pr/2026-11-21-update-bc-features-v100.md) records the comparison and feature changes.
 - **Next starting point.** Resume the historical Microsoft Support review by finding approved alternative routes for unavailable KB articles. Compare historical features and candidates for specific minor releases against V100. Continue article-level review of approved complementary archives, verify the cited official references, and compare eligible features with V100. Full archive coverage remains open.
 - **Open evidence gap.** Microsoft references disagree on the minor release that introduced the Mexico DIOT file format. Keep the introduction release pending until the evidence is reconciled.
-- **BC 13 research in progress.** Screened the official cumulative update index and the regulatory sections of CU 02, 03, 06, 07, 08, 10, and 13. Compare the pending candidates in the [source scan register](source_archive/scanned_urls.json), starting with VAT reminder DateFormula (307397), and UK fraud prevention headers (318233). Continue extracting the remaining individual KB links from the October 2018 on-premises index. Review the feature evidence from the Waldo and Kauffmann archive pages reached in the coverage audit.
+- **BC 13 research in progress.** Screened the official cumulative update index and the regulatory sections of CU 02, 03, 06, 07, 08, 10, and 13. Compare the pending candidates in the [source scan register](source_archive/scanned_urls.json), continuing with UK fraud prevention headers (318233). Continue extracting the remaining individual KB links from the October 2018 on-premises index. Review the feature evidence from the Waldo and Kauffmann archive pages reached in the coverage audit.
 - **Coverage review.** The V100 catalog has entries for BC 13 through 30. The configured BC 15.0–29.1 Learn URL matrix has 72 processed routes and 14 failed routes, with route status distinct from feature-level coverage. Use archived wave plans for unavailable major-release routes and Microsoft Support for 15.1, 15.5 and 18.1. The Support KBs for 17.7 and 18.1 both document the Spanish SII negative-line export option. Compare branch dates and earlier KBs before assigning the introduction version. Keep the Italian 15.5 withholding tax value and the 18.1 Belgian SEPA and Mexican CFDI changes in the verification queue. Continue from the version 14, 15 and 18 Support indexes and the unreviewed complementary archive pages.
 - **Full source review in progress.** Recursive discovery attempted 8,462 distinct URLs and saved 6,523 readable extracts under `.work/full-coverage-extracts/`. Microsoft Learn returned HTTP 429 for 1,660 attempts. Resume after the rate limit clears with the per-host pause enabled, then compare the extracts at feature level before marking scope complete. Kauffmann category pages 2 and 3 were reached using web retrieval; page 4 was inaccessible. BC 15.1 KB 4528699 confirms DIOT on that branch. No DIOT item was found in BC 14.5 or 14.6 KBs. Keep the separate BC 26.2/26.3 DIOT file-format discrepancy open. The 92 previously verified candidate records reconcile with V100, including the statistical-accounts title alias. Catalog version remains V100. Session closure verified workbook-to-JSON parity for all 1,026 records and found no duplicate normalized titles or descriptions by country or region. Raw extracts and request logs are local inspection files.

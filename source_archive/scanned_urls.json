@@ -27387,18 +27387,18 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2019/06/cumulative-update-07-for-microsoft-dynamics-365-business-central-on-premises-application-build-31809",
     "scanDate": "2026-11-21",
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Verified and cataloged VAT report reminder DateFormula support (307397) in V112. Other update evidence remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/a67aa7831ed9055d3f2e9e4df5fc387dd7a9adecf307a028ca07f59883462353.json"
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2019/08/cumulative-update-10-for-microsoft-dynamics-365-business-central-on-premises-application-build-34590",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Matched Norwegian KID structure (318349) to an existing 13.10 entry. UK Making Tax Digital header comparison remains pending. Other update evidence remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/e63d1de8dc40e9ef9a7b5ed5580aa943ca9ace8ba330853d6b704fe7cfa32248.json"
   },
@@ -27423,9 +27423,9 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2019/11/cumulative-update-13-for-microsoft-dynamics-365-business-central-on-premises-application-build-37622",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Compared selected regulatory entries with existing catalog entries. Other update evidence remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/ea005302eb1a64cd6ec4e5691ec84ad39a2e93f04c580a503efa393c354081c7.json"
   },
@@ -27450,9 +27450,9 @@
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/04/cumulative-update-08-for-microsoft-dynamics-365-business-central-on-premises-application-build-32990",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Compared selected regulatory entries with existing catalog entries. Other update evidence remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/80d044ecc1e6ff27e4f2845ac5dd3fcb0d982ee090bbbe93ecba8eb46c093c36.json"
   },
@@ -27541,7 +27541,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Confirmed Norwegian free text on individual VAT return lines (433241) and cataloged it in V104. BC 20.1 records the same change (433243). Remaining update scope pending.",
+    "scope": "Verified issue 433037 for V108. Added the Spanish SII operation-date option in 14.36; corroborated in 20.1. Other update scope remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/537f7d78479f3de403fbf5e799697698e6f61b0a5a108cd519f25fb46a6e0642.json"
   },
@@ -27559,7 +27559,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Screened regulatory sections of Spring 2019 CU 24 (application 14.25). Additional feature evidence and remaining release-note scope are pending.",
+    "scope": "Confirmed earlier documented on-premises change 399225 and corrected the V110 catalog entry. Other update items remain pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/4a4c5f30cab371a8f147b97a5df6e1cf80ff99eaff486b42505ddf8efb1ea54c.json"
   },
@@ -67979,13 +67979,13 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-system-application-overview",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "error",
-    "scope": "Discovered relevant linked page",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Current System Application overview reviewed. It does not establish the first release of the Assisted Setup registration API.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/telemetry-azure-function-integration-trace",
-    "httpStatus": 429,
-    "error": "429 Client Error: Too Many Requests for url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-system-application-overview"
+    "httpStatus": 200,
+    "accessFailures": 1
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-wait-statistics",
@@ -77260,9 +77260,9 @@
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/module/system-application",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scope": "Retrieved the System Application reference. The assisted setup registration API still needs versioned evidence.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/ai-build-capability-in-al",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/9325cbf9058f8e1b77d44a3af2ce542410df36998ea00d5be823a3a6a03e19cb.json"
@@ -83347,20 +83347,20 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/codeunit/system.environment.configuration.assisted-setup-installation",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed the current assisted setup component reference; no introduction release was stated. Historical API verification remains pending.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/namespace/system.environment.configuration",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/a3a8fa22243360feb2713c77085b698081baf0f0dfb4a5102ab86260eec7ca6a.json"
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/codeunit/system.environment.configuration.assisted-setup-upgrade",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed the current assisted setup component reference; no introduction release was stated. Historical API verification remains pending.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/namespace/system.environment.configuration",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/ceca5501be7f3db5bebebe5136446adc9fbf75d8eaa0048401d6c3953e8fb283.json"
@@ -83517,10 +83517,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/enum/system.environment.configuration.assisted-setup-group",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed the current assisted setup component reference; no introduction release was stated. Historical API verification remains pending.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/namespace/system.environment.configuration",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/4460e7dc78b5f03e0abc9f4aec2c51a8a8df1e850b3d0cf7d4b9bbf92bca392d.json"
@@ -83647,10 +83647,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/page/system.environment.configuration.assisted-setup",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed the current assisted setup component reference; no introduction release was stated. Historical API verification remains pending.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/namespace/system.environment.configuration",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/121b4bad663cdedd0d01a3df9837f64a61cacf772408932b453d8c88d3fd1cc6.json"
@@ -85672,7 +85672,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Screened regulatory sections of Spring 2019 CU 21 (application 14.22). Additional feature evidence and remaining release-note scope are pending.",
+    "scope": "Confirmed earlier documented on-premises change 387347 and corrected the V110 catalog entry. Other update items remain pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-cumulative-updates-for-microsoft-dynamics-365-business-central-spring-2019-update-on-premis",
     "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-21-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu"
@@ -85682,7 +85682,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "Screened regulatory sections of Spring 2019 CU 22 (application 14.23). Cataloged change 388141 in V104. Additional feature evidence and remaining release-note scope are pending.",
+    "scope": "Verified issue 385944 for V108. Corrected the existing Spanish mixed-supply SII entry to the earlier on-premises 14.23 evidence; corroborated in 15.16. Other update scope remains pending.",
     "linkedFrom": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2020/12/released-cumulative-updates-for-microsoft-dynamics-365-business-central-spring-2019-update-on-premis",
     "httpStatus": 200,
     "error": "403 Client Error: Forbidden for url: https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2024/09/cumulative-update-22-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu"
@@ -88039,9 +88039,9 @@
   {
     "url": "https://thatnavguy.com/blog/2023/d365-business-central-stringconversionmanagement-codeunit",
     "scanDate": null,
-    "lastAttemptDate": "2026-11-25",
+    "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Linked pages checked for further URLs; article-level evidence review pending.",
+    "scope": "Confirms GetPaddedString was available by 2023, without identifying its introduction release.",
     "linkedFrom": "https://thatnavguy.com/blog/2023/azure-using-logic-apps-to-monitor-azure-app-registration-expiration",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/3775045b36ee7d08e9b5980697c16231cec90ac3988626a7489841f50cb9586d.json"
@@ -105440,10 +105440,10 @@
   },
   {
     "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2019/09/19/customization-inside-the-system-application-in-dynamics-365-business-central/",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed Microsoft System Application architecture and extensibility evidence against the 2019 release plan.",
     "linkedFrom": "https://www.microsoft.com/en-us/dynamics-365/blog/product/dynamics-365-business-central/?paged=6",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/a85ad40bf5256638ceb25e922b61b85bb5d3a57e24dcb9c0d33b77835eccac04.json"
@@ -106020,10 +106020,10 @@
   },
   {
     "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2019/08/09/introducing-the-dynamics-365-business-central-system-application/",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-21",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open.",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Reviewed Microsoft System Application architecture and extensibility evidence against the 2019 release plan.",
     "linkedFrom": "https://www.microsoft.com/en-us/dynamics-365/blog/product/dynamics-365-business-central/?paged=7",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/1dad5c2a2151e3ef2fbd59f6db35c4cd95b9e75f2e8b89e694905470c91d7d57.json"
@@ -250136,7 +250136,7 @@
     "status": "retry",
     "lastAttemptDate": "2026-11-25",
     "httpStatus": 200,
-    "scope": "Screened regulatory sections of Spring 2019 CU 26 (application 14.27). Additional feature evidence and remaining release-note scope are pending."
+    "scope": "Confirmed earlier documented on-premises change 404260 and corrected the V110 catalog entry. Other update items remain pending."
   },
   {
     "url": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2021/08/cumulative-update-27-for-microsoft-dynamics-365-business-central-april-19-on-premises-application-bu",
@@ -250609,7 +250609,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "BC 20.7 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending. Corroborates the Belgian EB Payment Journal vendor column.",
+    "scope": "Verified change 450902 and added it in V110. Further update items remain pending.",
     "httpStatus": 200
   },
   {
@@ -250787,7 +250787,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "BC 21.2 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "scope": "Verified change 456304 and added it in V110. Further update items remain pending.",
     "httpStatus": 200
   },
   {
@@ -250907,7 +250907,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "BC 22.4 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "scope": "Verified change 477634 and added it in V110. Further update items remain pending. V111 verified platform changes 477432, 478287.",
     "httpStatus": 200
   },
   {
@@ -250931,7 +250931,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-25",
     "status": "retry",
-    "scope": "BC 22.1 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending.",
+    "scope": "BC 22.1 cross-branch release-note check returned HTTP 200. Compared selected update titles and issue IDs with the Spring 2019 branch; broader review pending. V111 verified platform changes 469313.",
     "httpStatus": 200
   },
   {
@@ -251005,5 +251005,40 @@
     "lastAttemptDate": "2026-11-25",
     "httpStatus": 200,
     "scope": "Recovered the update page; content review remains pending."
+  },
+  {
+    "url": "https://yzhums.com/77663/",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-26",
+    "status": "retry",
+    "scope": "Dedicated GetPaddedString walkthrough. The method was already documented by That NAV Guy in 2023; introduction version is unverified.",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-business-central/system-application-application-foundation",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "status": "processed",
+    "scope": "Resolved to the canonical archived Microsoft Learn release plan.",
+    "httpStatus": 200,
+    "redirectUrl": "https://learn.microsoft.com/en-us/previous-versions/dynamics365-release-plan/2019wave2/dynamics365-business-central/system-application-application-foundation"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/previous-versions/dynamics365-release-plan/2019wave2/dynamics365-business-central/system-application-application-foundation",
+    "status": "processed",
+    "scanDate": "2026-11-26",
+    "lastAttemptDate": "2026-11-26",
+    "httpStatus": 200,
+    "scope": "Verified the 2019 release-wave System Application foundation, release dates and initial Assisted Setup module; cataloged the platform change in V109."
+  },
+  {
+    "url": "https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Assisted%20Setup",
+    "scanDate": null,
+    "lastAttemptDate": "2026-11-26",
+    "status": "error",
+    "scope": "The historical Assisted Setup GitHub path now redirects to main and returns 404. One retry remains.",
+    "accessFailures": 1,
+    "httpStatus": 404,
+    "redirectUrl": "https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Assisted%20Setup"
   }
 ]
