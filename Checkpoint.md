@@ -2,7 +2,13 @@
 
 ## Resume here — 2026-11-27
 
-- **Current catalog V116.** [Workbook](Business_Central_Updates_V116.xlsx) and [JSON](Business_Central_Updates.json) match across 1,071 records. Added AL Sticky Scroll and Go to Definition for Rec (21.1), and telemetry dimensions for RT0019 and RT0018 (21.4). Archived [V115](archive/Business_Central_Updates_V115.xlsx) byte-for-byte.
+- **Current catalog V117.** [Workbook](Business_Central_Updates_V117.xlsx) and [JSON](Business_Central_Updates.json) match across all 17 fields and 1,077 records. Added six features verified against Microsoft evidence. Archived [V116](archive/Business_Central_Updates_V116.xlsx) byte-for-byte.
+- **Queue review.** Screened 5,004 additional distinct page contents from 5,312 queued requests, excluding the previous batch. Completed 10 canonical content reviews and recorded 7 unsuccessful access attempts from the batch. Remaining partial content comparisons are still queued. The local extraction log is `.work/read-5000-2026-11-27.jsonl`.
+- **Pending research.** Continue feature comparisons and confirm the BC24 AL folding candidate against versioned Microsoft evidence. PR #27 contains V116; V117 is based on that commit.
+
+## V116 handoff — 2026-11-27
+
+- **Current catalog V116.** [Workbook](archive/Business_Central_Updates_V116.xlsx) and [JSON](Business_Central_Updates.json) match across 1,071 records. Added AL Sticky Scroll and Go to Definition for Rec (21.1), and telemetry dimensions for RT0019 and RT0018 (21.4). Archived [V115](archive/Business_Central_Updates_V115.xlsx) byte-for-byte.
 - **URL review.** Screened the extracted page content of 1,044 distinct URLs from 1,216 requests. Completed feature comparisons for three dedicated articles, and kept partial reviews queued. Two access requests returned 404. The local content extracts are in `.work/read-1000-2026-11-27.jsonl`. The BC 25 CUSTOMERCONTRACT dimension and BC 24 NumberSequence performance changes still need version and source verification.
 
 ## V115 handoff — 2026-11-27
