@@ -3712,7 +3712,7 @@
     "countryRegion": "United Kingdom",
     "functionalArea": "Finance",
     "feature": "United Kingdom — Configure fraud prevention headers for Making Tax Digital",
-    "description": "Adds configurable fraud prevention headers for the UK Making Tax Digital integration, allowing the required client and network information to be provided with VAT submissions. Microsoft documents the on-premises change in 14.25 and lists it again in update 18.2.",
+    "description": "Adds configurable fraud prevention headers for the UK Making Tax Digital integration, allowing the required client and network information to be provided with VAT submissions. Microsoft documents the on-premises change in 14.25 and lists it again in update 18.2. The 13.10 on-premises update mentions earlier work on fraud prevention headers. The configurable behavior is documented in 14.25.",
     "releaseStatus": "General availability",
     "previewDate": null,
     "gaDate": "June 2021",
