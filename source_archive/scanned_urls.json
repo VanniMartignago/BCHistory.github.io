@@ -27398,7 +27398,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-26",
     "status": "retry",
-    "scope": "Matched Norwegian KID structure (318349) to an existing 13.10 entry. UK Making Tax Digital header comparison remains pending. Other update evidence remains pending.",
+    "scope": "Matched Norwegian KID structure (318349) to an existing 13.10 entry. The UK Making Tax Digital header mention (318233) is historical context for V114, with no separate catalog entry. Other update evidence remains pending.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/e63d1de8dc40e9ef9a7b5ed5580aa943ca9ace8ba330853d6b704fe7cfa32248.json"
   },

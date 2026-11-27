@@ -2,8 +2,13 @@
 
 ## Resume here — 2026-11-27
 
-- **Current catalog V113.** [Workbook](Business_Central_Updates_V113.xlsx) and [JSON](Business_Central_Updates.json) match across 1,067 records and all 17 fields. Added user cache persistence reliability (21.2) and Copilot performance (22.5), also listed in 22.6. Archived [V112](archive/Business_Central_Updates_V112.xlsx) byte-for-byte.
-- **Pending research.** Continue the queued application and platform evidence and compare the BC 13.10 UK fraud prevention header entry with later configuration and automation updates.
+- **Current catalog V114.** [Workbook](Business_Central_Updates_V114.xlsx) and [JSON](Business_Central_Updates.json) match across 1,067 records. The 13.10 reference to Making Tax Digital fraud prevention headers is historical context for the existing 14.25 configuration entry. The separate 14.27 automation entry retains its release evidence. [V113](archive/Business_Central_Updates_V113.xlsx) was archived byte-for-byte.
+- **Pending research.** Continue the queued application and platform evidence.
+
+## V113 handoff — 2026-11-27
+
+- **Current catalog V113.** [Workbook](archive/Business_Central_Updates_V113.xlsx) and [JSON](Business_Central_Updates.json) match across 1,067 records and all 17 fields. Added user cache persistence reliability (21.2) and Copilot performance (22.5), also listed in 22.6. Archived [V112](archive/Business_Central_Updates_V112.xlsx) byte-for-byte.
+- **Pending research.** Continue the queued application and platform evidence; the BC 13.10 header mention was resolved as historical context in V114.
 
 ## V112 handoff — 2026-11-26
 
