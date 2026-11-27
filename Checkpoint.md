@@ -2,7 +2,13 @@
 
 ## Resume here — 2026-11-27
 
-- **Current catalog V117.** [Workbook](Business_Central_Updates_V117.xlsx) and [JSON](Business_Central_Updates.json) match across all 17 fields and 1,077 records. Added six features verified against Microsoft evidence. Archived [V116](archive/Business_Central_Updates_V116.xlsx) byte-for-byte.
+- **Current catalog V118.** [Workbook](Business_Central_Updates_V118.xlsx) and [JSON](Business_Central_Updates.json) match across 1,079 records and all 17 fields. Added the BC 26.0 CallStack method and UserControlHost page type. Added OnPreRendering details and its official documentation link to the existing PDF report post-processing entry. Expanded the existing SecretText entry with its two supported uses and dedicated Microsoft release-plan page. Archived [V117](archive/Business_Central_Updates_V117.xlsx) byte-for-byte.
+- **Queue review.** Screened 5,099 additional distinct URLs from 5,480 requests, excluding both earlier batches, including 2,482 substantive public excerpts of restricted articles. Completed six feature or documentation reviews, three using saved official content, and tracked 107 failed access attempts. Remaining feature comparisons stay queued. Local extracts are in `.work/read-next5000-2026-11-27.jsonl`.
+- **Pending research.** Continue feature comparisons. Verify the specific servicing version for AL external business event obsoletion. Microsoft Learn confirms applicability to BC 26 and later, while the blog reports AL 15.2. PR #27 contains V116. V117 and V118 are stacked above that commit.
+
+## V117 handoff — 2026-11-27
+
+- **Current catalog V117.** [Workbook](archive/Business_Central_Updates_V117.xlsx) and [JSON](Business_Central_Updates.json) match across all 17 fields and 1,077 records. Added six features verified against Microsoft evidence. Archived [V116](archive/Business_Central_Updates_V116.xlsx) byte-for-byte.
 - **Queue review.** Screened 5,004 additional distinct page contents from 5,312 queued requests, excluding the previous batch. Completed 10 canonical content reviews and recorded 7 unsuccessful access attempts from the batch. Remaining partial content comparisons are still queued. The local extraction log is `.work/read-5000-2026-11-27.jsonl`.
 - **Pending research.** Continue feature comparisons and confirm the BC24 AL folding candidate against versioned Microsoft evidence. PR #27 contains V116; V117 is based on that commit.
 
