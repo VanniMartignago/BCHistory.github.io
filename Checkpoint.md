@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-27
 
-- **Current catalog V115.** [Workbook](Business_Central_Updates_V115.xlsx) and [JSON](Business_Central_Updates.json) match across 1,067 records. Consolidated four equivalent product-area labels across 39 records. The site displays English area names in both interface languages. The functional area audit found 21 distinct English labels. [V114](archive/Business_Central_Updates_V114.xlsx) was archived byte-for-byte.
+- **Current catalog V116.** [Workbook](Business_Central_Updates_V116.xlsx) and [JSON](Business_Central_Updates.json) match across 1,071 records. Added AL Sticky Scroll and Go to Definition for Rec (21.1), and telemetry dimensions for RT0019 and RT0018 (21.4). Archived [V115](archive/Business_Central_Updates_V115.xlsx) byte-for-byte.
+- **URL review.** Screened the extracted page content of 1,044 distinct URLs from 1,216 requests. Completed feature comparisons for three dedicated articles, and kept partial reviews queued. Two access requests returned 404. The local content extracts are in `.work/read-1000-2026-11-27.jsonl`. The BC 25 CUSTOMERCONTRACT dimension and BC 24 NumberSequence performance changes still need version and source verification.
+
+## V115 handoff — 2026-11-27
+
+- **Current catalog V115.** [Workbook](archive/Business_Central_Updates_V115.xlsx) and [JSON](Business_Central_Updates.json) match across 1,067 records. Consolidated four equivalent product-area labels across 39 records. The site displays English area names in both interface languages. The functional area audit found 21 distinct English labels. [V114](archive/Business_Central_Updates_V114.xlsx) was archived byte-for-byte.
 - **Pending research.** Continue the queued application and platform evidence.
 
 ## V114 handoff — 2026-11-27
