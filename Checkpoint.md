@@ -1,8 +1,13 @@
 # Business Central research checkpoint
 
-## Resume here — 2026-11-26
+## Resume here — 2026-11-27
 
-- **Current catalog V112.** [Workbook](Business_Central_Updates_V112.xlsx) and [JSON](Business_Central_Updates.json) match across 1,065 records. Added VAT report reminder DateFormula support (13.7). Archived [V111](archive/Business_Central_Updates_V111.xlsx) byte-for-byte.
+- **Current catalog V113.** [Workbook](Business_Central_Updates_V113.xlsx) and [JSON](Business_Central_Updates.json) match across 1,067 records and all 17 fields. Added user cache persistence reliability (21.2) and Copilot performance (22.5), also listed in 22.6. Archived [V112](archive/Business_Central_Updates_V112.xlsx) byte-for-byte.
+- **Pending research.** Continue the queued application and platform evidence and compare the BC 13.10 UK fraud prevention header entry with later configuration and automation updates.
+
+## V112 handoff — 2026-11-26
+
+- **Current catalog V112.** [Workbook](archive/Business_Central_Updates_V112.xlsx) and [JSON](Business_Central_Updates.json) match across 1,065 records. Added VAT report reminder DateFormula support (13.7). Archived [V111](archive/Business_Central_Updates_V111.xlsx) byte-for-byte.
 - **Continue research.** Screened four queued Business Central 13 updates. The Norwegian SEPA KID change was already cataloged in 13.10. Compare the UK 13.10 fraud header item with later configuration and automation changes and continue remaining application and platform evidence.
 
 ## V111 handoff — 2026-11-26

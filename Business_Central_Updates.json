@@ -20233,5 +20233,43 @@
     "officialDocumentation": null,
     "blogSource": null,
     "changeType": "Enhancement"
+  },
+  {
+    "majorVersion": "21",
+    "minorVersion": "21.2",
+    "releaseWave": "2022 release wave 2",
+    "productArea": "Service and platform",
+    "countryRegion": null,
+    "functionalArea": null,
+    "feature": "Improve the reliability of user cache persistence",
+    "description": "Improves the reliability of saving user cache data in Business Central.",
+    "releaseStatus": "General availability",
+    "previewDate": null,
+    "gaDate": "December 2022",
+    "cloud": null,
+    "onPrem": "Yes",
+    "primarySource": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2022/11/update-21-2-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application",
+    "officialDocumentation": null,
+    "blogSource": null,
+    "changeType": "Enhancement"
+  },
+  {
+    "majorVersion": "22",
+    "minorVersion": "22.5",
+    "releaseWave": "2023 release wave 1",
+    "productArea": "Copilot and agents",
+    "countryRegion": null,
+    "functionalArea": null,
+    "feature": "Improve Copilot performance",
+    "description": "Improves Copilot performance in Business Central.",
+    "releaseStatus": "General availability",
+    "previewDate": null,
+    "gaDate": "September 2023",
+    "cloud": null,
+    "onPrem": null,
+    "primarySource": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2023/08/update-22-5-for-microsoft-dynamics-365-business-central-2023-release-wave-1-application-build-22-5-6",
+    "officialDocumentation": null,
+    "blogSource": null,
+    "changeType": "Enhancement"
   }
 ]
