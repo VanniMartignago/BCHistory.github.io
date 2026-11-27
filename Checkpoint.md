@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-27
 
-- **Current catalog V114.** [Workbook](Business_Central_Updates_V114.xlsx) and [JSON](Business_Central_Updates.json) match across 1,067 records. The 13.10 reference to Making Tax Digital fraud prevention headers is historical context for the existing 14.25 configuration entry. The separate 14.27 automation entry retains its release evidence. [V113](archive/Business_Central_Updates_V113.xlsx) was archived byte-for-byte.
+- **Current catalog V115.** [Workbook](Business_Central_Updates_V115.xlsx) and [JSON](Business_Central_Updates.json) match across 1,067 records. Consolidated four equivalent product-area labels across 39 records. The site displays English area names in both interface languages. The functional area audit found 21 distinct English labels. [V114](archive/Business_Central_Updates_V114.xlsx) was archived byte-for-byte.
+- **Pending research.** Continue the queued application and platform evidence.
+
+## V114 handoff — 2026-11-27
+
+- **Current catalog V114.** [Workbook](archive/Business_Central_Updates_V114.xlsx) and [JSON](Business_Central_Updates.json) match across 1,067 records. The 13.10 reference to Making Tax Digital fraud prevention headers is historical context for the existing 14.25 configuration entry. The separate 14.27 automation entry retains its release evidence. [V113](archive/Business_Central_Updates_V113.xlsx) was archived byte-for-byte.
 - **Pending research.** Continue the queued application and platform evidence.
 
 ## V113 handoff — 2026-11-27
