@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V139.** [Workbook](Business_Central_Updates_V139.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Classified the invoice line filter as User experience / Supply chain management per user direction. Archived [V138](archive/Business_Central_Updates_V138.xlsx) byte-for-byte.
+- **Current catalog V140.** [Workbook](Business_Central_Updates_V140.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Reclassified the 35 Sustainability Management and one Cash Management product entries into product capabilities and business processes. Archived [V139](archive/Business_Central_Updates_V139.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V139 handoff — 2026-11-28
+
+- **Current catalog V139.** [Workbook](archive/Business_Central_Updates_V139.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Classified the invoice line filter as User experience / Supply chain management per user direction. Archived [V138](archive/Business_Central_Updates_V138.xlsx) byte-for-byte.
 - **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
 
 ## V138 handoff — 2026-11-28
