@@ -5302,7 +5302,7 @@
   },
   {
     "majorVersion": "20",
-    "minorVersion": "20.3",
+    "minorVersion": "20.0",
     "releaseWave": "2022 release wave 1",
     "productArea": "Application",
     "countryRegion": null,
@@ -5314,7 +5314,7 @@
     "gaDate": "April 2022",
     "cloud": "Yes",
     "onPrem": null,
-    "primarySource": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/whatsnew-update-20-3",
+    "primarySource": "https://learn.microsoft.com/en-us/previous-versions/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/support-inventory-pick-warehouse-pick-operations-jobs",
     "officialDocumentation": null,
     "blogSource": null,
     "changeType": "Enhancement"

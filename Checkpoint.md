@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V120.** [Workbook](Business_Central_Updates_V120.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Corrected 13 Functional Area values using the existing Microsoft references. Archived [V119](archive/Business_Central_Updates_V119.xlsx) byte-for-byte.
+- **Current catalog V121.** [Workbook](Business_Central_Updates_V121.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Corrected the initial Jobs warehouse picking release to 20.0 and linked the original release plan. Verified the product and functional areas of the picking, terminology, and project receiving entries. Archived [V120](archive/Business_Central_Updates_V120.xlsx) byte-for-byte.
+- **Pending research.** Continue the functional area audit and verify the separate 20.3 To-Job Bin Code enhancement for cataloging.
+
+## V120 handoff — 2026-11-28
+
+- **Current catalog V120.** [Workbook](archive/Business_Central_Updates_V120.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Corrected 13 Functional Area values using the existing Microsoft references. Archived [V119](archive/Business_Central_Updates_V119.xlsx) byte-for-byte.
 - **Pending audit.** Continue source-level classification checks, including records whose exact catalog titles do not appear in their linked pages.
 
 ## V119 handoff — 2026-11-28
