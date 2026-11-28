@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V142.** [Workbook](Business_Central_Updates_V142.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Verified four on-premises values against exact Microsoft passages. The wider availability audit remains open. Archived [V141](archive/Business_Central_Updates_V141.xlsx) byte-for-byte.
+- **Current catalog V143.** [Workbook](Business_Central_Updates_V143.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Verified 42 cloud-only availability values for built-in Copilot and Business Central agents. The wider availability audit remains open. Archived [V142](archive/Business_Central_Updates_V142.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V142 handoff — 2026-11-28
+
+- **Current catalog V142.** [Workbook](archive/Business_Central_Updates_V142.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Verified four on-premises values against exact Microsoft passages. The wider availability audit remains open. Archived [V141](archive/Business_Central_Updates_V141.xlsx) byte-for-byte.
 - **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
 
 ## V141 handoff — 2026-11-28
