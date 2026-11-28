@@ -2,7 +2,92 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V120.** [Workbook](Business_Central_Updates_V120.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Corrected 13 Functional Area values using the existing Microsoft references. Archived [V119](archive/Business_Central_Updates_V119.xlsx) byte-for-byte.
+- **Current catalog V137.** [Workbook](Business_Central_Updates_V137.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Product Area to Service and platform for AL system symbols included with Business Central Server, as confirmed by the user. The functional area is empty. Archived [V136](archive/Business_Central_Updates_V136.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V136 handoff — 2026-11-28
+
+- **Current catalog V136.** [Workbook](archive/Business_Central_Updates_V136.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Aligned six records using linked Microsoft sources and catalog conventions for development, migration, geographic availability, and platform limits. Archived [V135](archive/Business_Central_Updates_V135.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V135 handoff — 2026-11-28
+
+- **Current catalog V135.** [Workbook](archive/Business_Central_Updates_V135.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to User Interface for legacy user personalization and profile configuration, as confirmed by the user. Archived [V134](archive/Business_Central_Updates_V134.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V134 handoff — 2026-11-28
+
+- **Current catalog V134.** [Workbook](archive/Business_Central_Updates_V134.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Aligned five areas using the linked sources and established catalog conventions for configuration packages, user interface changes, collections and AL tooling. Archived [V133](archive/Business_Central_Updates_V133.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V133 handoff — 2026-11-28
+
+- **Current catalog V133.** [Workbook](archive/Business_Central_Updates_V133.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to Finance for item descriptions and customer and vendor names in ledger entries, as confirmed by the user. Archived [V132](archive/Business_Central_Updates_V132.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V132 handoff — 2026-11-28
+
+- **Current catalog V132.** [Workbook](archive/Business_Central_Updates_V132.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to Administration for Excel import previews in configuration packages, as confirmed by the user. Archived [V131](archive/Business_Central_Updates_V131.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V131 handoff — 2026-11-28
+
+- **Current catalog V131.** [Workbook](archive/Business_Central_Updates_V131.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to Administration for RapidStart configuration package errors, as confirmed by the user. Archived [V130](archive/Business_Central_Updates_V130.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V130 handoff — 2026-11-28
+
+- **Current catalog V130.** [Workbook](archive/Business_Central_Updates_V130.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Aligned six BC 14.0 records with the Microsoft Application enhancements page and recorded the confirmed Administration classification for configuration templates. Archived [V129](archive/Business_Central_Updates_V129.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V129 handoff — 2026-11-28
+
+- **Current catalog V129.** [Workbook](archive/Business_Central_Updates_V129.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Aligned four BC 14.0 records with the Microsoft Application enhancements page and linked the exact sections. Archived [V128](archive/Business_Central_Updates_V128.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V128 handoff — 2026-11-28
+
+- **Current catalog V128.** [Workbook](archive/Business_Central_Updates_V128.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Aligned nine BC 14.0 records with the Microsoft Application enhancements page and linked the exact sections. Archived [V127](archive/Business_Central_Updates_V127.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V127 handoff — 2026-11-28
+
+- **Current catalog V127.** [Workbook](archive/Business_Central_Updates_V127.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the registry creation-time feature to Application enhancements and User Interface and linked the specific Microsoft feature section. Archived [V126](archive/Business_Central_Updates_V126.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V126 handoff — 2026-11-28
+
+- **Current catalog V126.** [Workbook](archive/Business_Central_Updates_V126.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to Inventory for the item creation prompts on sales and purchase documents, as confirmed by the user. Archived [V125](archive/Business_Central_Updates_V125.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V125 handoff — 2026-11-28
+
+- **Current catalog V125.** [Workbook](archive/Business_Central_Updates_V125.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Classified four records for which the linked sources do not specify a more precise area. The Spanish VAT entry uses Country/region and Finance, with Spain in Country/Region. Archived [V124](archive/Business_Central_Updates_V124.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V124 handoff — 2026-11-28
+
+- **Current catalog V124.** [Workbook](archive/Business_Central_Updates_V124.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Filled seven Product Area values with the Performance improvements and Server improvements headings from the linked Microsoft April 2019 release plan. Archived [V123](archive/Business_Central_Updates_V123.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V123 handoff — 2026-11-28
+
+- **Current catalog V123.** [Workbook](archive/Business_Central_Updates_V123.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Updated one Product Area and ten Functional Area values using the linked Microsoft releases. Archived [V122](archive/Business_Central_Updates_V122.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V122 handoff — 2026-11-28
+
+- **Current catalog V122.** [Workbook](archive/Business_Central_Updates_V122.xlsx) and [JSON](Business_Central_Updates.json) match for all 1,080 records. Preserved the Microsoft release category Finance for cross-environment master data management and cleared its functional area based on the linked synchronization guidance. Archived [V121](archive/Business_Central_Updates_V121.xlsx) byte-for-byte.
+- **Pending audit.** Verify functional area candidates using existing sources. Some historical links only establish context or localization and need a specific source passage before reclassification.
+
+## V121 handoff — 2026-11-28
+
+- **Current catalog V121.** [Workbook](archive/Business_Central_Updates_V121.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Corrected the initial Jobs warehouse picking release to 20.0 and linked the original release plan. Verified the product and functional areas of the picking, terminology, and project receiving entries. Archived [V120](archive/Business_Central_Updates_V120.xlsx) byte-for-byte.
+- **Pending research.** Continue the functional area audit and verify the separate 20.3 To-Job Bin Code enhancement for cataloging.
+
+## V120 handoff — 2026-11-28
+
+- **Current catalog V120.** [Workbook](archive/Business_Central_Updates_V120.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Corrected 13 Functional Area values using the existing Microsoft references. Archived [V119](archive/Business_Central_Updates_V119.xlsx) byte-for-byte.
 - **Pending audit.** Continue source-level classification checks, including records whose exact catalog titles do not appear in their linked pages.
 
 ## V119 handoff — 2026-11-28
