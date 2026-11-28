@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V126.** [Workbook](Business_Central_Updates_V126.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to Inventory for the item creation prompts on sales and purchase documents, as confirmed by the user. Archived [V125](archive/Business_Central_Updates_V125.xlsx) byte-for-byte.
+- **Current catalog V127.** [Workbook](Business_Central_Updates_V127.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the registry creation-time feature to Application enhancements and User Interface and linked the specific Microsoft feature section. Archived [V126](archive/Business_Central_Updates_V126.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V126 handoff — 2026-11-28
+
+- **Current catalog V126.** [Workbook](archive/Business_Central_Updates_V126.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to Inventory for the item creation prompts on sales and purchase documents, as confirmed by the user. Archived [V125](archive/Business_Central_Updates_V125.xlsx) byte-for-byte.
 - **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
 
 ## V125 handoff — 2026-11-28
