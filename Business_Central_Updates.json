@@ -1088,7 +1088,7 @@
     "releaseWave": "Spring 2019",
     "productArea": "Application enhancements",
     "countryRegion": null,
-    "functionalArea": null,
+    "functionalArea": "Administration",
     "feature": "Preview Excel imports into configuration packages",
     "description": "Review the packages and tables in an Excel file before importing it. The preview shows whether the import action creates a package or updates an existing one and whether it adds or updates table lines.",
     "releaseStatus": "General availability",
