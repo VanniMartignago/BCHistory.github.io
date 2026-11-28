@@ -18243,7 +18243,7 @@
     "majorVersion": "26",
     "minorVersion": "26.3",
     "releaseWave": "2025 release wave 1",
-    "productArea": null,
+    "productArea": "Service and platform",
     "countryRegion": null,
     "functionalArea": null,
     "feature": "Include AL system symbols with Business Central Server",
