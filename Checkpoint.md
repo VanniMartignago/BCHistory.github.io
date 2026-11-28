@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V137.** [Workbook](Business_Central_Updates_V137.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Product Area to Service and platform for AL system symbols included with Business Central Server, as confirmed by the user. The functional area is empty. Archived [V136](archive/Business_Central_Updates_V136.xlsx) byte-for-byte.
+- **Current catalog V138.** [Workbook](Business_Central_Updates_V138.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Reviewed the Supply chain management cohort and corrected five functional areas using the linked Microsoft references. Archived [V137](archive/Business_Central_Updates_V137.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V137 handoff — 2026-11-28
+
+- **Current catalog V137.** [Workbook](archive/Business_Central_Updates_V137.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Product Area to Service and platform for AL system symbols included with Business Central Server, as confirmed by the user. The functional area is empty. Archived [V136](archive/Business_Central_Updates_V136.xlsx) byte-for-byte.
 - **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
 
 ## V136 handoff — 2026-11-28
