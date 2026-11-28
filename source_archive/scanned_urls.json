@@ -27695,7 +27695,7 @@
     "scanDate": null,
     "lastAttemptDate": "2026-11-27",
     "status": "retry",
-    "scope": "Compared selected regulatory entries with existing catalog entries. Other update evidence remains pending. Content extracted and screened on 2026-11-27; full feature review remains queued.",
+    "scope": "Compared selected regulatory entries with existing catalog entries. Other update evidence remains pending. Content extracted and screened on 2026-11-27; full feature review remains queued. Verified platform fix 331020 for V119. Remaining cumulative-update items are queued.",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/ea005302eb1a64cd6ec4e5691ec84ad39a2e93f04c580a503efa393c354081c7.json"
   },
@@ -65292,10 +65292,10 @@
   },
   {
     "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/prepare-for-cookie-samesite-policy",
-    "scanDate": null,
-    "lastAttemptDate": "2026-11-27",
-    "status": "retry",
-    "scope": "Retrieved page and extracted relevant links. Feature-level evidence review remains open. Content extracted and screened on 2026-11-27 in the second 5,000-link batch; full feature comparison remains pending.",
+    "scanDate": "2026-11-28",
+    "lastAttemptDate": "2026-11-28",
+    "status": "processed",
+    "scope": "Reviewed SameSite guidance and confirmed the minimum recommended October 2018 update for the BC 13.13 catalog entry.",
     "linkedFrom": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/authenticating-users-with-azure-active-directory",
     "httpStatus": 200,
     "extract": ".work/full-coverage-extracts/e16626555aba713d336cbecdaf503272a3af0b2a5250dafb64721daa88db430d.json"

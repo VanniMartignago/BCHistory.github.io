@@ -20499,5 +20499,24 @@
     "officialDocumentation": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-pagetype-property",
     "blogSource": null,
     "changeType": "Addition"
+  },
+  {
+    "majorVersion": "13",
+    "minorVersion": "13.13",
+    "releaseWave": "October 2018",
+    "productArea": "Service and platform",
+    "countryRegion": null,
+    "functionalArea": null,
+    "feature": "Maintain Microsoft Entra sign-in with Chrome SameSite cookie changes",
+    "description": "Cumulative Update 13 updates the on-premises platform so Microsoft Entra authentication continues to work when Chrome changes its default SameSite cookie policy. Microsoft identifies CU 13 as the minimum recommended update for the October 2018 release. Deployments using a web farm may also need to configure the session affinity cookie.",
+    "releaseStatus": "General availability",
+    "previewDate": null,
+    "gaDate": "November 2019",
+    "cloud": null,
+    "onPrem": "Yes",
+    "primarySource": "https://support.microsoft.com/en-us/servicing/dynamics/business-central/update/2019/11/cumulative-update-13-for-microsoft-dynamics-365-business-central-on-premises-application-build-37622",
+    "officialDocumentation": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/prepare-for-cookie-samesite-policy",
+    "blogSource": null,
+    "changeType": "Enhancement"
   }
 ]

@@ -1,8 +1,13 @@
 # Business Central research checkpoint
 
-## Resume here — 2026-11-27
+## Resume here — 2026-11-28
 
-- **Current catalog V118.** [Workbook](Business_Central_Updates_V118.xlsx) and [JSON](Business_Central_Updates.json) match across 1,079 records and all 17 fields. Added the BC 26.0 CallStack method and UserControlHost page type. Added OnPreRendering details and its official documentation link to the existing PDF report post-processing entry. Expanded the existing SecretText entry with its two supported uses and dedicated Microsoft release-plan page. Archived [V117](archive/Business_Central_Updates_V117.xlsx) byte-for-byte.
+- **Current catalog V119.** [Workbook](Business_Central_Updates_V119.xlsx) and [JSON](Business_Central_Updates.json) match across 1,080 records and all 17 fields. Added BC 13.13 on-premises compatibility with Chrome SameSite defaults for Microsoft Entra authentication. Archived [V118](archive/Business_Central_Updates_V118.xlsx) byte-for-byte.
+- **Pending research.** Continue the remaining CU 13 evidence and queued historical release notes. Microsoft guidance lists the minimum update for each affected release branch. Keep the precise servicing version for AL external business event obsoletion pending.
+
+## V118 handoff — 2026-11-27
+
+- **Current catalog V118.** [Workbook](archive/Business_Central_Updates_V118.xlsx) and [JSON](Business_Central_Updates.json) match across 1,079 records and all 17 fields. Added the BC 26.0 CallStack method and UserControlHost page type. Added OnPreRendering details and its official documentation link to the existing PDF report post-processing entry. Expanded the existing SecretText entry with its two supported uses and dedicated Microsoft release-plan page. Archived [V117](archive/Business_Central_Updates_V117.xlsx) byte-for-byte.
 - **Queue review.** Screened 5,099 additional distinct URLs from 5,480 requests, excluding both earlier batches, including 2,482 substantive public excerpts of restricted articles. Completed six feature or documentation reviews, three using saved official content, and tracked 107 failed access attempts. Remaining feature comparisons stay queued. Local extracts are in `.work/read-next5000-2026-11-27.jsonl`.
 - **Pending research.** Continue feature comparisons. Verify the specific servicing version for AL external business event obsoletion. Microsoft Learn confirms applicability to BC 26 and later, while the blog reports AL 15.2. PR #27 contains V116. V117 and V118 are stacked above that commit.
 
