@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V122.** [Workbook](Business_Central_Updates_V122.xlsx) and [JSON](Business_Central_Updates.json) match for all 1,080 records. Preserved the Microsoft release category Finance for cross-environment master data management and cleared its functional area based on the linked synchronization guidance. Archived [V121](archive/Business_Central_Updates_V121.xlsx) byte-for-byte.
+- **Current catalog V123.** [Workbook](Business_Central_Updates_V123.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Updated one Product Area and ten Functional Area values using the linked Microsoft releases. Archived [V122](archive/Business_Central_Updates_V122.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V122 handoff — 2026-11-28
+
+- **Current catalog V122.** [Workbook](archive/Business_Central_Updates_V122.xlsx) and [JSON](Business_Central_Updates.json) match for all 1,080 records. Preserved the Microsoft release category Finance for cross-environment master data management and cleared its functional area based on the linked synchronization guidance. Archived [V121](archive/Business_Central_Updates_V121.xlsx) byte-for-byte.
 - **Pending audit.** Verify functional area candidates using existing sources. Some historical links only establish context or localization and need a specific source passage before reclassification.
 
 ## V121 handoff — 2026-11-28
