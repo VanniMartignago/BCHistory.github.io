@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V123.** [Workbook](Business_Central_Updates_V123.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Updated one Product Area and ten Functional Area values using the linked Microsoft releases. Archived [V122](archive/Business_Central_Updates_V122.xlsx) byte-for-byte.
+- **Current catalog V124.** [Workbook](Business_Central_Updates_V124.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Filled seven Product Area values with the Performance improvements and Server improvements headings from the linked Microsoft April 2019 release plan. Archived [V123](archive/Business_Central_Updates_V123.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V123 handoff — 2026-11-28
+
+- **Current catalog V123.** [Workbook](archive/Business_Central_Updates_V123.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Updated one Product Area and ten Functional Area values using the linked Microsoft releases. Archived [V122](archive/Business_Central_Updates_V122.xlsx) byte-for-byte.
 - **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
 
 ## V122 handoff — 2026-11-28
