@@ -1069,7 +1069,7 @@
     "releaseWave": "Spring 2019",
     "productArea": "Application enhancements",
     "countryRegion": null,
-    "functionalArea": null,
+    "functionalArea": "Administration",
     "feature": "Review and export RapidStart configuration package errors",
     "description": "See validation and import errors for an entire configuration package. Filter by error text, field, or table, inspect the source record, and export the filtered errors to Excel for follow-up.",
     "releaseStatus": "General availability",
