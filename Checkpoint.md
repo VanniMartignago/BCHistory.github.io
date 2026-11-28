@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V125.** [Workbook](Business_Central_Updates_V125.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Classified four records for which the linked sources do not specify a more precise area. The Spanish VAT entry uses Country/region and Finance, with Spain in Country/Region. Archived [V124](archive/Business_Central_Updates_V124.xlsx) byte-for-byte.
+- **Current catalog V126.** [Workbook](Business_Central_Updates_V126.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to Inventory for the item creation prompts on sales and purchase documents, as confirmed by the user. Archived [V125](archive/Business_Central_Updates_V125.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V125 handoff — 2026-11-28
+
+- **Current catalog V125.** [Workbook](archive/Business_Central_Updates_V125.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Classified four records for which the linked sources do not specify a more precise area. The Spanish VAT entry uses Country/region and Finance, with Spain in Country/Region. Archived [V124](archive/Business_Central_Updates_V124.xlsx) byte-for-byte.
 - **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
 
 ## V124 handoff — 2026-11-28

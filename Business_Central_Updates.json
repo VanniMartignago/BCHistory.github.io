@@ -1126,7 +1126,7 @@
     "releaseWave": "Spring 2019",
     "productArea": null,
     "countryRegion": null,
-    "functionalArea": null,
+    "functionalArea": "Inventory",
     "feature": "Control item creation prompts on sales and purchase documents",
     "description": "Inventory setup can suppress the prompt shown for an item that cannot be found. Sales and purchase setup separately control whether users can enter an item number that is not yet in Business Central.",
     "releaseStatus": "General availability",
