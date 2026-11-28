@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V132.** [Workbook](Business_Central_Updates_V132.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to Administration for Excel import previews in configuration packages, as confirmed by the user. Archived [V131](archive/Business_Central_Updates_V131.xlsx) byte-for-byte.
+- **Current catalog V133.** [Workbook](Business_Central_Updates_V133.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to Finance for item descriptions and customer and vendor names in ledger entries, as confirmed by the user. Archived [V132](archive/Business_Central_Updates_V132.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V132 handoff — 2026-11-28
+
+- **Current catalog V132.** [Workbook](archive/Business_Central_Updates_V132.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to Administration for Excel import previews in configuration packages, as confirmed by the user. Archived [V131](archive/Business_Central_Updates_V131.xlsx) byte-for-byte.
 - **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
 
 ## V131 handoff — 2026-11-28

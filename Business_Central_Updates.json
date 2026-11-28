@@ -1012,7 +1012,7 @@
     "releaseWave": "Spring 2019",
     "productArea": "Application enhancements",
     "countryRegion": null,
-    "functionalArea": null,
+    "functionalArea": "Finance",
     "feature": "Copy item descriptions and customer and vendor names to ledger entries",
     "description": "Enable the corresponding options in Inventory Setup, Sales & Receivables Setup, or Purchases & Payables Setup to copy item descriptions and customer and vendor names to their ledger entries. The descriptive information makes posted entries easier to identify.",
     "releaseStatus": "General availability",
