@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V121.** [Workbook](Business_Central_Updates_V121.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Corrected the initial Jobs warehouse picking release to 20.0 and linked the original release plan. Verified the product and functional areas of the picking, terminology, and project receiving entries. Archived [V120](archive/Business_Central_Updates_V120.xlsx) byte-for-byte.
+- **Current catalog V122.** [Workbook](Business_Central_Updates_V122.xlsx) and [JSON](Business_Central_Updates.json) match for all 1,080 records. Preserved the Microsoft release category Finance for cross-environment master data management and cleared its functional area based on the linked synchronization guidance. Archived [V121](archive/Business_Central_Updates_V121.xlsx) byte-for-byte.
+- **Pending audit.** Verify functional area candidates using existing sources. Some historical links only establish context or localization and need a specific source passage before reclassification.
+
+## V121 handoff — 2026-11-28
+
+- **Current catalog V121.** [Workbook](archive/Business_Central_Updates_V121.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Corrected the initial Jobs warehouse picking release to 20.0 and linked the original release plan. Verified the product and functional areas of the picking, terminology, and project receiving entries. Archived [V120](archive/Business_Central_Updates_V120.xlsx) byte-for-byte.
 - **Pending research.** Continue the functional area audit and verify the separate 20.3 To-Job Bin Code enhancement for cataloging.
 
 ## V120 handoff — 2026-11-28

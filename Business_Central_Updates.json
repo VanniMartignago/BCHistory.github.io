@@ -17428,7 +17428,7 @@
     "releaseWave": "2026 release wave 2",
     "productArea": "Finance",
     "countryRegion": null,
-    "functionalArea": "Finance",
+    "functionalArea": null,
     "feature": "Cross-environment Master Data Management",
     "description": "Extends master data synchronization to companies in different Business Central online environments within the same Microsoft Entra tenant. Administrators establish a secure OAuth connection with a single-tenant app, select the source company, and configure the data to synchronize. The feature is in public preview and requires consent to the cross-environment privacy notice and appropriate app permissions.",
     "releaseStatus": "Public preview",
