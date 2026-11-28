@@ -1,8 +1,30 @@
 # Business Central research checkpoint
 
-## Resume here — 2026-11-27
+## Resume here — 2026-11-28
 
-- **Current catalog V115.** [Workbook](Business_Central_Updates_V115.xlsx) and [JSON](Business_Central_Updates.json) match across 1,067 records. Consolidated four equivalent product-area labels across 39 records. The site displays English area names in both interface languages. The functional area audit found 21 distinct English labels. [V114](archive/Business_Central_Updates_V114.xlsx) was archived byte-for-byte.
+- **Current catalog V119.** [Workbook](Business_Central_Updates_V119.xlsx) and [JSON](Business_Central_Updates.json) match across 1,080 records and all 17 fields. Added BC 13.13 on-premises compatibility with Chrome SameSite defaults for Microsoft Entra authentication. Archived [V118](archive/Business_Central_Updates_V118.xlsx) byte-for-byte.
+- **Pending research.** Continue the remaining CU 13 evidence and queued historical release notes. Microsoft guidance lists the minimum update for each affected release branch. Keep the precise servicing version for AL external business event obsoletion pending.
+
+## V118 handoff — 2026-11-27
+
+- **Current catalog V118.** [Workbook](archive/Business_Central_Updates_V118.xlsx) and [JSON](Business_Central_Updates.json) match across 1,079 records and all 17 fields. Added the BC 26.0 CallStack method and UserControlHost page type. Added OnPreRendering details and its official documentation link to the existing PDF report post-processing entry. Expanded the existing SecretText entry with its two supported uses and dedicated Microsoft release-plan page. Archived [V117](archive/Business_Central_Updates_V117.xlsx) byte-for-byte.
+- **Queue review.** Screened 5,099 additional distinct URLs from 5,480 requests, excluding both earlier batches, including 2,482 substantive public excerpts of restricted articles. Completed six feature or documentation reviews, three using saved official content, and tracked 107 failed access attempts. Remaining feature comparisons stay queued. Local extracts are in `.work/read-next5000-2026-11-27.jsonl`.
+- **Pending research.** Continue feature comparisons. Verify the specific servicing version for AL external business event obsoletion. Microsoft Learn confirms applicability to BC 26 and later, while the blog reports AL 15.2. PR #27 contains V116. V117 and V118 are stacked above that commit.
+
+## V117 handoff — 2026-11-27
+
+- **Current catalog V117.** [Workbook](archive/Business_Central_Updates_V117.xlsx) and [JSON](Business_Central_Updates.json) match across all 17 fields and 1,077 records. Added six features verified against Microsoft evidence. Archived [V116](archive/Business_Central_Updates_V116.xlsx) byte-for-byte.
+- **Queue review.** Screened 5,004 additional distinct page contents from 5,312 queued requests, excluding the previous batch. Completed 10 canonical content reviews and recorded 7 unsuccessful access attempts from the batch. Remaining partial content comparisons are still queued. The local extraction log is `.work/read-5000-2026-11-27.jsonl`.
+- **Pending research.** Continue feature comparisons and confirm the BC24 AL folding candidate against versioned Microsoft evidence. PR #27 contains V116; V117 is based on that commit.
+
+## V116 handoff — 2026-11-27
+
+- **Current catalog V116.** [Workbook](archive/Business_Central_Updates_V116.xlsx) and [JSON](Business_Central_Updates.json) match across 1,071 records. Added AL Sticky Scroll and Go to Definition for Rec (21.1), and telemetry dimensions for RT0019 and RT0018 (21.4). Archived [V115](archive/Business_Central_Updates_V115.xlsx) byte-for-byte.
+- **URL review.** Screened the extracted page content of 1,044 distinct URLs from 1,216 requests. Completed feature comparisons for three dedicated articles, and kept partial reviews queued. Two access requests returned 404. The local content extracts are in `.work/read-1000-2026-11-27.jsonl`. The BC 25 CUSTOMERCONTRACT dimension and BC 24 NumberSequence performance changes still need version and source verification.
+
+## V115 handoff — 2026-11-27
+
+- **Current catalog V115.** [Workbook](archive/Business_Central_Updates_V115.xlsx) and [JSON](Business_Central_Updates.json) match across 1,067 records. Consolidated four equivalent product-area labels across 39 records. The site displays English area names in both interface languages. The functional area audit found 21 distinct English labels. [V114](archive/Business_Central_Updates_V114.xlsx) was archived byte-for-byte.
 - **Pending research.** Continue the queued application and platform evidence.
 
 ## V114 handoff — 2026-11-27
