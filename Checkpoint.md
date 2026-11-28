@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V127.** [Workbook](Business_Central_Updates_V127.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the registry creation-time feature to Application enhancements and User Interface and linked the specific Microsoft feature section. Archived [V126](archive/Business_Central_Updates_V126.xlsx) byte-for-byte.
+- **Current catalog V128.** [Workbook](Business_Central_Updates_V128.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Aligned nine BC 14.0 records with the Microsoft Application enhancements page and linked the exact sections. Archived [V127](archive/Business_Central_Updates_V127.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V127 handoff — 2026-11-28
+
+- **Current catalog V127.** [Workbook](archive/Business_Central_Updates_V127.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the registry creation-time feature to Application enhancements and User Interface and linked the specific Microsoft feature section. Archived [V126](archive/Business_Central_Updates_V126.xlsx) byte-for-byte.
 - **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
 
 ## V126 handoff — 2026-11-28
