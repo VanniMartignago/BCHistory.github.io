@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V134.** [Workbook](Business_Central_Updates_V134.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Aligned five areas using the linked sources and established catalog conventions for configuration packages, user interface changes, collections and AL tooling. Archived [V133](archive/Business_Central_Updates_V133.xlsx) byte-for-byte.
+- **Current catalog V135.** [Workbook](Business_Central_Updates_V135.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Set the Functional Area to User Interface for legacy user personalization and profile configuration, as confirmed by the user. Archived [V134](archive/Business_Central_Updates_V134.xlsx) byte-for-byte.
+- **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
+
+## V134 handoff — 2026-11-28
+
+- **Current catalog V134.** [Workbook](archive/Business_Central_Updates_V134.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Aligned five areas using the linked sources and established catalog conventions for configuration packages, user interface changes, collections and AL tooling. Archived [V133](archive/Business_Central_Updates_V133.xlsx) byte-for-byte.
 - **Pending audit.** Continue comparing records whose linked sources lack an exact feature title or a clear area label. Preserve documented Microsoft product categories and apply catalog conventions to functional process labels where the sources describe the relevant scope.
 
 ## V133 handoff — 2026-11-28

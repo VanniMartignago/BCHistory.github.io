@@ -18492,7 +18492,7 @@
     "releaseWave": "2019 release wave 2",
     "productArea": "Modern client",
     "countryRegion": null,
-    "functionalArea": null,
+    "functionalArea": "User Interface",
     "feature": "Replace legacy user personalization and profile configuration",
     "description": "Legacy personalizations and profile configurations are discarded when moving to the AL-based tools. Users and administrators recreate their changes with the new tools, which retain them for subsequent releases.",
     "releaseStatus": "Released",
