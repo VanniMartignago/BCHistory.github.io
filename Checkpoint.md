@@ -2,7 +2,12 @@
 
 ## Resume here — 2026-11-28
 
-- **Current catalog V119.** [Workbook](Business_Central_Updates_V119.xlsx) and [JSON](Business_Central_Updates.json) match across 1,080 records and all 17 fields. Added BC 13.13 on-premises compatibility with Chrome SameSite defaults for Microsoft Entra authentication. Archived [V118](archive/Business_Central_Updates_V118.xlsx) byte-for-byte.
+- **Current catalog V120.** [Workbook](Business_Central_Updates_V120.xlsx) and [JSON](Business_Central_Updates.json) match across all 1,080 records. Corrected 13 Functional Area values using the existing Microsoft references. Archived [V119](archive/Business_Central_Updates_V119.xlsx) byte-for-byte.
+- **Pending audit.** Continue source-level classification checks, including records whose exact catalog titles do not appear in their linked pages.
+
+## V119 handoff — 2026-11-28
+
+- **Current catalog V119.** [Workbook](archive/Business_Central_Updates_V119.xlsx) and [JSON](Business_Central_Updates.json) match across 1,080 records and all 17 fields. Added BC 13.13 on-premises compatibility with Chrome SameSite defaults for Microsoft Entra authentication. Archived [V118](archive/Business_Central_Updates_V118.xlsx) byte-for-byte.
 - **Pending research.** Continue the remaining CU 13 evidence and queued historical release notes. Microsoft guidance lists the minimum update for each affected release branch. Keep the precise servicing version for AL external business event obsoletion pending.
 
 ## V118 handoff — 2026-11-27
